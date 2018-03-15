@@ -1,0 +1,39 @@
+{
+	"name": "YuanXC",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start --port=8082",
+		"test": "jest"
+	},
+	"dependencies": {
+		"axios": "^0.17.1",
+		"moment": "^2.19.3",
+		"numeral": "^2.0.6",
+		"qs": "^6.5.1",
+		"react": "16.0.0",
+		"react-native": "0.50.4",
+		"react-native-cli": "^2.0.1",
+		"react-native-code-push": "^5.2.0-beta",
+		"react-native-device-info": "^0.13.0",
+		"react-native-image-zoom-viewer": "^2.0.16",
+		"react-native-modalbox": "^1.4.2",
+		"react-native-swiper": "^1.5.13",
+		"react-native-tab-navigator": "^0.3.4",
+		"react-native-wechat": "^1.9.9",
+		"react-navigation": "^1.0.0-beta.21",
+		"react-redux": "^5.0.6",
+		"redux": "^3.7.2",
+		"redux-thunk": "^2.2.0",
+		"styled-components": "^2.2.4"
+	},
+	"devDependencies": {
+		"babel-jest": "21.2.0",
+		"babel-preset-react-native": "4.0.0",
+		"jest": "21.2.1",
+		"react-test-renderer": "16.0.0"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}

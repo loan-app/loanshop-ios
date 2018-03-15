@@ -1,0 +1,4 @@
+<resources>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">0CI4IWsIv5Woa-qV9n2Gg6-sMGlXa646c8e3-762b-4dd6-b940-56cdbe5dd5aa</string>
+    <string name="app_name">利群理财</string>
+</resources>
