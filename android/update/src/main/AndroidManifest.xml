@@ -7,7 +7,7 @@
 
         <provider
             android:name="ezy.boost.update.UpdateFileProvider"
-            android:authorities="com.liqun.car"
+            android:authorities="com.liqun4"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

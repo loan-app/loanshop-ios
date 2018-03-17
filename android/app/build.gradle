@@ -197,8 +197,17 @@ android {
         mumayi {
             manifestPlaceholders = [BAIDU_CHANNEL: "mumayi"]
         }
-        android {
-            manifestPlaceholders = [BAIDU_CHANNEL: "android"]
+        guanwang {
+            manifestPlaceholders = [BAIDU_CHANNEL: "guanwang"]
+        }
+        dt001 {
+            manifestPlaceholders = [BAIDU_CHANNEL: "dt001"]
+        }
+        dt002 {
+            manifestPlaceholders = [BAIDU_CHANNEL: "dt002"]
+        }
+        dt003 {
+            manifestPlaceholders = [BAIDU_CHANNEL: "dt003"]
         }
     }
 }
