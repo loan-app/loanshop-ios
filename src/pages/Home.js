@@ -467,6 +467,13 @@ class Home extends Component {
               安全合规</StyledText>
           </CenterRow>
         </SafeView>
+
+          <SafeView>
+              <CenterRow>
+                  <StyledText color="#999999" size="10" lh="0">利群理财的基金销售服务由北京兴辉投资管理有限公司提供</StyledText>
+              </CenterRow>
+          </SafeView>
+
         <MessageBox
           style={{height: 195}}
           boxStyle={{height: 150, alignItems: 'flex-start'}}
