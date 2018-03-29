@@ -199,14 +199,16 @@ export function messageDetail(data) {
  * 理财列表
  * **/
 export function financeList(data) {
-  return axios.get(createApiUrl('/finance-base/'), {params: data});
+    console.log('--------financeList' + data.toString());
+    return axios.get(createApiUrl('/finance-base/'), {params: data});
 }
 
 /**
  * 理财详情
  * **/
 export function financeDetail(data) {
-  return axios.get(createApiUrl('/finance-base/detail'), {params: data});
+    console.log('--------financeDetail');
+    return axios.get(createApiUrl('/finance-base/detail'), {params: data});
 }
 
 /**
