@@ -46129,15 +46129,15 @@ var _stackNavigator = require(370                      ); // 370 = ./config/stac
 
 var _stackNavigator2 = babelHelpers.interopRequireDefault(_stackNavigator);
 
-var _Modal = require(706                 ); // 706 = ./components/Modal
+var _Modal = require(704                 ); // 704 = ./components/Modal
 
 var _Modal2 = babelHelpers.interopRequireDefault(_Modal);
 
-var _ToastWrapper = require(707                        ); // 707 = ./components/ToastWrapper
+var _ToastWrapper = require(705                        ); // 705 = ./components/ToastWrapper
 
 var _ToastWrapper2 = babelHelpers.interopRequireDefault(_ToastWrapper);
 
-var _Splash = require(708             ); // 708 = ./pages/Splash
+var _Splash = require(706             ); // 706 = ./pages/Splash
 
 var _Splash2 = babelHelpers.interopRequireDefault(_Splash);
 
@@ -46165,7 +46165,7 @@ var _LocalStorage = require(620                   ); // 620 = ./utils/LocalStora
 
 var _LocalStorage2 = babelHelpers.interopRequireDefault(_LocalStorage);
 
-var _store = require(714             ); // 714 = ./config/store
+var _store = require(712             ); // 712 = ./config/store
 
 var _store2 = babelHelpers.interopRequireDefault(_store);
 
@@ -48258,67 +48258,67 @@ var _WebView = require(661               ); // 661 = ../pages/WebView
 
 var _WebView2 = babelHelpers.interopRequireDefault(_WebView);
 
-var _BankCardDetail = require(668                      ); // 668 = ../pages/BankCardDetail
+var _BankCardDetail = require(666                      ); // 666 = ../pages/BankCardDetail
 
 var _BankCardDetail2 = babelHelpers.interopRequireDefault(_BankCardDetail);
 
-var _PayPasswordInit = require(670                       ); // 670 = ../pages/PayPasswordInit
+var _PayPasswordInit = require(668                       ); // 668 = ../pages/PayPasswordInit
 
 var _PayPasswordInit2 = babelHelpers.interopRequireDefault(_PayPasswordInit);
 
-var _PayPasswordModify = require(671                         ); // 671 = ../pages/PayPasswordModify
+var _PayPasswordModify = require(669                         ); // 669 = ../pages/PayPasswordModify
 
 var _PayPasswordModify2 = babelHelpers.interopRequireDefault(_PayPasswordModify);
 
-var _MessageList = require(672                   ); // 672 = ../pages/MessageList
+var _MessageList = require(670                   ); // 670 = ../pages/MessageList
 
 var _MessageList2 = babelHelpers.interopRequireDefault(_MessageList);
 
-var _MessageDetail = require(675                     ); // 675 = ../pages/MessageDetail
+var _MessageDetail = require(673                     ); // 673 = ../pages/MessageDetail
 
 var _MessageDetail2 = babelHelpers.interopRequireDefault(_MessageDetail);
 
-var _Recharge = require(677                ); // 677 = ../pages/Recharge
+var _Recharge = require(675                ); // 675 = ../pages/Recharge
 
 var _Recharge2 = babelHelpers.interopRequireDefault(_Recharge);
 
-var _Cash = require(679            ); // 679 = ../pages/Cash
+var _Cash = require(677            ); // 677 = ../pages/Cash
 
 var _Cash2 = babelHelpers.interopRequireDefault(_Cash);
 
-var _Experience = require(680                  ); // 680 = ../pages/Experience
+var _Experience = require(678                  ); // 678 = ../pages/Experience
 
 var _Experience2 = babelHelpers.interopRequireDefault(_Experience);
 
-var _ExperienceDetail = require(681                        ); // 681 = ../pages/ExperienceDetail
+var _ExperienceDetail = require(679                        ); // 679 = ../pages/ExperienceDetail
 
 var _ExperienceDetail2 = babelHelpers.interopRequireDefault(_ExperienceDetail);
 
-var _Asset = require(682             ); // 682 = ../pages/Asset
+var _Asset = require(680             ); // 680 = ../pages/Asset
 
 var _Asset2 = babelHelpers.interopRequireDefault(_Asset);
 
-var _Income = require(684              ); // 684 = ../pages/Income
+var _Income = require(682              ); // 682 = ../pages/Income
 
 var _Income2 = babelHelpers.interopRequireDefault(_Income);
 
-var _FinanceDetail = require(685                     ); // 685 = ../pages/FinanceDetail
+var _FinanceDetail = require(683                     ); // 683 = ../pages/FinanceDetail
 
 var _FinanceDetail2 = babelHelpers.interopRequireDefault(_FinanceDetail);
 
-var _FinanceBuy = require(701                  ); // 701 = ../pages/FinanceBuy
+var _FinanceBuy = require(699                  ); // 699 = ../pages/FinanceBuy
 
 var _FinanceBuy2 = babelHelpers.interopRequireDefault(_FinanceBuy);
 
-var _AboutUs = require(703               ); // 703 = ../pages/AboutUs
+var _AboutUs = require(701               ); // 701 = ../pages/AboutUs
 
 var _AboutUs2 = babelHelpers.interopRequireDefault(_AboutUs);
 
-var _NotifyDetail = require(704                    ); // 704 = ../pages/NotifyDetail
+var _NotifyDetail = require(702                    ); // 702 = ../pages/NotifyDetail
 
 var _NotifyDetail2 = babelHelpers.interopRequireDefault(_NotifyDetail);
 
-var _PhoneBind = require(705                 ); // 705 = ../pages/PhoneBind
+var _PhoneBind = require(703                 ); // 703 = ../pages/PhoneBind
 
 var _PhoneBind2 = babelHelpers.interopRequireDefault(_PhoneBind);
 
@@ -56675,8 +56675,8 @@ var OS = exports.OS = _reactNative.Platform.OS;
 var PackageName = exports.PackageName = _reactNativeDeviceInfo2.default.getBundleId();
 var Channel = exports.Channel = OS === "ios" ? iOSCn : AndroidCn;
 var InnerVersion = exports.InnerVersion = "1";
-var WeChatKey = exports.WeChatKey = "";
-var ItunesId = exports.ItunesId = "com.wcz.app";
+var WeChatKey = exports.WeChatKey = "wx6de50f0e3a8a7a1a";
+var ItunesId = exports.ItunesId = "1364345343";
 var TDkey = exports.TDkey = OS === "ios" ? "F8EEB5B98AEE4597984274DA18B0E2E9" : "AF1FA0E532384161BEDE63D225B84A11";
 }, 434, null, "YuanXC/src/config/constants.js");
 __d(/* react-native-device-info/deviceinfo.js */function(global, require, module, exports) {
@@ -63472,7 +63472,7 @@ var Home = function (_Component) {
             ItemView,
             { key: i,
               onPress: function onPress() {
-                return navigate("WebView", { url: (0, _http.createApiUrl)('/finance-base/h5/detail?id=' + item.id + '&1=1') });
+                return _this8.props.navigation.navigate("FinanceDetail", { id: item.id });
               }, __source: {
                 fileName: _jsxFileName,
                 lineNumber: 412
@@ -63740,6 +63740,33 @@ var Home = function (_Component) {
           )
         ),
         _react2.default.createElement(
+          SafeView,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 471
+            }
+          },
+          _react2.default.createElement(
+            _UtilLib.CenterRow,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 472
+              }
+            },
+            _react2.default.createElement(
+              _UtilLib.StyledText,
+              { color: '#999999', size: '10', lh: '0', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 473
+                }
+              },
+              '\u5229\u7FA4\u7406\u8D22\u7684\u57FA\u91D1\u9500\u552E\u670D\u52A1\u7531\u5317\u4EAC\u5174\u8F89\u6295\u8D44\u7BA1\u7406\u6709\u9650\u516C\u53F8\u63D0\u4F9B'
+            )
+          )
+        ),
+        _react2.default.createElement(
           _MessageBox2.default,
           {
             style: { height: 195 },
@@ -63748,7 +63775,7 @@ var Home = function (_Component) {
             content: this.state.messageBox.content,
             button: this.state.messageBox.button, __source: {
               fileName: _jsxFileName,
-              lineNumber: 470
+              lineNumber: 477
             }
           },
           _react2.default.createElement(
@@ -63756,14 +63783,14 @@ var Home = function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 476
+                lineNumber: 483
               }
             },
             _react2.default.createElement(
               _UtilLib.StyledText,
               { size: '16', bottom: '10', color: '#333333', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 477
+                  lineNumber: 484
                 }
               },
               '\u5E94\u7528\u66F4\u65B0'
@@ -63772,7 +63799,7 @@ var Home = function (_Component) {
               _UtilLib.StyledText,
               { size: '14', bottom: '6', color: '#333333', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 478
+                  lineNumber: 485
                 }
               },
               '\u66F4\u65B0\u5185\u5BB9:'
@@ -63782,14 +63809,14 @@ var Home = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 479
+                  lineNumber: 486
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { color: '#333333', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 480
+                    lineNumber: 487
                   }
                 },
                 this.state.updateInfo
@@ -74390,10 +74417,12 @@ function messageDetail(data) {
 }
 
 function financeList(data) {
+  console.log('--------financeList' + data.toString());
   return _axios2.default.get(createApiUrl('/finance-base/'), { params: data });
 }
 
 function financeDetail(data) {
+  console.log('--------financeDetail');
   return _axios2.default.get(createApiUrl('/finance-base/detail'), { params: data });
 }
 
@@ -79750,7 +79779,7 @@ var FinanceList = function (_Component) {
       return _react2.default.createElement(
         ItemView,
         { onPress: function onPress() {
-            return _this2.props.navigation.navigate("WebView", { url: (0, _http.createApiUrl)('/finance-base/h5/detail?id=' + item.id) });
+            return _this2.props.navigation.navigate("FinanceDetail", { id: item.id });
           }, __source: {
             fileName: _jsxFileName,
             lineNumber: 146
@@ -86377,70 +86406,6 @@ var Share = function (_PureComponent) {
           _react2.default.createElement(
             _Touchable2.default,
             { onPress: function onPress() {
-                return _this2._share(1);
-              }, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 34
-              }
-            },
-            _react2.default.createElement(
-              _reactNative.View,
-              { style: styles.content, __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 35
-                }
-              },
-              _react2.default.createElement(_reactNative.Image, { source: require(665                       ), style: styles.img, __source: { // 665 = ../resources/imgs/wx.png
-                  fileName: _jsxFileName,
-                  lineNumber: 36
-                }
-              }),
-              _react2.default.createElement(
-                _reactNative.Text,
-                { style: styles.label, __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 37
-                  }
-                },
-                '\u5FAE\u4FE1\u597D\u53CB'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            _Touchable2.default,
-            { onPress: function onPress() {
-                return _this2._share(2);
-              }, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 42
-              }
-            },
-            _react2.default.createElement(
-              _reactNative.View,
-              { style: styles.content, __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 43
-                }
-              },
-              _react2.default.createElement(_reactNative.Image, { source: require(666                        ), style: styles.img, __source: { // 666 = ../resources/imgs/wx2.png
-                  fileName: _jsxFileName,
-                  lineNumber: 44
-                }
-              }),
-              _react2.default.createElement(
-                _reactNative.Text,
-                { style: styles.label, __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 45
-                  }
-                },
-                '\u670B\u53CB\u5708'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            _Touchable2.default,
-            { onPress: function onPress() {
                 return _this2._share(3);
               }, __source: {
                 fileName: _jsxFileName,
@@ -86454,7 +86419,7 @@ var Share = function (_PureComponent) {
                   lineNumber: 51
                 }
               },
-              _react2.default.createElement(_reactNative.Image, { source: require(667                         ), style: styles.img, __source: { // 667 = ../resources/imgs/copy.png
+              _react2.default.createElement(_reactNative.Image, { source: require(665                         ), style: styles.img, __source: { // 665 = ../resources/imgs/copy.png
                   fileName: _jsxFileName,
                   lineNumber: 52
                 }
@@ -86993,12 +86958,8 @@ function isUndefined(arg) {
   return arg === void 0;
 }
 }, 664, null, "events/events.js");
-__d(/* YuanXC/src/resources/imgs/wx.png */function(global, require, module, exports) {module.exports=require(160                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/src/resources/imgs","width":300,"height":300,"scales":[1],"hash":"924892a93363123d676b3a25247a0510","name":"wx","type":"png"}); // 160 = react-native/Libraries/Image/AssetRegistry
-}, 665, null, "YuanXC/src/resources/imgs/wx.png");
-__d(/* YuanXC/src/resources/imgs/wx2.png */function(global, require, module, exports) {module.exports=require(160                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/src/resources/imgs","width":300,"height":300,"scales":[1],"hash":"8704e377f0adfc634d82e956f60bf3b8","name":"wx2","type":"png"}); // 160 = react-native/Libraries/Image/AssetRegistry
-}, 666, null, "YuanXC/src/resources/imgs/wx2.png");
 __d(/* YuanXC/src/resources/imgs/copy.png */function(global, require, module, exports) {module.exports=require(160                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/src/resources/imgs","width":300,"height":300,"scales":[1],"hash":"3a4ab26613619457b1b2790dcc26e045","name":"copy","type":"png"}); // 160 = react-native/Libraries/Image/AssetRegistry
-}, 667, null, "YuanXC/src/resources/imgs/copy.png");
+}, 665, null, "YuanXC/src/resources/imgs/copy.png");
 __d(/* YuanXC/src/pages/BankCardDetail.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -87030,7 +86991,7 @@ var _color = require(587              ); // 587 = ../styles/color
 
 var _color2 = babelHelpers.interopRequireDefault(_color);
 
-var _bankCardDetailActions = require(669                               ); // 669 = ../actions/bankCardDetailActions
+var _bankCardDetailActions = require(667                               ); // 667 = ../actions/bankCardDetailActions
 
 var bankCardDetailCreator = babelHelpers.interopRequireWildcard(_bankCardDetailActions);
 
@@ -87228,7 +87189,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(BankCardDetail);
-}, 668, null, "YuanXC/src/pages/BankCardDetail.js");
+}, 666, null, "YuanXC/src/pages/BankCardDetail.js");
 __d(/* YuanXC/src/actions/bankCardDetailActions.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -87266,7 +87227,7 @@ function receiveData(data) {
     type: types.RECEIVE_BANKCARD_DETAIL
   }, data);
 }
-}, 669, null, "YuanXC/src/actions/bankCardDetailActions.js");
+}, 667, null, "YuanXC/src/actions/bankCardDetailActions.js");
 __d(/* YuanXC/src/pages/PayPasswordInit.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -87314,7 +87275,7 @@ var _userActions = require(630                     ); // 630 = ../actions/userAc
 
 var userCreator = babelHelpers.interopRequireWildcard(_userActions);
 
-var _bankCardDetailActions = require(669                               ); // 669 = ../actions/bankCardDetailActions
+var _bankCardDetailActions = require(667                               ); // 667 = ../actions/bankCardDetailActions
 
 var bankCardDetailCreator = babelHelpers.interopRequireWildcard(_bankCardDetailActions);
 
@@ -87635,7 +87596,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(PayPasswordInit);
-}, 670, null, "YuanXC/src/pages/PayPasswordInit.js");
+}, 668, null, "YuanXC/src/pages/PayPasswordInit.js");
 __d(/* YuanXC/src/pages/PayPasswordModify.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -87679,7 +87640,7 @@ var _Touchable = require(497                      ); // 497 = ../components/Touc
 
 var _Touchable2 = babelHelpers.interopRequireDefault(_Touchable);
 
-var _bankCardDetailActions = require(669                               ); // 669 = ../actions/bankCardDetailActions
+var _bankCardDetailActions = require(667                               ); // 667 = ../actions/bankCardDetailActions
 
 var bankCardDetailCreator = babelHelpers.interopRequireWildcard(_bankCardDetailActions);
 
@@ -88106,7 +88067,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(PayPasswordModify);
-}, 671, null, "YuanXC/src/pages/PayPasswordModify.js");
+}, 669, null, "YuanXC/src/pages/PayPasswordModify.js");
 __d(/* YuanXC/src/pages/MessageList.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -88147,11 +88108,11 @@ var _imgs2 = babelHelpers.interopRequireDefault(_imgs);
 
 var _UtilLib = require(586                    ); // 586 = ../components/UtilLib
 
-var _messageListActions = require(673                            ); // 673 = ../actions/messageListActions
+var _messageListActions = require(671                            ); // 671 = ../actions/messageListActions
 
 var messageListCreator = babelHelpers.interopRequireWildcard(_messageListActions);
 
-var _notifyListActions = require(674                           ); // 674 = ../actions/notifyListActions
+var _notifyListActions = require(672                           ); // 672 = ../actions/notifyListActions
 
 var notifyListCreator = babelHelpers.interopRequireWildcard(_notifyListActions);
 
@@ -88495,7 +88456,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(MessageList);
-}, 672, null, "YuanXC/src/pages/MessageList.js");
+}, 670, null, "YuanXC/src/pages/MessageList.js");
 __d(/* YuanXC/src/actions/messageListActions.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -88535,7 +88496,7 @@ function receiveData(data) {
     type: types.RECEIVE_MESSAGE_LIST
   }, data);
 }
-}, 673, null, "YuanXC/src/actions/messageListActions.js");
+}, 671, null, "YuanXC/src/actions/messageListActions.js");
 __d(/* YuanXC/src/actions/notifyListActions.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -88575,7 +88536,7 @@ function receiveData(data) {
     type: types.RECEIVE_NOTIFY_LIST
   }, data);
 }
-}, 674, null, "YuanXC/src/actions/notifyListActions.js");
+}, 672, null, "YuanXC/src/actions/notifyListActions.js");
 __d(/* YuanXC/src/pages/MessageDetail.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -88591,7 +88552,7 @@ var _UtilLib = require(586                    ); // 586 = ../components/UtilLib
 
 var _http = require(622               ); // 622 = ../requests/http
 
-var _HTML = require(676            ); // 676 = ../utils/HTML
+var _HTML = require(674            ); // 674 = ../utils/HTML
 
 var _HTML2 = babelHelpers.interopRequireDefault(_HTML);
 
@@ -88668,7 +88629,7 @@ var WebView1 = function (_Component) {
 }(_react.Component);
 
 exports.default = WebView1;
-}, 675, null, "YuanXC/src/pages/MessageDetail.js");
+}, 673, null, "YuanXC/src/pages/MessageDetail.js");
 __d(/* YuanXC/src/utils/HTML.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -88677,7 +88638,7 @@ exports.default = HtmlFormatter = function HtmlFormatter(title, date, html) {
   var content = "<!DOCTYPE html><meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width\">\n    <meta content=\"telephone=no\" name=\"format-detection\">\n    <title></title>\n    <style>body{font-family: \"\u5FAE\u8F6F\u96C5\u9ED1\",Arial, Helvetica, sans-serif;margin:0;color:#999999;font-size:13px;padding:10px;padding-top:20px;padding-bottom:50px;}\n    .title{font-size:18px;color:#333333;}\n    .date{font-size:14;line-height:30px;}\n    </style>\n    <body><div class=\"title\">" + title + "</div><div class=\"date\">" + date + "</div>" + html + "</body></html>";
   return content;
 };
-}, 676, null, "YuanXC/src/utils/HTML.js");
+}, 674, null, "YuanXC/src/utils/HTML.js");
 __d(/* YuanXC/src/pages/Recharge.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -88741,7 +88702,7 @@ var _imgs2 = babelHelpers.interopRequireDefault(_imgs);
 
 var _constants = require(434                  ); // 434 = ../config/constants
 
-var _bankCardDetailActions = require(669                               ); // 669 = ../actions/bankCardDetailActions
+var _bankCardDetailActions = require(667                               ); // 667 = ../actions/bankCardDetailActions
 
 var bankCardDetailCreator = babelHelpers.interopRequireWildcard(_bankCardDetailActions);
 
@@ -88751,7 +88712,7 @@ var userCreator = babelHelpers.interopRequireWildcard(_userActions);
 
 var _http = require(622               ); // 622 = ../requests/http
 
-var _PayView = require(678                    ); // 678 = ../components/PayView
+var _PayView = require(676                    ); // 676 = ../components/PayView
 
 var _PayView2 = babelHelpers.interopRequireDefault(_PayView);
 
@@ -89670,7 +89631,7 @@ Recharge.navigationOptions = function (_ref) {
       screenProps = _ref.screenProps;
   return {
     title: '快捷充值',
-    hideHeader: navigation.state.params.hideHeader
+    header: null
   };
 };
 
@@ -89692,7 +89653,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Recharge);
-}, 677, null, "YuanXC/src/pages/Recharge.js");
+}, 675, null, "YuanXC/src/pages/Recharge.js");
 __d(/* YuanXC/src/components/PayView.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -89748,7 +89709,7 @@ MyView.propTypes = {
   infoDict: _propTypes2.default.object
 };
 exports.default = MyView;
-}, 678, null, "YuanXC/src/components/PayView.js");
+}, 676, null, "YuanXC/src/components/PayView.js");
 __d(/* YuanXC/src/pages/Cash.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -89816,7 +89777,7 @@ var _userActions = require(630                     ); // 630 = ../actions/userAc
 
 var userCreator = babelHelpers.interopRequireWildcard(_userActions);
 
-var _bankCardDetailActions = require(669                               ); // 669 = ../actions/bankCardDetailActions
+var _bankCardDetailActions = require(667                               ); // 667 = ../actions/bankCardDetailActions
 
 var bankCardDetailCreator = babelHelpers.interopRequireWildcard(_bankCardDetailActions);
 
@@ -90666,7 +90627,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Cash);
-}, 679, null, "YuanXC/src/pages/Cash.js");
+}, 677, null, "YuanXC/src/pages/Cash.js");
 __d(/* YuanXC/src/pages/Experience.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -90943,7 +90904,7 @@ exports.default = Experience;
 Experience.contextTypes = {
   callToast: _propTypes2.default.func.isRequired
 };
-}, 680, null, "YuanXC/src/pages/Experience.js");
+}, 678, null, "YuanXC/src/pages/Experience.js");
 __d(/* YuanXC/src/pages/ExperienceDetail.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -91127,7 +91088,7 @@ exports.default = ExperienceDetail;
 ExperienceDetail.contextTypes = {
   callToast: _propTypes2.default.func.isRequired
 };
-}, 681, null, "YuanXC/src/pages/ExperienceDetail.js");
+}, 679, null, "YuanXC/src/pages/ExperienceDetail.js");
 __d(/* YuanXC/src/pages/Asset.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -91167,7 +91128,7 @@ var _UtilLib = require(586                    ); // 586 = ../components/UtilLib
 
 var _constants = require(434                  ); // 434 = ../config/constants
 
-var _Pie = require(683                ); // 683 = ../components/Pie
+var _Pie = require(681                ); // 681 = ../components/Pie
 
 var _Pie2 = babelHelpers.interopRequireDefault(_Pie);
 
@@ -91501,7 +91462,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Asset);
-}, 682, null, "YuanXC/src/pages/Asset.js");
+}, 680, null, "YuanXC/src/pages/Asset.js");
 __d(/* YuanXC/src/components/Pie.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -91656,7 +91617,7 @@ Pie.defaultProps = {
   innerRadius: 0,
   backgroundColor: '#fff'
 };
-}, 683, null, "YuanXC/src/components/Pie.js");
+}, 681, null, "YuanXC/src/components/Pie.js");
 __d(/* YuanXC/src/pages/Income.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -91696,7 +91657,7 @@ var _UtilLib = require(586                    ); // 586 = ../components/UtilLib
 
 var _constants = require(434                  ); // 434 = ../config/constants
 
-var _Pie = require(683                ); // 683 = ../components/Pie
+var _Pie = require(681                ); // 681 = ../components/Pie
 
 var _Pie2 = babelHelpers.interopRequireDefault(_Pie);
 
@@ -92021,7 +91982,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Income);
-}, 684, null, "YuanXC/src/pages/Income.js");
+}, 682, null, "YuanXC/src/pages/Income.js");
 __d(/* YuanXC/src/pages/FinanceDetail.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -92066,7 +92027,7 @@ var _reactRedux = require(333          ); // 333 = react-redux
 
 var _redux = require(344    ); // 344 = redux
 
-var _reactNativeImageZoomViewer = require(686                             ); // 686 = react-native-image-zoom-viewer
+var _reactNativeImageZoomViewer = require(684                             ); // 684 = react-native-image-zoom-viewer
 
 var _reactNativeImageZoomViewer2 = babelHelpers.interopRequireDefault(_reactNativeImageZoomViewer);
 
@@ -92084,7 +92045,7 @@ var _imgs2 = babelHelpers.interopRequireDefault(_imgs);
 
 var _reactNative = require(12            ); // 12 = react-native
 
-var _financeDetailActions = require(698                              ); // 698 = ../actions/financeDetailActions
+var _financeDetailActions = require(696                              ); // 696 = ../actions/financeDetailActions
 
 var financeDetailCreator = babelHelpers.interopRequireWildcard(_financeDetailActions);
 
@@ -92100,7 +92061,7 @@ var _Touchable = require(497                      ); // 497 = ../components/Touc
 
 var _Touchable2 = babelHelpers.interopRequireDefault(_Touchable);
 
-var _reactNativeModalbox = require(699                    ); // 699 = react-native-modalbox
+var _reactNativeModalbox = require(697                    ); // 697 = react-native-modalbox
 
 var _reactNativeModalbox2 = babelHelpers.interopRequireDefault(_reactNativeModalbox);
 
@@ -92118,7 +92079,7 @@ var _TextInputCustomized = require(638                                ); // 638 
 
 var _TextInputCustomized2 = babelHelpers.interopRequireDefault(_TextInputCustomized);
 
-var _HTML = require(700             ); // 700 = ../utils/HTML2
+var _HTML = require(698             ); // 698 = ../utils/HTML2
 
 var _HTML2 = babelHelpers.interopRequireDefault(_HTML);
 
@@ -92208,6 +92169,7 @@ var FinanceDetail = function (_Component) {
     value: function _navigateCheck(level, route, params) {
       var routers = (0, _Check2.default)(this.props.check, level, route, params);
       if (routers[0]) {
+        console.log('---------routers[0] = ' + routers[0] + 'routers[1] = ' + routers[1]);
         this.props.navigation.navigate(routers[0], routers[1]);
       }
     }
@@ -92264,11 +92226,11 @@ var FinanceDetail = function (_Component) {
             },
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 261
+              lineNumber: 262
             }
           }), __source: {
             fileName: _jsxFileName,
-            lineNumber: 259
+            lineNumber: 260
           }
         },
         _react2.default.createElement(
@@ -92276,7 +92238,7 @@ var FinanceDetail = function (_Component) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 266
+              lineNumber: 267
             }
           },
           _react2.default.createElement(
@@ -92284,7 +92246,7 @@ var FinanceDetail = function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 267
+                lineNumber: 268
               }
             },
             _react2.default.createElement(
@@ -92292,14 +92254,14 @@ var FinanceDetail = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 268
+                  lineNumber: 269
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { size: '16', color: '#4A4A4A', bottom: '20', top: '5', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 269
+                    lineNumber: 270
                   }
                 },
                 detail.title
@@ -92310,28 +92272,28 @@ var FinanceDetail = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 271
+                  lineNumber: 272
                 }
               },
               _react2.default.createElement(
                 _UtilLib.BetweenView,
                 { style: { width: _constants.WINDOW_WIDTH - 40, alignItems: 'flex-end' }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 272
+                    lineNumber: 273
                   }
                 },
                 _react2.default.createElement(
                   _UtilLib.NormalView,
                   { style: { marginLeft: 20 }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 273
+                      lineNumber: 274
                     }
                   },
                   _react2.default.createElement(
                     _UtilLib.StyledText,
                     { size: '30', color: '#FBA558', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 274
+                        lineNumber: 275
                       }
                     },
                     ((detail.rate - detail.rateExt) * 100).toFixed(1),
@@ -92341,7 +92303,7 @@ var FinanceDetail = function (_Component) {
                     _UtilLib.StyledText,
                     { size: '12', color: '#333333', top: '4', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 277
+                        lineNumber: 278
                       }
                     },
                     '\u9884\u671F\u5E74\u5316\u7387'
@@ -92352,7 +92314,7 @@ var FinanceDetail = function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 279
+                      lineNumber: 280
                     }
                   },
                   _react2.default.createElement(
@@ -92360,12 +92322,12 @@ var FinanceDetail = function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 280
+                        lineNumber: 281
                       }
                     },
                     _react2.default.createElement(ProgressView, { progress: progress, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 281
+                        lineNumber: 282
                       }
                     })
                   ),
@@ -92373,7 +92335,7 @@ var FinanceDetail = function (_Component) {
                     _UtilLib.StyledText,
                     { color: '#999999', top: '10', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 283
+                        lineNumber: 284
                       }
                     },
                     '\u6295\u8D44\u8FDB\u5EA6',
@@ -92386,7 +92348,7 @@ var FinanceDetail = function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 286
+                    lineNumber: 287
                   }
                 },
                 _react2.default.createElement(
@@ -92394,14 +92356,14 @@ var FinanceDetail = function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 287
+                      lineNumber: 288
                     }
                   },
                   _react2.default.createElement(
                     _UtilLib.StyledText,
                     { size: '15', color: '#333333', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 288
+                        lineNumber: 289
                       }
                     },
                     (0, _Float2.default)(detail.financeMoney && detail.financeMoney)
@@ -92410,7 +92372,7 @@ var FinanceDetail = function (_Component) {
                     _UtilLib.StyledText,
                     { color: '#999999', top: '7', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 291
+                        lineNumber: 292
                       }
                     },
                     '\u9879\u76EE\u603B\u989D(\u5143)'
@@ -92420,7 +92382,7 @@ var FinanceDetail = function (_Component) {
                   CellView,
                   { style: { flex: 1, alignItems: "center" }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 293
+                      lineNumber: 294
                     }
                   },
                   _react2.default.createElement(
@@ -92428,14 +92390,14 @@ var FinanceDetail = function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 294
+                        lineNumber: 295
                       }
                     },
                     _react2.default.createElement(
                       _UtilLib.StyledText,
                       { size: '15', color: '#333333', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 295
+                          lineNumber: 296
                         }
                       },
                       detail.isEnd ? "募集结束" : residueMoney > 100 ? (0, _Float2.default)(residueMoney / 10000) + '\u4E07' : (0, _Float2.default)(residueMoney) + '\u5143'
@@ -92444,7 +92406,7 @@ var FinanceDetail = function (_Component) {
                       _UtilLib.StyledText,
                       { color: '#999999', top: '7', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 298
+                          lineNumber: 299
                         }
                       },
                       '\u5269\u4F59\u53EF\u6295(\u5143)'
@@ -92456,14 +92418,14 @@ var FinanceDetail = function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 301
+                      lineNumber: 302
                     }
                   },
                   _react2.default.createElement(
                     _UtilLib.StyledText,
                     { size: '15', color: '#333333', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 302
+                        lineNumber: 303
                       }
                     },
                     detail.deadLine
@@ -92472,7 +92434,7 @@ var FinanceDetail = function (_Component) {
                     _UtilLib.StyledText,
                     { color: '#999999', top: '7', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 303
+                        lineNumber: 304
                       }
                     },
                     '\u9879\u76EE\u671F\u9650(\u5929)'
@@ -92483,14 +92445,14 @@ var FinanceDetail = function (_Component) {
                 _UtilLib.BetweenView,
                 { style: { width: _constants.WINDOW_WIDTH - 40 }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 306
+                    lineNumber: 307
                   }
                 },
                 _react2.default.createElement(
                   _UtilLib.StyledText,
                   { color: '#999999', size: '10', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 307
+                      lineNumber: 308
                     }
                   },
                   '\u8D77\u6295\u91D1\u989D:\uFFE5',
@@ -92500,7 +92462,7 @@ var FinanceDetail = function (_Component) {
                   _UtilLib.StyledText,
                   { color: '#999999', size: '10', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 308
+                      lineNumber: 309
                     }
                   },
                   '\u8D77\u606F\u65B9\u5F0F:',
@@ -92510,7 +92472,7 @@ var FinanceDetail = function (_Component) {
                   _UtilLib.StyledText,
                   { color: '#999999', size: '10', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 309
+                      lineNumber: 310
                     }
                   },
                   '\u8FD8\u6B3E\u65B9\u5F0F:',
@@ -92524,7 +92486,7 @@ var FinanceDetail = function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 313
+                lineNumber: 314
               }
             },
             _react2.default.createElement(
@@ -92532,12 +92494,12 @@ var FinanceDetail = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 314
+                  lineNumber: 315
                 }
               },
               _react2.default.createElement(StatusCirle, { complete: true, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 315
+                  lineNumber: 316
                 }
               }),
               _react2.default.createElement(
@@ -92545,14 +92507,14 @@ var FinanceDetail = function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 316
+                    lineNumber: 317
                   }
                 },
                 _react2.default.createElement(
                   _UtilLib.StyledText,
                   { color: '#333333', size: '14', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 317
+                      lineNumber: 318
                     }
                   },
                   '\u52DF\u96C6\u5F00\u59CB'
@@ -92561,7 +92523,7 @@ var FinanceDetail = function (_Component) {
                   _UtilLib.StyledText,
                   { color: '#999999', size: '11', top: '4', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 318
+                      lineNumber: 319
                     }
                   },
                   detail.beginAtStr
@@ -92573,12 +92535,12 @@ var FinanceDetail = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 321
+                  lineNumber: 322
                 }
               },
               _react2.default.createElement(StatusCirle, { complete: detail.showStatus > 1, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 322
+                  lineNumber: 323
                 }
               }),
               _react2.default.createElement(
@@ -92586,14 +92548,14 @@ var FinanceDetail = function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 323
+                    lineNumber: 324
                   }
                 },
                 _react2.default.createElement(
                   _UtilLib.StyledText,
                   { color: '#333333', size: '14', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 324
+                      lineNumber: 325
                     }
                   },
                   '\u5F00\u59CB\u8BA1\u606F'
@@ -92602,7 +92564,7 @@ var FinanceDetail = function (_Component) {
                   _UtilLib.StyledText,
                   { color: '#999999', size: '11', top: '4', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 325
+                      lineNumber: 326
                     }
                   },
                   detail.beginInterestAtStr
@@ -92614,12 +92576,12 @@ var FinanceDetail = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 328
+                  lineNumber: 329
                 }
               },
               _react2.default.createElement(StatusCirle, { complete: detail.showStatus > 2, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 329
+                  lineNumber: 330
                 }
               }),
               _react2.default.createElement(
@@ -92627,14 +92589,14 @@ var FinanceDetail = function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 330
+                    lineNumber: 331
                   }
                 },
                 _react2.default.createElement(
                   _UtilLib.StyledText,
                   { color: '#333333', size: '14', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 331
+                      lineNumber: 332
                     }
                   },
                   '\u5230\u671F\u56DE\u6B3E'
@@ -92643,7 +92605,7 @@ var FinanceDetail = function (_Component) {
                   _UtilLib.StyledText,
                   { color: '#999999', size: '11', top: '4', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 332
+                      lineNumber: 333
                     }
                   },
                   detail.endAtStr
@@ -92656,21 +92618,21 @@ var FinanceDetail = function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 336
+                lineNumber: 337
               }
             },
             _react2.default.createElement(
               FilterView,
               { color: this.state.type === 1 && _color2.default.font.blue, onPress: this._changeType.bind(this, 1), __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 337
+                  lineNumber: 338
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { size: '15', color: this.state.type === 1 ? _color2.default.font.blue : '#333333', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 338
+                    lineNumber: 339
                   }
                 },
                 '\u9879\u76EE\u4FE1\u606F'
@@ -92680,14 +92642,14 @@ var FinanceDetail = function (_Component) {
               FilterView,
               { color: this.state.type === 2 && _color2.default.font.blue, onPress: this._changeType.bind(this, 2), __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 340
+                  lineNumber: 341
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { size: '15', color: this.state.type === 2 ? _color2.default.font.blue : '#333333', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 341
+                    lineNumber: 342
                   }
                 },
                 '\u5B89\u5168\u4FDD\u969C'
@@ -92697,14 +92659,14 @@ var FinanceDetail = function (_Component) {
               FilterView,
               { color: this.state.type === 3 && _color2.default.font.blue, onPress: this._changeType.bind(this, 3), __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 343
+                  lineNumber: 344
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { size: '15', color: this.state.type === 3 ? _color2.default.font.blue : '#333333', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 344
+                    lineNumber: 345
                   }
                 },
                 '\u8D2D\u4E70\u8BB0\u5F55'
@@ -92732,14 +92694,14 @@ var FinanceDetail = function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 361
+                lineNumber: 362
               }
             },
             _react2.default.createElement(
               _UtilLib.StyledText,
               { color: '#333333', size: '15', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 362
+                  lineNumber: 363
                 }
               },
               '\u501F\u6B3E\u4EBA\u4FE1\u606F'
@@ -92749,14 +92711,14 @@ var FinanceDetail = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 363
+                  lineNumber: 364
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { color: '#9B9B9B', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 364
+                    lineNumber: 365
                   }
                 },
                 '\u501F\u6B3E\u4EBA\u59D3\u540D'
@@ -92765,7 +92727,7 @@ var FinanceDetail = function (_Component) {
                 _UtilLib.StyledText,
                 { color: '#404040', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 365
+                    lineNumber: 366
                   }
                 },
                 detail.borrowerName
@@ -92776,14 +92738,14 @@ var FinanceDetail = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 367
+                  lineNumber: 368
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { color: '#9B9B9B', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 368
+                    lineNumber: 369
                   }
                 },
                 '\u501F\u6B3E\u4EBA\u8EAB\u4EFD\u8BC1\u53F7'
@@ -92792,7 +92754,7 @@ var FinanceDetail = function (_Component) {
                 _UtilLib.StyledText,
                 { color: '#404040', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 369
+                    lineNumber: 370
                   }
                 },
                 detail.borrowerIdCardNo
@@ -92803,14 +92765,14 @@ var FinanceDetail = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 371
+                  lineNumber: 372
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { color: '#9B9B9B', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 372
+                    lineNumber: 373
                   }
                 },
                 '\u501F\u6B3E\u4EBA\u6027\u522B'
@@ -92819,7 +92781,7 @@ var FinanceDetail = function (_Component) {
                 _UtilLib.StyledText,
                 { color: '#404040', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 373
+                    lineNumber: 374
                   }
                 },
                 detail.borrowerGender
@@ -92830,14 +92792,14 @@ var FinanceDetail = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 375
+                  lineNumber: 376
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { color: '#9B9B9B', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 376
+                    lineNumber: 377
                   }
                 },
                 '\u501F\u6B3E\u4EBA\u4F4F\u6240\u5730'
@@ -92846,7 +92808,7 @@ var FinanceDetail = function (_Component) {
                 _UtilLib.StyledText,
                 { color: '#404040', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 377
+                    lineNumber: 378
                   }
                 },
                 detail.borrowerLocation
@@ -92857,14 +92819,14 @@ var FinanceDetail = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 379
+                  lineNumber: 380
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { color: '#9B9B9B', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 380
+                    lineNumber: 381
                   }
                 },
                 '\u501F\u6B3E\u4EBA\u5E74\u9F84'
@@ -92873,7 +92835,7 @@ var FinanceDetail = function (_Component) {
                 _UtilLib.StyledText,
                 { color: '#404040', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 381
+                    lineNumber: 382
                   }
                 },
                 detail.borrowerAge
@@ -92884,14 +92846,14 @@ var FinanceDetail = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 383
+                  lineNumber: 384
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { color: '#9B9B9B', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 384
+                    lineNumber: 385
                   }
                 },
                 '\u501F\u6B3E\u7528\u9014'
@@ -92900,7 +92862,7 @@ var FinanceDetail = function (_Component) {
                 _UtilLib.StyledText,
                 { color: '#404040', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 385
+                    lineNumber: 386
                   }
                 },
                 detail.borrowerPurposeDesc
@@ -92911,14 +92873,14 @@ var FinanceDetail = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 387
+                  lineNumber: 388
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { color: '#333333', size: '15', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 388
+                    lineNumber: 389
                   }
                 },
                 '\u501F\u6B3E\u63CF\u8FF0'
@@ -92927,7 +92889,7 @@ var FinanceDetail = function (_Component) {
                 _UtilLib.NormalView,
                 { style: { height: this.state.webHeight }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 389
+                    lineNumber: 390
                   }
                 },
                 _react2.default.createElement(_reactNative.WebView, {
@@ -92942,7 +92904,7 @@ var FinanceDetail = function (_Component) {
                   javaScriptEnabled: true,
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 390
+                    lineNumber: 391
                   }
                 })
               )
@@ -92954,7 +92916,7 @@ var FinanceDetail = function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 405
+                lineNumber: 406
               }
             },
             detail && detail.financePicList && detail.financePicList.map(function (item, i) {
@@ -92964,12 +92926,12 @@ var FinanceDetail = function (_Component) {
                     return _this3.modal.open();
                   }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 408
+                    lineNumber: 409
                   }
                 },
                 _react2.default.createElement(ItemImg, { source: { uri: item.picPath }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 409
+                    lineNumber: 410
                   }
                 })
               );
@@ -92981,7 +92943,7 @@ var FinanceDetail = function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 417
+                lineNumber: 418
               }
             },
             _react2.default.createElement(
@@ -92989,14 +92951,14 @@ var FinanceDetail = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 418
+                  lineNumber: 419
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { color: '#999999', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 419
+                    lineNumber: 420
                   }
                 },
                 '\u6295\u8D44\u4EBA'
@@ -93005,7 +92967,7 @@ var FinanceDetail = function (_Component) {
                 _UtilLib.StyledText,
                 { color: '#999999', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 420
+                    lineNumber: 421
                   }
                 },
                 '\u6295\u8D44\u91D1\u989D(\u5143)'
@@ -93016,7 +92978,7 @@ var FinanceDetail = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 422
+                  lineNumber: 423
                 }
               },
               detail.investList && detail.investList.map(function (item, i) {
@@ -93024,7 +92986,7 @@ var FinanceDetail = function (_Component) {
                   JLItem,
                   { key: i, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 425
+                      lineNumber: 426
                     }
                   },
                   _react2.default.createElement(
@@ -93032,14 +92994,14 @@ var FinanceDetail = function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 426
+                        lineNumber: 427
                       }
                     },
                     _react2.default.createElement(
                       _UtilLib.StyledText,
                       { color: '#333333', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 427
+                          lineNumber: 428
                         }
                       },
                       item.investerName
@@ -93048,7 +93010,7 @@ var FinanceDetail = function (_Component) {
                       _UtilLib.StyledText,
                       { color: '#999999', top: '4', __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 428
+                          lineNumber: 429
                         }
                       },
                       item.investAt
@@ -93058,7 +93020,7 @@ var FinanceDetail = function (_Component) {
                     _UtilLib.StyledText,
                     { color: '#EE5C2B', size: '17', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 430
+                        lineNumber: 431
                       }
                     },
                     item.investMoney
@@ -93074,7 +93036,7 @@ var FinanceDetail = function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 440
+                lineNumber: 441
               }
             },
             _react2.default.createElement(
@@ -93082,21 +93044,21 @@ var FinanceDetail = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 441
+                  lineNumber: 442
                 }
               },
               _react2.default.createElement(
                 BarView,
                 { color: status > 1 && "#2574CA", __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 442
+                    lineNumber: 443
                   }
                 },
                 _react2.default.createElement(
                   BarText,
                   { color: '#2574CA', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 443
+                      lineNumber: 444
                     }
                   },
                   detail.beginAtStr
@@ -93105,7 +93067,7 @@ var FinanceDetail = function (_Component) {
                   BarText,
                   { color: status > 1 && "#2574CA", top: '20', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 444
+                      lineNumber: 445
                     }
                   },
                   detail.beginInterestAtStr
@@ -93115,14 +93077,14 @@ var FinanceDetail = function (_Component) {
                 BarView,
                 { color: status > 2 && "#2574CA", __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 446
+                    lineNumber: 447
                   }
                 },
                 _react2.default.createElement(
                   BarText,
                   { color: status > 2 && "#2574CA", top: '20', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 447
+                      lineNumber: 448
                     }
                   },
                   detail.descStr
@@ -93131,7 +93093,7 @@ var FinanceDetail = function (_Component) {
                   BarText,
                   { color: status > 2 && "#2574CA", top: '20', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 448
+                      lineNumber: 449
                     }
                   },
                   detail.endAtStr
@@ -93139,17 +93101,17 @@ var FinanceDetail = function (_Component) {
               ),
               _react2.default.createElement(Cicle, { idx: '1', color: '#2574CA', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 450
+                  lineNumber: 451
                 }
               }),
               _react2.default.createElement(Cicle, { idx: '2', color: status > 1 && "#2574CA", __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 451
+                  lineNumber: 452
                 }
               }),
               _react2.default.createElement(Cicle, { idx: '4', color: status > 2 && "#2574CA", __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 452
+                  lineNumber: 453
                 }
               })
             )
@@ -93193,12 +93155,12 @@ var FinanceDetail = function (_Component) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 480
+            lineNumber: 481
           }
         },
         _react2.default.createElement(_UtilLib.ActivityIndicatorModal, { visible: loading, __source: {
             fileName: _jsxFileName,
-            lineNumber: 481
+            lineNumber: 482
           }
         }),
         this._renderDetail(),
@@ -93209,14 +93171,14 @@ var FinanceDetail = function (_Component) {
               return canTouch && _this4._navigateCheck(2, "FinanceBuy");
             }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 484
+              lineNumber: 485
             }
           },
           _react2.default.createElement(
             _UtilLib.StyledText,
             { size: '19', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 486
+                lineNumber: 487
               }
             },
             btn
@@ -93228,12 +93190,12 @@ var FinanceDetail = function (_Component) {
               return _this4.modal = _ref;
             }, backButtonClose: true, __source: {
               fileName: _jsxFileName,
-              lineNumber: 489
+              lineNumber: 490
             }
           },
           _react2.default.createElement(_reactNativeImageZoomViewer2.default, { saveToLocalByLongPress: false, imageUrls: detail.financePicList || [], __source: {
               fileName: _jsxFileName,
-              lineNumber: 490
+              lineNumber: 491
             }
           }),
           _react2.default.createElement(
@@ -93243,7 +93205,7 @@ var FinanceDetail = function (_Component) {
                 return _this4.modal.close();
               }, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 491
+                lineNumber: 492
               }
             },
             _imgs2.default.guan()
@@ -93282,14 +93244,14 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(FinanceDetail);
-}, 685, null, "YuanXC/src/pages/FinanceDetail.js");
+}, 683, null, "YuanXC/src/pages/FinanceDetail.js");
 __d(/* react-native-image-zoom-viewer/built/index.js */function(global, require, module, exports) {"use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var image_viewer_component_1 = require(687                           ); // 687 = ./src/image-viewer.component
+var image_viewer_component_1 = require(685                           ); // 685 = ./src/image-viewer.component
 exports.ImageViewer = image_viewer_component_1.default;
 exports.default = image_viewer_component_1.default;
-}, 686, null, "react-native-image-zoom-viewer/built/index.js");
+}, 684, null, "react-native-image-zoom-viewer/built/index.js");
 __d(/* react-native-image-zoom-viewer/built/src/image-viewer.component.js */function(global, require, module, exports) {"use strict";
 
 var __decorate = this && this.__decorate || function (decorators, target, key, desc) {
@@ -93303,10 +93265,10 @@ var __decorate = this && this.__decorate || function (decorators, target, key, d
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require(35     ); // 35 = react
 var react_native_1 = require(12            ); // 12 = react-native
-var typings = require(688                  ); // 688 = ./image-viewer.type
-var nt_transmit_transparently_1 = require(690                        ); // 690 = nt-transmit-transparently
-var react_native_image_pan_zoom_1 = require(694                          ); // 694 = react-native-image-pan-zoom
-var image_viewer_style_1 = require(689                   ); // 689 = ./image-viewer.style
+var typings = require(686                  ); // 686 = ./image-viewer.type
+var nt_transmit_transparently_1 = require(688                        ); // 688 = nt-transmit-transparently
+var react_native_image_pan_zoom_1 = require(692                          ); // 692 = react-native-image-pan-zoom
+var image_viewer_style_1 = require(687                   ); // 687 = ./image-viewer.style
 var ImageViewer = function (_React$Component) {
     babelHelpers.inherits(ImageViewer, _React$Component);
 
@@ -93685,13 +93647,13 @@ var ImageViewer = function (_React$Component) {
 ImageViewer.defaultProps = new typings.Props();
 ImageViewer = __decorate([nt_transmit_transparently_1.TransmitTransparently('style')], ImageViewer);
 exports.default = ImageViewer;
-}, 687, null, "react-native-image-zoom-viewer/built/src/image-viewer.component.js");
+}, 685, null, "react-native-image-zoom-viewer/built/src/image-viewer.component.js");
 __d(/* react-native-image-zoom-viewer/built/src/image-viewer.type.js */function(global, require, module, exports) {"use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require(35     ); // 35 = react
 var ReactNative = require(12            ); // 12 = react-native
-var image_viewer_style_1 = require(689                   ); // 689 = ./image-viewer.style
+var image_viewer_style_1 = require(687                   ); // 687 = ./image-viewer.style
 
 var PropsGaea = function PropsGaea() {
     babelHelpers.classCallCheck(this, PropsGaea);
@@ -93768,7 +93730,7 @@ var State = function State() {
 };
 
 exports.State = State;
-}, 688, null, "react-native-image-zoom-viewer/built/src/image-viewer.type.js");
+}, 686, null, "react-native-image-zoom-viewer/built/src/image-viewer.type.js");
 __d(/* react-native-image-zoom-viewer/built/src/image-viewer.style.js */function(global, require, module, exports) {"use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -93901,16 +93863,16 @@ exports.simpleStyle = {
         textShadowRadius: 0
     }
 };
-}, 689, null, "react-native-image-zoom-viewer/built/src/image-viewer.style.js");
+}, 687, null, "react-native-image-zoom-viewer/built/src/image-viewer.style.js");
 __d(/* nt-transmit-transparently/lib/index.js */function(global, require, module, exports) {"use strict";
 
-var transmit_transparently_component_1 = require(691                                                        ); // 691 = ./transmit-transparently/transmit-transparently.component
+var transmit_transparently_component_1 = require(689                                                        ); // 689 = ./transmit-transparently/transmit-transparently.component
 exports.TransmitTransparently = transmit_transparently_component_1.default;
-var others_1 = require(693              ); // 693 = ./others/others
+var others_1 = require(691              ); // 691 = ./others/others
 exports.others = others_1.default;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = transmit_transparently_component_1.default;
-}, 690, null, "nt-transmit-transparently/lib/index.js");
+}, 688, null, "nt-transmit-transparently/lib/index.js");
 __d(/* nt-transmit-transparently/lib/transmit-transparently/transmit-transparently.component.js */function(global, require, module, exports) {"use strict";
 
 var _extends = Object.assign || function (target) {
@@ -93952,8 +93914,8 @@ function _inherits(subClass, superClass) {
 }
 
 var React = require(35     ); // 35 = react
-var typings = require(692                            ); // 692 = ./transmit-transparently.type
-var others_1 = require(693               ); // 693 = ../others/others
+var typings = require(690                            ); // 690 = ./transmit-transparently.type
+var others_1 = require(691               ); // 691 = ../others/others
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = function () {
     for (var _len = arguments.length, ignore = Array(_len), _key = 0; _key < _len; _key++) {
@@ -94004,7 +93966,7 @@ exports.default = function () {
         return func();
     };
 };
-}, 691, null, "nt-transmit-transparently/lib/transmit-transparently/transmit-transparently.component.js");
+}, 689, null, "nt-transmit-transparently/lib/transmit-transparently/transmit-transparently.component.js");
 __d(/* nt-transmit-transparently/lib/transmit-transparently/transmit-transparently.type.js */function(global, require, module, exports) {"use strict";
 
 function _possibleConstructorReturn(self, call) {
@@ -94052,7 +94014,7 @@ var State = function State() {
 };
 
 exports.State = State;
-}, 692, null, "nt-transmit-transparently/lib/transmit-transparently/transmit-transparently.type.js");
+}, 690, null, "nt-transmit-transparently/lib/transmit-transparently/transmit-transparently.type.js");
 __d(/* nt-transmit-transparently/lib/others/others.js */function(global, require, module, exports) {"use strict";
 
 var domAttributes = ['children', 'dangerouslySetInnerHTML', 'onCopy', 'onCut', 'onPaste', 'onCompositionEnd', 'onCompositionStart', 'onCompositionUpdate', 'onFocus', 'onBlur', 'onChange', 'onInput', 'onSubmit', 'onLoad', 'onError', 'onKeyDown', 'onKeyPress', 'onKeyUp', 'onAbort', 'onCanPlay', 'onCanPlayThrough', 'onDurationChange', 'onEmptied', 'onEncrypted', 'onEnded', 'onLoadedData', 'onLoadedMetadata', 'onLoadStart', 'onPause', 'onPlay', 'onPlaying', 'onProgress', 'onRateChange', 'onSeeked', 'onSeeking', 'onStalled', 'onSuspend', 'onTimeUpdate', 'onVolumeChange', 'onWaiting', 'onClick', 'onContextMenu', 'onDoubleClick', 'onDrag', 'onDragEnd', 'onDragEnter', 'onDragExit', 'onDragLeave', 'onDragOver', 'onDragStart', 'onDrop', 'onMouseDown', 'onMouseEnter', 'onMouseLeave', 'onMouseMove', 'onMouseOut', 'onMouseOver', 'onMouseUp', 'onSelect', 'onTouchCancel', 'onTouchEnd', 'onTouchMove', 'onTouchStart', 'onScroll', 'onWheel', 'onAnimationStart', 'onAnimationEnd', 'onAnimationIteration', 'onTransitionEnd'];
@@ -94083,21 +94045,21 @@ exports.default = function () {
     });
     return others;
 };
-}, 693, null, "nt-transmit-transparently/lib/others/others.js");
+}, 691, null, "nt-transmit-transparently/lib/others/others.js");
 __d(/* react-native-image-pan-zoom/built/index.js */function(global, require, module, exports) {"use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var image_zoom_component_1 = require(695                                ); // 695 = ./image-zoom/image-zoom.component
+var image_zoom_component_1 = require(693                                ); // 693 = ./image-zoom/image-zoom.component
 exports.ImageZoom = image_zoom_component_1.default;
 exports.default = image_zoom_component_1.default;
-}, 694, null, "react-native-image-pan-zoom/built/index.js");
+}, 692, null, "react-native-image-pan-zoom/built/index.js");
 __d(/* react-native-image-pan-zoom/built/image-zoom/image-zoom.component.js */function(global, require, module, exports) {"use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require(35     ); // 35 = react
 var react_native_1 = require(12            ); // 12 = react-native
-var typings = require(696                ); // 696 = ./image-zoom.type
-var image_zoom_style_1 = require(697                 ); // 697 = ./image-zoom.style
+var typings = require(694                ); // 694 = ./image-zoom.type
+var image_zoom_style_1 = require(695                 ); // 695 = ./image-zoom.style
 var isMobile = function isMobile() {
     if (react_native_1.Platform.OS === 'web') {
         return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
@@ -94462,7 +94424,7 @@ var ImageViewer = function (_React$Component) {
 
 ImageViewer.defaultProps = new typings.Props();
 exports.default = ImageViewer;
-}, 695, null, "react-native-image-pan-zoom/built/image-zoom/image-zoom.component.js");
+}, 693, null, "react-native-image-pan-zoom/built/image-zoom/image-zoom.component.js");
 __d(/* react-native-image-pan-zoom/built/image-zoom/image-zoom.type.js */function(global, require, module, exports) {"use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -94518,7 +94480,7 @@ var State = function State() {
 };
 
 exports.State = State;
-}, 696, null, "react-native-image-pan-zoom/built/image-zoom/image-zoom.type.js");
+}, 694, null, "react-native-image-pan-zoom/built/image-zoom/image-zoom.type.js");
 __d(/* react-native-image-pan-zoom/built/image-zoom/image-zoom.style.js */function(global, require, module, exports) {"use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -94530,7 +94492,7 @@ exports.default = {
         backgroundColor: 'transparent'
     }
 };
-}, 697, null, "react-native-image-pan-zoom/built/image-zoom/image-zoom.style.js");
+}, 695, null, "react-native-image-pan-zoom/built/image-zoom/image-zoom.style.js");
 __d(/* YuanXC/src/actions/financeDetailActions.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -94581,7 +94543,7 @@ function receiveData(data) {
     type: types.RECEIVE_FINANCE_DETAIL
   }, data);
 }
-}, 698, null, "YuanXC/src/actions/financeDetailActions.js");
+}, 696, null, "YuanXC/src/actions/financeDetailActions.js");
 __d(/* react-native-modalbox/index.js */function(global, require, module, exports) {'use strict';
 
 var _jsxFileName = '/Users/mac/Documents/YuanXiaoCai/node_modules/react-native-modalbox/index.js';
@@ -95048,7 +95010,7 @@ var ModalBox = createReactClass({
 });
 
 module.exports = ModalBox;
-}, 699, null, "react-native-modalbox/index.js");
+}, 697, null, "react-native-modalbox/index.js");
 __d(/* YuanXC/src/utils/HTML2.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -95057,7 +95019,7 @@ exports.default = HtmlFormatter = function HtmlFormatter(html) {
   var content = "<!DOCTYPE html><meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width\">\n    <meta content=\"telephone=no\" name=\"format-detection\">\n    <title></title>\n    <style>body{font-family: \"\u5FAE\u8F6F\u96C5\u9ED1\",Arial, Helvetica, sans-serif;padding:0;margin:0;color:#9B9B9B;font-size:13px;}\n    </style>\n    <body>" + html + "</body></html>";
   return content;
 };
-}, 700, null, "YuanXC/src/utils/HTML2.js");
+}, 698, null, "YuanXC/src/utils/HTML2.js");
 __d(/* YuanXC/src/pages/FinanceBuy.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -95094,7 +95056,7 @@ var _reactRedux = require(333          ); // 333 = react-redux
 
 var _redux = require(344    ); // 344 = redux
 
-var _reactNativeModalbox = require(699                    ); // 699 = react-native-modalbox
+var _reactNativeModalbox = require(697                    ); // 697 = react-native-modalbox
 
 var _reactNativeModalbox2 = babelHelpers.interopRequireDefault(_reactNativeModalbox);
 
@@ -95108,7 +95070,7 @@ var _imgs2 = babelHelpers.interopRequireDefault(_imgs);
 
 var _reactNative = require(12            ); // 12 = react-native
 
-var _financeDetailActions = require(698                              ); // 698 = ../actions/financeDetailActions
+var _financeDetailActions = require(696                              ); // 696 = ../actions/financeDetailActions
 
 var financeDetailCreator = babelHelpers.interopRequireWildcard(_financeDetailActions);
 
@@ -95160,7 +95122,7 @@ var BDescView = _UtilLib.BetweenView.extend(_templateObject8, _constants.WINDOW_
 var Content = _native2.default.View(_templateObject9);
 var SuccessContent = _UtilLib.CenterView.extend(_templateObject10);
 var Bg = _native2.default.ImageBackground.attrs({
-  source: require(702                            ) // 702 = ../resources/imgs/beijing.png
+  source: require(700                            ) // 700 = ../resources/imgs/beijing.png
 })(_templateObject11, _constants.WINDOW_WIDTH, _constants.WINDOW_WIDTH * 0.32);
 var BonusView = _UtilLib.CenterView.extend(_templateObject12);
 
@@ -95424,11 +95386,12 @@ var FinanceBuy = function (_Component) {
       var _this9 = this;
 
       if (!isNaN(this.state.money) && this.state.money >= this.state.min) {
+        console.log('------this.props.detail.id = ' + this.props.detail.id);
         (0, _http.getBonusListForBuy)({ investMoney: this.state.money, fid: this.props.detail.id }).then(function (data) {
           if (data.data.code === 0) {
             var bonusList = data.data.data.memberCouponList;
             var cantList = data.data.data.notUseCouponList;
-            cantList.map(function (item) {
+            cantList && cantList.map(function (item) {
               return item.cantUse = true;
             });
             bonusList = bonusList.concat(cantList);
@@ -95450,17 +95413,25 @@ var FinanceBuy = function (_Component) {
     value: function _buyAll() {
       var _this10 = this;
 
+      console.log('-------this.state.min = ' + this.state.min);
+      console.log('-------this.props.userInfo.balance = ' + this.props.userInfo.balance);
+
       if (this.state.min > this.props.userInfo.balance) {
+        console.log('-------_buyAll1');
         this.context.callToast('账户余额小于起投金额');
       } else {
         var money = void 0;
         if (this.state.min > this.props.userInfo.balance) {
+          console.log('-------_buyAll2');
           money = this.state.min;
         } else if (this.state.residueMoney < this.props.userInfo.balance) {
+          console.log('-------_buyAll3');
           money = this.state.residueMoney;
         } else {
+          console.log('-------_buyAll4');
           money = this.props.userInfo.balance;
         }
+        console.log('-------_buyAll5');
         this.setState({
           bonusMoney: '',
           bonusType: '',
@@ -95473,6 +95444,7 @@ var FinanceBuy = function (_Component) {
           money: (0, _Float2.default)(money),
           income: money * this.props.detail.rate / 365 * parseInt(this.props.detail.deadLine)
         }, function () {
+          console.log('-------_buyAll6');
           _this10._getBonusList();
         });
       }
@@ -95508,7 +95480,7 @@ var FinanceBuy = function (_Component) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 424
+            lineNumber: 434
           }
         },
         _react2.default.createElement(
@@ -95516,14 +95488,14 @@ var FinanceBuy = function (_Component) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 425
+              lineNumber: 435
             }
           },
           _react2.default.createElement(
             _reactNative.KeyboardAvoidingView,
             { behavior: 'position', style: { zIndex: 1, backgroundColor: "#F9F9F9" }, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 426
+                lineNumber: 436
               }
             },
             _react2.default.createElement(
@@ -95531,14 +95503,14 @@ var FinanceBuy = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 427
+                  lineNumber: 437
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { color: '#333333', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 428
+                    lineNumber: 438
                   }
                 },
                 '\u5269\u4F59\u53EF\u6295 \uFF1A ',
@@ -95551,14 +95523,14 @@ var FinanceBuy = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 430
+                  lineNumber: 440
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { color: '#333333', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 431
+                    lineNumber: 441
                   }
                 },
                 '\u8D26\u6237\u4F59\u989D \uFF1A ',
@@ -95571,14 +95543,14 @@ var FinanceBuy = function (_Component) {
                     return navigate("Recharge");
                   }, style: { paddingHorizontal: 10 }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 432
+                    lineNumber: 442
                   }
                 },
                 _react2.default.createElement(
                   _UtilLib.StyledText,
                   { color: '#6195ff', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 433
+                      lineNumber: 443
                     }
                   },
                   '\u5145\u503C'
@@ -95590,14 +95562,14 @@ var FinanceBuy = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 436
+                  lineNumber: 446
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { color: '#333333', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 437
+                    lineNumber: 447
                   }
                 },
                 '\u9884\u671F\u6536\u76CA\uFF1A',
@@ -95605,7 +95577,7 @@ var FinanceBuy = function (_Component) {
                   _UtilLib.StyledText,
                   { color: '#FD8E5A', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 439
+                      lineNumber: 449
                     }
                   },
                   (0, _Float2.default)(this.state.income)
@@ -95655,14 +95627,14 @@ var FinanceBuy = function (_Component) {
                       return _this11._buyAll();
                     }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 479
+                      lineNumber: 489
                     }
                   },
                   _react2.default.createElement(
                     _UtilLib.StyledText,
                     { color: '#6195ff', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 480
+                        lineNumber: 490
                       }
                     },
                     '\u4F59\u989D\u5168\u6295'
@@ -95670,7 +95642,7 @@ var FinanceBuy = function (_Component) {
                 ),
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 441
+                  lineNumber: 451
                 }
               })
             ),
@@ -95689,7 +95661,7 @@ var FinanceBuy = function (_Component) {
                 });
               }, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 485
+                lineNumber: 495
               }
             })
           ),
@@ -95698,7 +95670,7 @@ var FinanceBuy = function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 500
+                lineNumber: 510
               }
             },
             _react2.default.createElement(
@@ -95708,14 +95680,14 @@ var FinanceBuy = function (_Component) {
                   return canTouch && _this11._submit();
                 }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 501
+                  lineNumber: 511
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { size: '14', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 503
+                    lineNumber: 513
                   }
                 },
                 '\u786E\u8BA4'
@@ -95727,18 +95699,18 @@ var FinanceBuy = function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 506
+                lineNumber: 516
               }
             },
             detail && detail.showActivityInvestInfoList && detail.showActivityInvestInfoList.length > 0 && _imgs2.default.qb2(),
-            detail && detail.showActivityInvestInfoList.map(function (item, i) {
+            detail && detail.showActivityInvestInfoList && detail.showActivityInvestInfoList.map(function (item, i) {
               var dom = [];
               var arr = item.split("@");
               dom.push(_react2.default.createElement(
                 _UtilLib.StyledText,
                 { key: 'lb1' + i, color: '#999999', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 512
+                    lineNumber: 522
                   }
                 },
                 arr[0]
@@ -95748,7 +95720,7 @@ var FinanceBuy = function (_Component) {
                   _UtilLib.StyledText,
                   { key: 'lb2' + i, color: '#FCA834', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 514
+                      lineNumber: 524
                     }
                   },
                   arr[1]
@@ -95757,7 +95729,7 @@ var FinanceBuy = function (_Component) {
                   _UtilLib.StyledText,
                   { key: 'lb3' + i, color: '#999999', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 515
+                      lineNumber: 525
                     }
                   },
                   arr[2]
@@ -95767,7 +95739,7 @@ var FinanceBuy = function (_Component) {
                 _UtilLib.CenterRow,
                 { key: i, style: { marginTop: 4, flexWrap: "wrap" }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 517
+                    lineNumber: 527
                   }
                 },
                 dom
@@ -95779,7 +95751,7 @@ var FinanceBuy = function (_Component) {
             { swipeToClose: false, backdropPressToClose: false, style: styles.modal,
               position: "bottom", ref: 'modal', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 524
+                lineNumber: 534
               }
             },
             _react2.default.createElement(
@@ -95787,7 +95759,7 @@ var FinanceBuy = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 526
+                  lineNumber: 536
                 }
               },
               _react2.default.createElement(
@@ -95796,7 +95768,7 @@ var FinanceBuy = function (_Component) {
                     return _this11._closeModal();
                   }, style: { padding: 15 }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 527
+                    lineNumber: 537
                   }
                 },
                 _imgs2.default.close()
@@ -95805,14 +95777,14 @@ var FinanceBuy = function (_Component) {
                 _UtilLib.StyledText,
                 { size: '16', color: '#333333', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 530
+                    lineNumber: 540
                   }
                 },
                 '\u6295\u8D44\u786E\u8BA4'
               ),
               _react2.default.createElement(_UtilLib.CenterView, { style: { width: 27 }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 531
+                  lineNumber: 541
                 }
               })
             ),
@@ -95821,14 +95793,14 @@ var FinanceBuy = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 533
+                  lineNumber: 543
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { size: '18', color: '#333333', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 534
+                    lineNumber: 544
                   }
                 },
                 '\xA5',
@@ -95839,14 +95811,14 @@ var FinanceBuy = function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 535
+                    lineNumber: 545
                   }
                 },
                 _react2.default.createElement(
                   _UtilLib.StyledText,
                   { color: '#333333', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 536
+                      lineNumber: 546
                     }
                   },
                   '\u652F\u4ED8\u65B9\u5F0F'
@@ -95855,7 +95827,7 @@ var FinanceBuy = function (_Component) {
                   _UtilLib.StyledText,
                   { color: '#333333', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 537
+                      lineNumber: 547
                     }
                   },
                   '\u4F59\u989D\u652F\u4ED8\uFF08',
@@ -95878,7 +95850,7 @@ var FinanceBuy = function (_Component) {
                 },
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 541
+                  lineNumber: 551
                 }
               }),
               _react2.default.createElement(
@@ -95886,7 +95858,7 @@ var FinanceBuy = function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 555
+                    lineNumber: 565
                   }
                 },
                 _react2.default.createElement(
@@ -95895,14 +95867,14 @@ var FinanceBuy = function (_Component) {
                       return navigate("PayPasswordModify");
                     }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 556
+                      lineNumber: 566
                     }
                   },
                   _react2.default.createElement(
                     _UtilLib.StyledText,
                     { color: _color2.default.font.blue, size: '12', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 557
+                        lineNumber: 567
                       }
                     },
                     '\u5FD8\u8BB0\u4EA4\u6613\u5BC6\u7801\uFF1F'
@@ -95915,14 +95887,14 @@ var FinanceBuy = function (_Component) {
                     return _this11._pay();
                   }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 560
+                    lineNumber: 570
                   }
                 },
                 _react2.default.createElement(
                   _UtilLib.StyledText,
                   { size: '14', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 561
+                      lineNumber: 571
                     }
                   },
                   '\u5B8C\u6210\u652F\u4ED8'
@@ -95933,7 +95905,7 @@ var FinanceBuy = function (_Component) {
                 return _this11.indicator = _ref;
               }, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 564
+                lineNumber: 574
               }
             })
           ),
@@ -95942,7 +95914,7 @@ var FinanceBuy = function (_Component) {
             content: this.state.messageBox.content,
             button: this.state.messageBox.button, __source: {
               fileName: _jsxFileName,
-              lineNumber: 566
+              lineNumber: 576
             }
           })
         )
@@ -95977,7 +95949,7 @@ var FinanceBuy = function (_Component) {
         _UtilLib.FlexView,
         { style: { backgroundColor: "#fff" }, __source: {
             fileName: _jsxFileName,
-            lineNumber: 601
+            lineNumber: 611
           }
         },
         _react2.default.createElement(
@@ -95985,7 +95957,7 @@ var FinanceBuy = function (_Component) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 602
+              lineNumber: 612
             }
           },
           _imgs2.default.operSuccess2({ marginBottom: 18 }),
@@ -95993,7 +95965,7 @@ var FinanceBuy = function (_Component) {
             _UtilLib.StyledText,
             { color: '#333333', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 604
+                lineNumber: 614
               }
             },
             '\u60A8\u5DF2\u6210\u529F\u6295\u8D44\u3010',
@@ -96004,7 +95976,7 @@ var FinanceBuy = function (_Component) {
             _UtilLib.StyledText,
             { color: '#333333', top: '10', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 605
+                lineNumber: 615
               }
             },
             '\u6295\u8D44\u672C\u91D1',
@@ -96012,7 +95984,7 @@ var FinanceBuy = function (_Component) {
               _UtilLib.StyledText,
               { color: '#FDA22D', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 607
+                  lineNumber: 617
                 }
               },
               ' ',
@@ -96024,7 +95996,7 @@ var FinanceBuy = function (_Component) {
               _UtilLib.StyledText,
               { color: '#FDA22D', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 609
+                  lineNumber: 619
                 }
               },
               ' ',
@@ -96038,7 +96010,7 @@ var FinanceBuy = function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 611
+                lineNumber: 621
               }
             },
             _react2.default.createElement(
@@ -96049,14 +96021,14 @@ var FinanceBuy = function (_Component) {
                   return _this12._complete(1);
                 }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 612
+                  lineNumber: 622
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { size: '14', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 615
+                    lineNumber: 625
                   }
                 },
                 '\u518D\u6295\u4E00\u7B14'
@@ -96070,14 +96042,14 @@ var FinanceBuy = function (_Component) {
                   return _this12._complete(2);
                 }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 617
+                  lineNumber: 627
                 }
               },
               _react2.default.createElement(
                 _UtilLib.StyledText,
                 { size: '14', color: '#6295fd', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 620
+                    lineNumber: 630
                   }
                 },
                 '\u67E5\u770B\u8BE6\u60C5'
@@ -96097,7 +96069,7 @@ var FinanceBuy = function (_Component) {
         _UtilLib.NormalView,
         { style: { backgroundColor: "#F9F9F9" }, __source: {
             fileName: _jsxFileName,
-            lineNumber: 630
+            lineNumber: 640
           }
         },
         _react2.default.createElement(
@@ -96105,7 +96077,7 @@ var FinanceBuy = function (_Component) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 631
+              lineNumber: 641
             }
           },
           _react2.default.createElement(
@@ -96113,15 +96085,15 @@ var FinanceBuy = function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 632
+                lineNumber: 642
               }
             },
-            this.state.success.showActivityInvestInfoList.map(function (item, i) {
+            this.state.success && this.state.success.showActivityInvestInfoList && this.state.success.showActivityInvestInfoList.map(function (item, i) {
               return _react2.default.createElement(
                 _UtilLib.StyledText,
                 { key: i, size: '14', top: '4', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 635
+                    lineNumber: 645
                   }
                 },
                 item
@@ -96136,7 +96108,7 @@ var FinanceBuy = function (_Component) {
                 return _this13.props.navigation.navigate("BonusList");
               }, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 639
+                lineNumber: 649
               }
             },
             _react2.default.createElement(
@@ -96144,7 +96116,7 @@ var FinanceBuy = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 642
+                  lineNumber: 652
                 }
               },
               '\u67E5\u770B\u7EA2\u5305'
@@ -96222,9 +96194,9 @@ var styles = _reactNative.StyleSheet.create({
     height: _constants.WINDOW_HEIGHT - 180
   }
 });
-}, 701, null, "YuanXC/src/pages/FinanceBuy.js");
+}, 699, null, "YuanXC/src/pages/FinanceBuy.js");
 __d(/* YuanXC/src/resources/imgs/beijing.png */function(global, require, module, exports) {module.exports=require(160                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/src/resources/imgs","width":1125,"height":360,"scales":[1],"hash":"747d2c1508f687219899efa58f1c854a","name":"beijing","type":"png"}); // 160 = react-native/Libraries/Image/AssetRegistry
-}, 702, null, "YuanXC/src/resources/imgs/beijing.png");
+}, 700, null, "YuanXC/src/resources/imgs/beijing.png");
 __d(/* YuanXC/src/pages/AboutUs.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -96500,7 +96472,7 @@ AboutUs.contextTypes = {
 };
 
 exports.default = AboutUs;
-}, 703, null, "YuanXC/src/pages/AboutUs.js");
+}, 701, null, "YuanXC/src/pages/AboutUs.js");
 __d(/* YuanXC/src/pages/NotifyDetail.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -96516,7 +96488,7 @@ var _UtilLib = require(586                    ); // 586 = ../components/UtilLib
 
 var _http = require(622               ); // 622 = ../requests/http
 
-var _HTML = require(676            ); // 676 = ../utils/HTML
+var _HTML = require(674            ); // 674 = ../utils/HTML
 
 var _HTML2 = babelHelpers.interopRequireDefault(_HTML);
 
@@ -96592,7 +96564,7 @@ var WebView1 = function (_Component) {
 }(_react.Component);
 
 exports.default = WebView1;
-}, 704, null, "YuanXC/src/pages/NotifyDetail.js");
+}, 702, null, "YuanXC/src/pages/NotifyDetail.js");
 __d(/* YuanXC/src/pages/PhoneBind.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -97138,7 +97110,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(PhoneBind);
-}, 705, null, "YuanXC/src/pages/PhoneBind.js");
+}, 703, null, "YuanXC/src/pages/PhoneBind.js");
 __d(/* YuanXC/src/components/Modal.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -97162,7 +97134,7 @@ var _modalActions = require(646                      ); // 646 = ../actions/moda
 
 var modalCreator = babelHelpers.interopRequireWildcard(_modalActions);
 
-var _reactNativeModalbox = require(699                    ); // 699 = react-native-modalbox
+var _reactNativeModalbox = require(697                    ); // 697 = react-native-modalbox
 
 var _reactNativeModalbox2 = babelHelpers.interopRequireDefault(_reactNativeModalbox);
 
@@ -97229,7 +97201,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Modal);
-}, 706, null, "YuanXC/src/components/Modal.js");
+}, 704, null, "YuanXC/src/components/Modal.js");
 __d(/* YuanXC/src/components/ToastWrapper.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -97446,7 +97418,7 @@ ToastWrapper.childContextTypes = {
   callToast: _propTypes2.default.func.isRequired,
   closeToast: _propTypes2.default.func.isRequired
 };
-}, 707, null, "YuanXC/src/components/ToastWrapper.js");
+}, 705, null, "YuanXC/src/components/ToastWrapper.js");
 __d(/* YuanXC/src/pages/Splash.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -97481,7 +97453,7 @@ var _LocalStorage = require(620                    ); // 620 = ../utils/LocalSto
 
 var _LocalStorage2 = babelHelpers.interopRequireDefault(_LocalStorage);
 
-var _XStatusBar = require(709                  ); // 709 = ../utils/XStatusBar
+var _XStatusBar = require(707                  ); // 707 = ../utils/XStatusBar
 
 var XStatusBar = babelHelpers.interopRequireWildcard(_XStatusBar);
 
@@ -97569,7 +97541,7 @@ var Splash = function (_Component) {
                 lineNumber: 84
               }
             },
-            _react2.default.createElement(Image, { source: require(710                            ), __source: { // 710 = ../resources/imgs/swiper1.png
+            _react2.default.createElement(Image, { source: require(708                            ), __source: { // 708 = ../resources/imgs/swiper1.png
                 fileName: _jsxFileName,
                 lineNumber: 85
               }
@@ -97583,7 +97555,7 @@ var Splash = function (_Component) {
                 lineNumber: 87
               }
             },
-            _react2.default.createElement(Image, { source: require(711                            ), __source: { // 711 = ../resources/imgs/swiper2.png
+            _react2.default.createElement(Image, { source: require(709                            ), __source: { // 709 = ../resources/imgs/swiper2.png
                 fileName: _jsxFileName,
                 lineNumber: 88
               }
@@ -97597,7 +97569,7 @@ var Splash = function (_Component) {
                 lineNumber: 90
               }
             },
-            _react2.default.createElement(Image, { source: require(712                            ), __source: { // 712 = ../resources/imgs/swiper3.png
+            _react2.default.createElement(Image, { source: require(710                            ), __source: { // 710 = ../resources/imgs/swiper3.png
                 fileName: _jsxFileName,
                 lineNumber: 91
               }
@@ -97642,7 +97614,7 @@ var Splash = function (_Component) {
             lineNumber: 105
           }
         }),
-        _react2.default.createElement(SplashImage, { source: require(713                           ), __source: { // 713 = ../resources/imgs/splash.png
+        _react2.default.createElement(SplashImage, { source: require(711                           ), __source: { // 711 = ../resources/imgs/splash.png
             fileName: _jsxFileName,
             lineNumber: 106
           }
@@ -97654,7 +97626,7 @@ var Splash = function (_Component) {
 }(_react.Component);
 
 exports.default = Splash;
-}, 708, null, "YuanXC/src/pages/Splash.js");
+}, 706, null, "YuanXC/src/pages/Splash.js");
 __d(/* YuanXC/src/utils/XStatusBar.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -97667,15 +97639,15 @@ var RNStatusBar = _reactNative.NativeModules.RNStatusBar;
 function setDark() {
   RNStatusBar && RNStatusBar.setDark();
 }
-}, 709, null, "YuanXC/src/utils/XStatusBar.js");
+}, 707, null, "YuanXC/src/utils/XStatusBar.js");
 __d(/* YuanXC/src/resources/imgs/swiper1.png */function(global, require, module, exports) {module.exports=require(160                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/src/resources/imgs","width":750,"height":1334,"scales":[1],"hash":"c113ff2a5f0a23053726ef96a357eef2","name":"swiper1","type":"png"}); // 160 = react-native/Libraries/Image/AssetRegistry
-}, 710, null, "YuanXC/src/resources/imgs/swiper1.png");
+}, 708, null, "YuanXC/src/resources/imgs/swiper1.png");
 __d(/* YuanXC/src/resources/imgs/swiper2.png */function(global, require, module, exports) {module.exports=require(160                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/src/resources/imgs","width":750,"height":1334,"scales":[1],"hash":"434cfea6329314851c5359fc738d197e","name":"swiper2","type":"png"}); // 160 = react-native/Libraries/Image/AssetRegistry
-}, 711, null, "YuanXC/src/resources/imgs/swiper2.png");
+}, 709, null, "YuanXC/src/resources/imgs/swiper2.png");
 __d(/* YuanXC/src/resources/imgs/swiper3.png */function(global, require, module, exports) {module.exports=require(160                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/src/resources/imgs","width":750,"height":1334,"scales":[1],"hash":"0668ba1fcf37ad318e78a8427a1cbd35","name":"swiper3","type":"png"}); // 160 = react-native/Libraries/Image/AssetRegistry
-}, 712, null, "YuanXC/src/resources/imgs/swiper3.png");
+}, 710, null, "YuanXC/src/resources/imgs/swiper3.png");
 __d(/* YuanXC/src/resources/imgs/splash.png */function(global, require, module, exports) {module.exports=require(160                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/src/resources/imgs","width":750,"height":1334,"scales":[1],"hash":"255b68865c0c7d03860b9805321f5881","name":"splash","type":"png"}); // 160 = react-native/Libraries/Image/AssetRegistry
-}, 713, null, "YuanXC/src/resources/imgs/splash.png");
+}, 711, null, "YuanXC/src/resources/imgs/splash.png");
 __d(/* YuanXC/src/config/store.js */function(global, require, module, exports) {'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -97685,11 +97657,11 @@ exports.default = configureStore;
 
 var _redux = require(344    ); // 344 = redux
 
-var _reduxThunk = require(715          ); // 715 = redux-thunk
+var _reduxThunk = require(713          ); // 713 = redux-thunk
 
 var _reduxThunk2 = babelHelpers.interopRequireDefault(_reduxThunk);
 
-var _reducers = require(716          ); // 716 = ../reducers
+var _reducers = require(714          ); // 714 = ../reducers
 
 var reducers = babelHelpers.interopRequireWildcard(_reducers);
 
@@ -97704,7 +97676,7 @@ function configureStore(initialState) {
 
     return store;
 }
-}, 714, null, "YuanXC/src/config/store.js");
+}, 712, null, "YuanXC/src/config/store.js");
 __d(/* redux-thunk/lib/index.js */function(global, require, module, exports) {'use strict';
 
 exports.__esModule = true;
@@ -97728,73 +97700,73 @@ var thunk = createThunkMiddleware();
 thunk.withExtraArgument = createThunkMiddleware;
 
 exports['default'] = thunk;
-}, 715, null, "redux-thunk/lib/index.js");
+}, 713, null, "redux-thunk/lib/index.js");
 __d(/* YuanXC/src/reducers/index.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.notifyList = exports.financeDetail = exports.financeList = exports.messageList = exports.bankCardDetail = exports.bonusList = exports.capitalDetail = exports.capitalList = exports.capitalRecord = exports.bankList = exports.forgetPassword = exports.passwordEdit = exports.register = exports.loanAdd = exports.user = exports.modal = exports.workingTable = undefined;
 
-var _workingTableReducers = require(717                     ); // 717 = ./workingTableReducers
+var _workingTableReducers = require(715                     ); // 715 = ./workingTableReducers
 
 var _workingTableReducers2 = babelHelpers.interopRequireDefault(_workingTableReducers);
 
-var _modalReducers = require(718              ); // 718 = ./modalReducers
+var _modalReducers = require(716              ); // 716 = ./modalReducers
 
 var _modalReducers2 = babelHelpers.interopRequireDefault(_modalReducers);
 
-var _userReducers = require(719             ); // 719 = ./userReducers
+var _userReducers = require(717             ); // 717 = ./userReducers
 
 var _userReducers2 = babelHelpers.interopRequireDefault(_userReducers);
 
-var _loadAddReducers = require(720                ); // 720 = ./loadAddReducers
+var _loadAddReducers = require(718                ); // 718 = ./loadAddReducers
 
 var _loadAddReducers2 = babelHelpers.interopRequireDefault(_loadAddReducers);
 
-var _registerReducers = require(721                 ); // 721 = ./registerReducers
+var _registerReducers = require(719                 ); // 719 = ./registerReducers
 
 var _registerReducers2 = babelHelpers.interopRequireDefault(_registerReducers);
 
-var _forgetPasswordReducers = require(722                       ); // 722 = ./forgetPasswordReducers
+var _forgetPasswordReducers = require(720                       ); // 720 = ./forgetPasswordReducers
 
 var _forgetPasswordReducers2 = babelHelpers.interopRequireDefault(_forgetPasswordReducers);
 
-var _bankListReducers = require(723                 ); // 723 = ./bankListReducers
+var _bankListReducers = require(721                 ); // 721 = ./bankListReducers
 
 var _bankListReducers2 = babelHelpers.interopRequireDefault(_bankListReducers);
 
-var _capitalRecordReducers = require(724                      ); // 724 = ./capitalRecordReducers
+var _capitalRecordReducers = require(722                      ); // 722 = ./capitalRecordReducers
 
 var _capitalRecordReducers2 = babelHelpers.interopRequireDefault(_capitalRecordReducers);
 
-var _capitalListReducers = require(725                    ); // 725 = ./capitalListReducers
+var _capitalListReducers = require(723                    ); // 723 = ./capitalListReducers
 
 var _capitalListReducers2 = babelHelpers.interopRequireDefault(_capitalListReducers);
 
-var _capitalDetailReducers = require(726                      ); // 726 = ./capitalDetailReducers
+var _capitalDetailReducers = require(724                      ); // 724 = ./capitalDetailReducers
 
 var _capitalDetailReducers2 = babelHelpers.interopRequireDefault(_capitalDetailReducers);
 
-var _bonusListReducers = require(727                  ); // 727 = ./bonusListReducers
+var _bonusListReducers = require(725                  ); // 725 = ./bonusListReducers
 
 var _bonusListReducers2 = babelHelpers.interopRequireDefault(_bonusListReducers);
 
-var _bankCardDetailReducers = require(728                       ); // 728 = ./bankCardDetailReducers
+var _bankCardDetailReducers = require(726                       ); // 726 = ./bankCardDetailReducers
 
 var _bankCardDetailReducers2 = babelHelpers.interopRequireDefault(_bankCardDetailReducers);
 
-var _messageListReducers = require(729                    ); // 729 = ./messageListReducers
+var _messageListReducers = require(727                    ); // 727 = ./messageListReducers
 
 var _messageListReducers2 = babelHelpers.interopRequireDefault(_messageListReducers);
 
-var _financeListReducers = require(730                    ); // 730 = ./financeListReducers
+var _financeListReducers = require(728                    ); // 728 = ./financeListReducers
 
 var _financeListReducers2 = babelHelpers.interopRequireDefault(_financeListReducers);
 
-var _financeDetailReducers = require(731                      ); // 731 = ./financeDetailReducers
+var _financeDetailReducers = require(729                      ); // 729 = ./financeDetailReducers
 
 var _financeDetailReducers2 = babelHelpers.interopRequireDefault(_financeDetailReducers);
 
-var _notifyListReducers = require(732                   ); // 732 = ./notifyListReducers
+var _notifyListReducers = require(730                   ); // 730 = ./notifyListReducers
 
 var _notifyListReducers2 = babelHelpers.interopRequireDefault(_notifyListReducers);
 
@@ -97815,7 +97787,7 @@ exports.messageList = _messageListReducers2.default;
 exports.financeList = _financeListReducers2.default;
 exports.financeDetail = _financeDetailReducers2.default;
 exports.notifyList = _notifyListReducers2.default;
-}, 716, null, "YuanXC/src/reducers/index.js");
+}, 714, null, "YuanXC/src/reducers/index.js");
 __d(/* YuanXC/src/reducers/workingTableReducers.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -97878,7 +97850,7 @@ function workingTable() {
       return state;
   }
 }
-}, 717, null, "YuanXC/src/reducers/workingTableReducers.js");
+}, 715, null, "YuanXC/src/reducers/workingTableReducers.js");
 __d(/* YuanXC/src/reducers/modalReducers.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -97906,7 +97878,7 @@ function modal() {
       return state;
   }
 }
-}, 718, null, "YuanXC/src/reducers/modalReducers.js");
+}, 716, null, "YuanXC/src/reducers/modalReducers.js");
 __d(/* YuanXC/src/reducers/userReducers.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -97951,7 +97923,7 @@ function user() {
       return state;
   }
 }
-}, 719, null, "YuanXC/src/reducers/userReducers.js");
+}, 717, null, "YuanXC/src/reducers/userReducers.js");
 __d(/* YuanXC/src/reducers/loadAddReducers.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -97990,7 +97962,7 @@ function register() {
       return state;
   }
 }
-}, 720, null, "YuanXC/src/reducers/loadAddReducers.js");
+}, 718, null, "YuanXC/src/reducers/loadAddReducers.js");
 __d(/* YuanXC/src/reducers/registerReducers.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -98029,7 +98001,7 @@ function register() {
       return state;
   }
 }
-}, 721, null, "YuanXC/src/reducers/registerReducers.js");
+}, 719, null, "YuanXC/src/reducers/registerReducers.js");
 __d(/* YuanXC/src/reducers/forgetPasswordReducers.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -98081,7 +98053,7 @@ function passwordEdit() {
       return state;
   }
 }
-}, 722, null, "YuanXC/src/reducers/forgetPasswordReducers.js");
+}, 720, null, "YuanXC/src/reducers/forgetPasswordReducers.js");
 __d(/* YuanXC/src/reducers/bankListReducers.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -98122,7 +98094,7 @@ function bankList() {
       return state;
   }
 }
-}, 723, null, "YuanXC/src/reducers/bankListReducers.js");
+}, 721, null, "YuanXC/src/reducers/bankListReducers.js");
 __d(/* YuanXC/src/reducers/capitalRecordReducers.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -98253,7 +98225,7 @@ function loadMore(state, action) {
   });
   return { list: state[state.ctype].list, monthList: state[state.ctype].monthList };
 }
-}, 724, null, "YuanXC/src/reducers/capitalRecordReducers.js");
+}, 722, null, "YuanXC/src/reducers/capitalRecordReducers.js");
 __d(/* YuanXC/src/reducers/capitalListReducers.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -98311,7 +98283,7 @@ function loadMore(state, action) {
   state.list = state.list.concat(action.list);
   return state.list;
 }
-}, 725, null, "YuanXC/src/reducers/capitalListReducers.js");
+}, 723, null, "YuanXC/src/reducers/capitalListReducers.js");
 __d(/* YuanXC/src/reducers/capitalDetailReducers.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -98354,7 +98326,7 @@ function capitalDetail() {
       return state;
   }
 }
-}, 726, null, "YuanXC/src/reducers/capitalDetailReducers.js");
+}, 724, null, "YuanXC/src/reducers/capitalDetailReducers.js");
 __d(/* YuanXC/src/reducers/bonusListReducers.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -98426,7 +98398,7 @@ function loadMore(state, action) {
   state[state.ctype].list = state[state.ctype].list.concat(action.list);
   return state[state.ctype].list;
 }
-}, 727, null, "YuanXC/src/reducers/bonusListReducers.js");
+}, 725, null, "YuanXC/src/reducers/bonusListReducers.js");
 __d(/* YuanXC/src/reducers/bankCardDetailReducers.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -98469,7 +98441,7 @@ function bankCardDetail() {
       return state;
   }
 }
-}, 728, null, "YuanXC/src/reducers/bankCardDetailReducers.js");
+}, 726, null, "YuanXC/src/reducers/bankCardDetailReducers.js");
 __d(/* YuanXC/src/reducers/messageListReducers.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -98527,7 +98499,7 @@ function loadMore(state, action) {
   state.list = state.list.concat(action.list);
   return state.list;
 }
-}, 729, null, "YuanXC/src/reducers/messageListReducers.js");
+}, 727, null, "YuanXC/src/reducers/messageListReducers.js");
 __d(/* YuanXC/src/reducers/financeListReducers.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -98596,7 +98568,7 @@ function loadMore(state, action) {
   state.list = state.list.concat(action.list);
   return state.list;
 }
-}, 730, null, "YuanXC/src/reducers/financeListReducers.js");
+}, 728, null, "YuanXC/src/reducers/financeListReducers.js");
 __d(/* YuanXC/src/reducers/financeDetailReducers.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -98642,7 +98614,7 @@ function financeDetail() {
       return state;
   }
 }
-}, 731, null, "YuanXC/src/reducers/financeDetailReducers.js");
+}, 729, null, "YuanXC/src/reducers/financeDetailReducers.js");
 __d(/* YuanXC/src/reducers/notifyListReducers.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -98700,6 +98672,6 @@ function loadMore(state, action) {
   state.list = state.list.concat(action.list);
   return state.list;
 }
-}, 732, null, "YuanXC/src/reducers/notifyListReducers.js");
+}, 730, null, "YuanXC/src/reducers/notifyListReducers.js");
 ;require(50);
 ;require(0);

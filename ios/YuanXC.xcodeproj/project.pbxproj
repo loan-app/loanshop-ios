@@ -11,6 +11,9 @@
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
+		0426E939207229E300548005 /* FUMobilePay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E9F6F81FD91FAB00FD2906 /* FUMobilePay.framework */; };
+		0426E93A20722A5400548005 /* FUMobilePay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E9F6F81FD91FAB00FD2906 /* FUMobilePay.framework */; };
+		0426E93B20722A5400548005 /* FUMobilePay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4E9F6F81FD91FAB00FD2906 /* FUMobilePay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -368,6 +371,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0426E93C20722A5400548005 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0426E93B20722A5400548005 /* FUMobilePay.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
@@ -456,6 +473,7 @@
 				A43FD2D61FD543E0000F4189 /* UIKit.framework in Frameworks */,
 				A43FD2D51FD543D4000F4189 /* CoreFoundation.framework in Frameworks */,
 				A43FD2D41FD543C8000F4189 /* CoreGraphics.framework in Frameworks */,
+				0426E939207229E300548005 /* FUMobilePay.framework in Frameworks */,
 				A43FD2C91FD54329000F4189 /* libRCTWeChat.a in Frameworks */,
 				A43FD2651FD53B64000F4189 /* libART.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
@@ -463,6 +481,7 @@
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				A43FD2701FD53BED000F4189 /* libTalkingDataAppCpa.a in Frameworks */,
 				A43FD2E31FD5449D000F4189 /* libz.1.2.5.tbd in Frameworks */,
+				0426E93A20722A5400548005 /* FUMobilePay.framework in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				A43FD2721FD53BED000F4189 /* libBaiduMobStat.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
@@ -797,6 +816,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				0426E93C20722A5400548005 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -818,7 +838,7 @@
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 8DTKTW24WZ;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 0;
@@ -1291,9 +1311,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Hangzhou Xin Yi Information Technology Co., Ltd. (8DTKTW24WZ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hangzhou Xin Yi Information Technology Co., Ltd. (8DTKTW24WZ)";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 8DTKTW24WZ;
@@ -1323,8 +1343,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liqun.app;
 				PRODUCT_NAME = YuanXC;
-				PROVISIONING_PROFILE = "0774973b-ce31-44e9-a161-eb290f1ab841";
-				PROVISIONING_PROFILE_SPECIFIER = liqun_dis;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1334,9 +1354,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Hangzhou Xin Yi Information Technology Co., Ltd. (8DTKTW24WZ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hangzhou Xin Yi Information Technology Co., Ltd. (8DTKTW24WZ)";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8DTKTW24WZ;
 				ENABLE_BITCODE = NO;
@@ -1365,8 +1385,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liqun.app;
 				PRODUCT_NAME = YuanXC;
-				PROVISIONING_PROFILE = "0774973b-ce31-44e9-a161-eb290f1ab841";
-				PROVISIONING_PROFILE_SPECIFIER = liqun_dis;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

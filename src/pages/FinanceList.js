@@ -143,7 +143,7 @@ class FinanceList extends Component {
     }
     (residueMoney + "").indexOf(".") > -1 && (residueMoney = residueMoney.toFixed(2));
     return (
-      <ItemView onPress={() => this.props.navigation.navigate("WebView", {url: createApiUrl(`/finance-base/h5/detail?id=${item.id}`)})}>
+      <ItemView onPress={() => this.props.navigation.navigate("FinanceDetail", {id: item.id})}>
         <TitleView>
           <StyledText color="#333333" size="16">{item.title}</StyledText>
           {item.isGuarantee ? <IconView text="担保" color={bcolor}/> : null}

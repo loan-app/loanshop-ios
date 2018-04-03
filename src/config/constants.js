@@ -19,6 +19,6 @@ export const OS = Platform.OS;
 export const PackageName = DeviceInfo.getBundleId();
 export const Channel = OS === "ios" ? iOSCn : AndroidCn;
 export const InnerVersion = "1";
-export const WeChatKey = "";
-export const ItunesId = "com.wcz.app";
+export const WeChatKey = "wx6de50f0e3a8a7a1a";
+export const ItunesId = "1364345343";
 export const TDkey = OS === "ios" ? "F8EEB5B98AEE4597984274DA18B0E2E9" : "AF1FA0E532384161BEDE63D225B84A11";

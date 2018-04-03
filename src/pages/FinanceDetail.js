@@ -218,7 +218,8 @@ class FinanceDetail extends Component {
   _navigateCheck(level, route, params) {
     const routers = AuthCheck(this.props.check, level, route, params);
     if (routers[0]) {
-      this.props.navigation.navigate(routers[0], routers[1]);
+        console.log('---------routers[0] = ' + routers[0] + 'routers[1] = ' + routers[1]);
+        this.props.navigation.navigate(routers[0], routers[1]);
     }
   }
 

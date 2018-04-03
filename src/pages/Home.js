@@ -410,7 +410,7 @@ class Home extends Component {
             const textcolor = (!item.isEnd ? "#333333" : "#999999");
             return (
               <ItemView key={i}
-                        onPress={() => navigate("WebView", {url: createApiUrl(`/finance-base/h5/detail?id=${item.id}&1=1`)})}>
+                        onPress={() => this.props.navigation.navigate("FinanceDetail", {id: item.id})}>
                 <TitleView>
                   <StyledText color="#333333" size="14">{item.title}</StyledText>
                   {item.isGuarantee ? <IconView text="担保" color="#ffa30f"/> : null}
@@ -468,11 +468,11 @@ class Home extends Component {
           </CenterRow>
         </SafeView>
 
-          <SafeView>
-              <CenterRow>
-                  <StyledText color="#999999" size="10" lh="0">利群理财的基金销售服务由北京兴辉投资管理有限公司提供</StyledText>
-              </CenterRow>
-          </SafeView>
+          {/*<SafeView>*/}
+              {/*<CenterRow>*/}
+                  {/*<StyledText color="#999999" size="10" lh="0">利群理财的基金销售服务由北京兴辉投资管理有限公司提供</StyledText>*/}
+              {/*</CenterRow>*/}
+          {/*</SafeView>*/}
 
         <MessageBox
           style={{height: 195}}

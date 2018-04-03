@@ -347,11 +347,12 @@ class FinanceBuy extends Component {
 
   _getBonusList() {
     if (!isNaN(this.state.money) && this.state.money >= this.state.min) {
+      console.log('------this.props.detail.id = '+ this.props.detail.id);
       getBonusListForBuy({investMoney: this.state.money, fid: this.props.detail.id}).then(data => {
         if (data.data.code === 0) {
           let bonusList = data.data.data.memberCouponList;
           const cantList = data.data.data.notUseCouponList;
-          cantList.map(item => item.cantUse = true);
+            cantList && cantList.map(item => item.cantUse = true);
           bonusList = bonusList.concat(cantList);
           this.setState({
             bonusCount: data.data.data.memberCouponList.length,
@@ -368,18 +369,26 @@ class FinanceBuy extends Component {
   }
 
   _buyAll() {
-    if (this.state.min > this.props.userInfo.balance) {
-      this.context.callToast('账户余额小于起投金额');
+    console.log('-------this.state.min = ' + this.state.min)
+      console.log('-------this.props.userInfo.balance = ' + this.props.userInfo.balance)
+
+      if (this.state.min > this.props.userInfo.balance) {
+          console.log('-------_buyAll1')
+          this.context.callToast('账户余额小于起投金额');
     } else {
       let money;
       if (this.state.min > this.props.userInfo.balance) {
-        money = this.state.min;
+          console.log('-------_buyAll2')
+          money = this.state.min;
       } else if (this.state.residueMoney < this.props.userInfo.balance) {
-        money = this.state.residueMoney;
+          console.log('-------_buyAll3')
+          money = this.state.residueMoney;
       } else {
-        money = this.props.userInfo.balance;
+          console.log('-------_buyAll4')
+          money = this.props.userInfo.balance;
       }
-      this.setState({
+          console.log('-------_buyAll5')
+          this.setState({
         bonusMoney: '',
         bonusType: '',
         bonusRate: '',
@@ -391,7 +400,8 @@ class FinanceBuy extends Component {
         money: FloatFormatter(money),
         income: (money * this.props.detail.rate) / 365 * parseInt(this.props.detail.deadLine)
       }, () => {
-        this._getBonusList();
+              console.log('-------_buyAll6')
+              this._getBonusList();
       });
     }
   }
@@ -506,7 +516,7 @@ class FinanceBuy extends Component {
           <Content>
             {detail && detail.showActivityInvestInfoList && detail.showActivityInvestInfoList.length > 0 && imgs.qb2()}
             {
-              detail && detail.showActivityInvestInfoList.map((item, i) => {
+              detail && detail.showActivityInvestInfoList && detail.showActivityInvestInfoList.map((item, i) => {
                 const dom = [];
                 const arr = item.split("@");
                 dom.push(<StyledText key={`lb1${i}`} color="#999999">{arr[0]}</StyledText>);
@@ -631,7 +641,7 @@ class FinanceBuy extends Component {
       <Bg>
         <BonusView>
           {
-            this.state.success.showActivityInvestInfoList.map((item, i) => {
+              this.state.success && this.state.success.showActivityInvestInfoList && this.state.success.showActivityInvestInfoList.map((item, i) => {
               return <StyledText key={i} size="14" top="4">{item}</StyledText>
             })
           }

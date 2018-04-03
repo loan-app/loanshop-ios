@@ -103,7 +103,7 @@ android {
         applicationId 'com.liqun.car'
         minSdkVersion 16
         targetSdkVersion 25
-        versionCode 1
+        versionCode 2
         versionName "1.0.0"
         flavorDimensions 'default'
 
@@ -208,6 +208,27 @@ android {
         }
         dt003 {
             manifestPlaceholders = [BAIDU_CHANNEL: "dt003"]
+        }
+        dt004 {
+            manifestPlaceholders = [BAIDU_CHANNEL: "dt004"]
+        }
+        dt005 {
+            manifestPlaceholders = [BAIDU_CHANNEL: "dt005"]
+        }
+        dt006 {
+            manifestPlaceholders = [BAIDU_CHANNEL: "dt006"]
+        }
+        dt007 {
+            manifestPlaceholders = [BAIDU_CHANNEL: "dt007"]
+        }
+        dt008 {
+            manifestPlaceholders = [BAIDU_CHANNEL: "dt008"]
+        }
+        dt009 {
+            manifestPlaceholders = [BAIDU_CHANNEL: "dt009"]
+        }
+        dt010 {
+            manifestPlaceholders = [BAIDU_CHANNEL: "dt010"]
         }
     }
 }

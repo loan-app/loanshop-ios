@@ -47,8 +47,11 @@ $.extend({
 	testAssign : function(test){
 		TEST = test ;
                               //商户测试和生产环境
-		URL_PREFIX = TEST ? "http://www-1.fuiou.com:18670/mobile_pay/" : "https://mpay.fuiou.com:16128/";
+		// URL_PREFIX = TEST ? "http://www-1.fuiou.com:18670/mobile_pay/" : "https://mpay.fuiou.com:16128/";
                               //内网测试和生产环境
+        URL_PREFIX = "https://mpay.fuiou.com:16128/";
+        console.log('-----------URL_PREFIX = ' + URL_PREFIX)
+
 //        URL_PREFIX = TEST ? "http://192.168.8.29:29024/mobile_pay/" : "https://mpay.fuiou.com:16128/";
 	} ,
 	httpPost: function httpPost(url, data, hud, success, failed) {

@@ -31,21 +31,21 @@ class Share extends PureComponent {
         this.close()
       }}>
         <View style={styles.container}>
-          <Touchable onPress={() => this._share(1)}>
-            <View style={styles.content}>
-              <Image source={require('../resources/imgs/wx.png')} style={styles.img}/>
-              <Text style={styles.label}>微信好友
-              </Text>
-            </View>
-          </Touchable>
+          {/*<Touchable onPress={() => this._share(1)}>*/}
+            {/*<View style={styles.content}>*/}
+              {/*<Image source={require('../resources/imgs/wx.png')} style={styles.img}/>*/}
+              {/*<Text style={styles.label}>微信好友*/}
+              {/*</Text>*/}
+            {/*</View>*/}
+          {/*</Touchable>*/}
 
-          <Touchable onPress={() => this._share(2)}>
-            <View style={styles.content}>
-              <Image source={require('../resources/imgs/wx2.png')} style={styles.img}/>
-              <Text style={styles.label}>朋友圈
-              </Text>
-            </View>
-          </Touchable>
+          {/*<Touchable onPress={() => this._share(2)}>*/}
+            {/*<View style={styles.content}>*/}
+              {/*<Image source={require('../resources/imgs/wx2.png')} style={styles.img}/>*/}
+              {/*<Text style={styles.label}>朋友圈*/}
+              {/*</Text>*/}
+            {/*</View>*/}
+          {/*</Touchable>*/}
 
           <Touchable onPress={() => this._share(3)}>
             <View style={styles.content}>

@@ -97,7 +97,7 @@ class Recharge extends Component {
 
   static navigationOptions = ({navigation, screenProps}) => ({
     title: '快捷充值',
-    hideHeader: navigation.state.params.hideHeader
+      header: null,
   });
 
   constructor(props) {
