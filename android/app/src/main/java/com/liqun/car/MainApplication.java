@@ -1,6 +1,9 @@
 package com.liqun.car;
 
 import android.app.Application;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.util.Log;
 
 import com.baidu.mobstat.StatService;
 import com.facebook.react.ReactApplication;
@@ -68,6 +71,16 @@ public class MainApplication extends Application implements ReactApplication {
         FyPay.setDev(true);
         FyPay.init(this);
 //        StatService.setDebugOn(true);
-        StatService.setAppChannel(this, "", false);
+        ApplicationInfo appInfo = null;
+        try {
+            appInfo = this.getPackageManager().getApplicationInfo(getPackageName(), PackageManager.GET_META_DATA);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        String channelStr = appInfo.metaData.getString("BaiduMobAd_CHANNEL");
+
+        Log.d("------channelStr=", channelStr);
+
+        StatService.setAppChannel(this, channelStr, false);
     }
 }
