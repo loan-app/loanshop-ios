@@ -393,7 +393,7 @@ class FinanceDetail extends Component {
                   bounces={false}
                   onMessage={(event) => this._changeHeight(event.nativeEvent)}
                   injectedJavaScript={this.patchPostMessageJsCode}
-                  source={{html: detail.contentStr ? HtmlFormatter(detail.contentStr) : ''}}
+                  source={{html: detail.contentStr ? HtmlFormatter(detail.contentStr) : '', baseUrl: ''}}
                   domStorageEnabled={true}
                   javaScriptEnabled={true}
                 />

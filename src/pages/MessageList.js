@@ -80,7 +80,9 @@ class MessageList extends Component {
   }
 
   _onEndReachedMessage() {
-    let {isLoadMore, noMore, loading} = this.props.messageList;
+      console.log('----------messageDetail')
+
+      let {isLoadMore, noMore, loading} = this.props.messageList;
     if (!isLoadMore && !noMore && this.state.type === 2 && !loading) {
       const {messageListActions} = this.props;
       messageListActions.getData(false, true, false, ++page);
@@ -90,7 +92,9 @@ class MessageList extends Component {
   }
 
   _onEndReachedNotify() {
-    let {isLoadMore, noMore, loading} = this.props.notifyList;
+      console.log('----------_onEndReachedNotify')
+
+      let {isLoadMore, noMore, loading} = this.props.notifyList;
     if (!isLoadMore && !noMore && this.state.type === 1 && !loading) {
       const {notifyListActions} = this.props;
       notifyListActions.getData(false, true, false, ++page);
@@ -100,7 +104,9 @@ class MessageList extends Component {
   }
 
   _changeType(type) {
-    this.state.type !== type && this.setState({type: type}, () => {
+      console.log('----------_changeType')
+
+      this.state.type !== type && this.setState({type: type}, () => {
       page = 1;
       const {notifyListActions, messageListActions} = this.props;
       let title = "";

@@ -8,6 +8,7 @@ export function userProfile(loading,time=0) {
     setTimeout(()=>{
       getUserProfile().then(data => {
         const user = data.data.data;
+        console.log('--------user = ' + JSON.stringify(data))
         if (data.data.code == 0) {
           const check = [
             {

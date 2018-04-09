@@ -63380,7 +63380,7 @@ var Home = function (_Component) {
                   lineNumber: 379
                 }
               },
-              '15\u5E74\u884C\u4E1A\u7ECF\u9A8C\u4ECE\u672A\u8FDD\u7EA6'
+              '\u591A\u5E74\u884C\u4E1A\u7ECF\u9A8C\u4ECE\u672A\u8FDD\u7EA6'
             )
           ),
           _react2.default.createElement(
@@ -63736,33 +63736,6 @@ var Home = function (_Component) {
               'ICP\u8BB8\u53EF\u8BC1',
               '\n',
               '\u5B89\u5168\u5408\u89C4'
-            )
-          )
-        ),
-        _react2.default.createElement(
-          SafeView,
-          {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 471
-            }
-          },
-          _react2.default.createElement(
-            _UtilLib.CenterRow,
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 472
-              }
-            },
-            _react2.default.createElement(
-              _UtilLib.StyledText,
-              { color: '#999999', size: '10', lh: '0', __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 473
-                }
-              },
-              '\u5229\u7FA4\u7406\u8D22\u7684\u57FA\u91D1\u9500\u552E\u670D\u52A1\u7531\u5317\u4EAC\u5174\u8F89\u6295\u8D44\u7BA1\u7406\u6709\u9650\u516C\u53F8\u63D0\u4F9B'
             )
           )
         ),
@@ -79514,6 +79487,7 @@ function userProfile(loading) {
     setTimeout(function () {
       (0, _http.getUserProfile)().then(function (data) {
         var user = data.data.data;
+        console.log('--------user = ' + JSON.stringify(data));
         if (data.data.code == 0) {
           var check = [{
             routeName: 'Authentication',
@@ -81097,6 +81071,7 @@ var Setting = function (_Component) {
     key: '_navigateCheck',
     value: function _navigateCheck(level, route, params, toast) {
       var routers = (0, _Check2.default)(this.props.user.check, level, route, params);
+      console.log('------------AuthCheck = ' + routers[0] + '---------' + routers[1]);
       if (routers[0]) {
         this.props.navigation.navigate(routers[0], routers[1]);
       } else {
@@ -81122,11 +81097,12 @@ var Setting = function (_Component) {
           userInfo = _props$user.userInfo,
           check = _props$user.check;
 
+
       return _react2.default.createElement(
         _reactNative.View,
         { style: { flex: 1 }, __source: {
             fileName: _jsxFileName,
-            lineNumber: 106
+            lineNumber: 110
           }
         },
         _react2.default.createElement(
@@ -81134,14 +81110,14 @@ var Setting = function (_Component) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 107
+              lineNumber: 111
             }
           },
           _react2.default.createElement(
             _UtilLib.BlockWrapper,
             { marginType: 'top', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 108
+                lineNumber: 112
               }
             },
             _react2.default.createElement(
@@ -81149,7 +81125,7 @@ var Setting = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 109
+                  lineNumber: 113
                 }
               },
               _react2.default.createElement(_GuideMenu2.default, { title: '\u7ED1\u5B9A\u624B\u673A\u53F7',
@@ -81158,7 +81134,7 @@ var Setting = function (_Component) {
                   return navigate("PhoneBind");
                 }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 110
+                  lineNumber: 114
                 }
               })
             ),
@@ -81167,7 +81143,7 @@ var Setting = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 114
+                  lineNumber: 118
                 }
               },
               _react2.default.createElement(_GuideMenu2.default, { title: '\u5B9E\u540D\u8BA4\u8BC1', iconComment: userInfo.idCard || "未认证",
@@ -81176,7 +81152,7 @@ var Setting = function (_Component) {
                   return _this3._navigateCheck(0, null, null, "已实名认证");
                 }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 115
+                  lineNumber: 119
                 }
               })
             ),
@@ -81185,7 +81161,7 @@ var Setting = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 119
+                  lineNumber: 123
                 }
               },
               _react2.default.createElement(_GuideMenu2.default, { title: '\u6211\u7684\u94F6\u884C\u5361', iconComment: userInfo.bankCard || "未绑定",
@@ -81194,7 +81170,7 @@ var Setting = function (_Component) {
                   return _this3._navigateCheck(1, "BankCardDetail");
                 }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 120
+                  lineNumber: 124
                 }
               })
             ),
@@ -81203,7 +81179,7 @@ var Setting = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 124
+                  lineNumber: 128
                 }
               },
               _react2.default.createElement(_GuideMenu2.default, { title: '\u4EA4\u6613\u5BC6\u7801', iconComment: userInfo.isSetTradingPassword ? "修改" : "未设置",
@@ -81212,7 +81188,7 @@ var Setting = function (_Component) {
                   return _this3._navigateCheck(2, 'PayPasswordModify');
                 }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 125
+                  lineNumber: 129
                 }
               })
             ),
@@ -81221,7 +81197,7 @@ var Setting = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 129
+                  lineNumber: 133
                 }
               },
               _react2.default.createElement(_GuideMenu2.default, { title: '\u767B\u5F55\u5BC6\u7801', iconComment: '\u4FEE\u6539',
@@ -81229,7 +81205,7 @@ var Setting = function (_Component) {
                   return navigate('ModifyPassword');
                 }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 130
+                  lineNumber: 134
                 }
               })
             )
@@ -81238,7 +81214,7 @@ var Setting = function (_Component) {
             _UtilLib.BlockWrapper,
             { marginType: 'both', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 134
+                lineNumber: 138
               }
             },
             _react2.default.createElement(
@@ -81246,7 +81222,7 @@ var Setting = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 135
+                  lineNumber: 139
                 }
               },
               _react2.default.createElement(_GuideMenu2.default, { title: '\u5173\u4E8E',
@@ -81254,7 +81230,7 @@ var Setting = function (_Component) {
                   return navigate("AboutUs");
                 }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 136
+                  lineNumber: 140
                 }
               })
             )
@@ -81264,7 +81240,7 @@ var Setting = function (_Component) {
             content: this.state.messageBox.content,
             button: this.state.messageBox.button, __source: {
               fileName: _jsxFileName,
-              lineNumber: 140
+              lineNumber: 144
             }
           })
         ),
@@ -81272,7 +81248,7 @@ var Setting = function (_Component) {
           _UtilLib.BlockWrapper,
           { style: { position: 'absolute', bottom: 0, left: 0, width: _constants.WINDOW_WIDTH }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 145
+              lineNumber: 149
             }
           },
           _react2.default.createElement(
@@ -81281,14 +81257,14 @@ var Setting = function (_Component) {
               style: { justifyContent: 'center', alignItems: 'center', paddingVertical: 15 },
               onPress: this._logout.bind(this), __source: {
                 fileName: _jsxFileName,
-                lineNumber: 146
+                lineNumber: 150
               }
             },
             _react2.default.createElement(
               _UtilLib.StyledText,
               { color: _color2.default.font.blue, size: '14', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 149
+                  lineNumber: 153
                 }
               },
               '\u5B89\u5168\u9000\u51FA'
@@ -88203,6 +88179,8 @@ var MessageList = function (_Component) {
   }, {
     key: '_onEndReachedMessage',
     value: function _onEndReachedMessage() {
+      console.log('----------messageDetail');
+
       var _props$messageList = this.props.messageList,
           isLoadMore = _props$messageList.isLoadMore,
           noMore = _props$messageList.noMore,
@@ -88219,6 +88197,8 @@ var MessageList = function (_Component) {
   }, {
     key: '_onEndReachedNotify',
     value: function _onEndReachedNotify() {
+      console.log('----------_onEndReachedNotify');
+
       var _props$notifyList = this.props.notifyList,
           isLoadMore = _props$notifyList.isLoadMore,
           noMore = _props$notifyList.noMore,
@@ -88236,6 +88216,8 @@ var MessageList = function (_Component) {
     key: '_changeType',
     value: function _changeType(type) {
       var _this3 = this;
+
+      console.log('----------_changeType');
 
       this.state.type !== type && this.setState({ type: type }, function () {
         page = 1;
@@ -88272,7 +88254,7 @@ var MessageList = function (_Component) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 123
+            lineNumber: 129
           }
         },
         _react2.default.createElement(_reactNative.FlatList, { data: list, initialNumToRender: 20,
@@ -88285,7 +88267,7 @@ var MessageList = function (_Component) {
           ListEmptyComponent: function ListEmptyComponent() {
             return _react2.default.createElement(_UtilLib.NoData, { visible: !loading, text: '\u6682\u65E0\u6D88\u606F', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 127
+                lineNumber: 133
               }
             });
           },
@@ -88295,17 +88277,17 @@ var MessageList = function (_Component) {
           ListFooterComponent: function ListFooterComponent() {
             return _react2.default.createElement(_UtilLib.Footer, { visible: !noMore && isLoadMore, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 129
+                lineNumber: 135
               }
             });
           }, __source: {
             fileName: _jsxFileName,
-            lineNumber: 124
+            lineNumber: 130
           }
         }),
         _react2.default.createElement(_UtilLib.ActivityIndicatorModal, { visible: loading, __source: {
             fileName: _jsxFileName,
-            lineNumber: 130
+            lineNumber: 136
           }
         })
       );
@@ -88326,7 +88308,7 @@ var MessageList = function (_Component) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 136
+            lineNumber: 142
           }
         },
         _react2.default.createElement(_reactNative.FlatList, { data: list, initialNumToRender: 20,
@@ -88339,7 +88321,7 @@ var MessageList = function (_Component) {
           ListEmptyComponent: function ListEmptyComponent() {
             return _react2.default.createElement(_UtilLib.NoData, { visible: !loading, text: '\u6682\u65E0\u516C\u544A', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 140
+                lineNumber: 146
               }
             });
           },
@@ -88349,17 +88331,17 @@ var MessageList = function (_Component) {
           ListFooterComponent: function ListFooterComponent() {
             return _react2.default.createElement(_UtilLib.Footer, { visible: !noMore && isLoadMore, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 142
+                lineNumber: 148
               }
             });
           }, __source: {
             fileName: _jsxFileName,
-            lineNumber: 137
+            lineNumber: 143
           }
         }),
         _react2.default.createElement(_UtilLib.ActivityIndicatorModal, { visible: loading, __source: {
             fileName: _jsxFileName,
-            lineNumber: 143
+            lineNumber: 149
           }
         })
       );
@@ -88380,7 +88362,7 @@ var MessageList = function (_Component) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 155
+            lineNumber: 161
           }
         },
         _react2.default.createElement(
@@ -88388,21 +88370,21 @@ var MessageList = function (_Component) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 156
+              lineNumber: 162
             }
           },
           _react2.default.createElement(
             FilterView,
             { color: this.state.type === 1 && _color2.default.font.blue, onPress: this._changeType.bind(this, 1), __source: {
                 fileName: _jsxFileName,
-                lineNumber: 157
+                lineNumber: 163
               }
             },
             _react2.default.createElement(
               _UtilLib.StyledText,
               { size: '14', color: this.state.type === 1 ? _color2.default.font.blue : '#999999', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 158
+                  lineNumber: 164
                 }
               },
               '\u5E73\u53F0\u516C\u544A'
@@ -88412,14 +88394,14 @@ var MessageList = function (_Component) {
             FilterView,
             { color: this.state.type === 2 && _color2.default.font.blue, onPress: this._changeType.bind(this, 2), __source: {
                 fileName: _jsxFileName,
-                lineNumber: 160
+                lineNumber: 166
               }
             },
             _react2.default.createElement(
               _UtilLib.StyledText,
               { size: '14', color: this.state.type === 2 ? _color2.default.font.blue : '#999999', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 161
+                  lineNumber: 167
                 }
               },
               '\u4E2A\u4EBA\u6D88\u606F'
@@ -88564,6 +88546,7 @@ var WebView1 = function (_Component) {
 
     var _this = babelHelpers.possibleConstructorReturn(this, (WebView1.__proto__ || Object.getPrototypeOf(WebView1)).call(this, props));
 
+    console.log('----------messageDetail');
     _this.state = {
       loading: true,
       detail: {}
@@ -88596,30 +88579,30 @@ var WebView1 = function (_Component) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 36
+            lineNumber: 37
           }
         },
         this.state.detail.title ? _react2.default.createElement(_reactNative.WebView, {
           style: { flex: 1 },
           scalesPageToFit: false,
-          source: { html: (0, _HTML2.default)(this.state.detail.title, this.state.detail.createdAt, this.state.detail.content) },
+          source: { html: (0, _HTML2.default)(this.state.detail.title, this.state.detail.createdAt, this.state.detail.content), baseUrl: '' },
           javaScriptEnabled: true,
           domStorageEnabled: true,
           renderError: function renderError() {
             return _react2.default.createElement(_UtilLib.NoData, { visible: true, text: '\u52A0\u8F7D\u5931\u8D25', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 43
+                lineNumber: 44
               }
             });
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 37
+            lineNumber: 38
           }
         }) : null,
         _react2.default.createElement(_UtilLib.ActivityIndicatorModal, { visible: this.state.loading, __source: {
             fileName: _jsxFileName,
-            lineNumber: 45
+            lineNumber: 46
           }
         })
       );
@@ -92899,7 +92882,7 @@ var FinanceDetail = function (_Component) {
                     return _this3._changeHeight(event.nativeEvent);
                   },
                   injectedJavaScript: this.patchPostMessageJsCode,
-                  source: { html: detail.contentStr ? (0, _HTML2.default)(detail.contentStr) : '' },
+                  source: { html: detail.contentStr ? (0, _HTML2.default)(detail.contentStr) : '', baseUrl: '' },
                   domStorageEnabled: true,
                   javaScriptEnabled: true,
                   __source: {
@@ -96537,7 +96520,7 @@ var WebView1 = function (_Component) {
         },
         this.state.detail.title ? _react2.default.createElement(_reactNative.WebView, {
           style: { flex: 1 },
-          source: { html: (0, _HTML2.default)(this.state.detail.title, this.state.detail.createdAt, this.state.detail.content) },
+          source: { html: (0, _HTML2.default)(this.state.detail.title, this.state.detail.createdAt, this.state.detail.content), baseUrl: '' },
           javaScriptEnabled: true,
           domStorageEnabled: true,
           renderError: function renderError() {

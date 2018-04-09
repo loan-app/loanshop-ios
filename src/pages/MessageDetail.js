@@ -11,6 +11,7 @@ export default class WebView1 extends Component {
 
   constructor(props) {
     super(props);
+    console.log('----------messageDetail')
     this.state = {
       loading: true,
       detail: {}
@@ -37,7 +38,7 @@ export default class WebView1 extends Component {
         {this.state.detail.title?<WebView
           style={{flex: 1}}
           scalesPageToFit={false}
-          source={{html: HtmlFormatter(this.state.detail.title, this.state.detail.createdAt, this.state.detail.content)}}
+          source={{html: HtmlFormatter(this.state.detail.title, this.state.detail.createdAt, this.state.detail.content), baseUrl: ''}}
           javaScriptEnabled={true}
           domStorageEnabled={true}
           renderError={() => <NoData visible text="加载失败"/>}

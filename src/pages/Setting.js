@@ -87,6 +87,7 @@ class Setting extends Component {
 
   _navigateCheck(level, route, params, toast) {
     const routers = AuthCheck(this.props.user.check, level, route, params);
+    console.log('------------AuthCheck = ' + routers[0] + '---------' + routers[1])
     if (routers[0]) {
       this.props.navigation.navigate(routers[0], routers[1]);
     } else {
@@ -102,7 +103,10 @@ class Setting extends Component {
   render() {
     const {navigate} = this.props.navigation;
     let {userInfo, check} = this.props.user;
-    return (
+      // console.log('---------userInfo = ' + userInfo.toJSON());
+      // console.log('---------bankCard = ' + userInfo);
+
+      return (
       <View style={{flex: 1}}>
         <ScrollView>
           <BlockWrapper marginType="top">

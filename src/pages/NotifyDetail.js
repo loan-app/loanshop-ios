@@ -36,7 +36,7 @@ export default class WebView1 extends Component {
       <FlexView>
         {this.state.detail.title?<WebView
           style={{flex: 1}}
-          source={{html: HtmlFormatter(this.state.detail.title, this.state.detail.createdAt, this.state.detail.content)}}
+          source={{html: HtmlFormatter(this.state.detail.title, this.state.detail.createdAt, this.state.detail.content), baseUrl: ''}}
           javaScriptEnabled={true}
           domStorageEnabled={true}
           renderError={() => <NoData visible text="加载失败"/>}

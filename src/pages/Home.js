@@ -376,7 +376,7 @@ class Home extends Component {
               {imgs.we()}
               <StyledText color="#333333" size="16" left="10">信息披露</StyledText>
             </CenterRow>
-            <StyledText color="#B7B7B7" top="4" size="10" left="6">15年行业经验从未违约</StyledText>
+            <StyledText color="#B7B7B7" top="4" size="10" left="6">多年行业经验从未违约</StyledText>
           </AboutView>
           <AboutView
             onPress={() => this._toWebView(createApiUrl(`/h5/activity/platform-introduction/about`))}>
