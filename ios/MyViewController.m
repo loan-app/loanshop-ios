@@ -7,8 +7,8 @@
 //
 
 #import "MyViewController.h"
-#import <FUMobilePay/FUMobilePay.h>
-#import <FUMobilePay/NSString+Extension.h>
+//#import <FUMobilePay/FUMobilePay.h>
+//#import <FUMobilePay/NSString+Extension.h>
 //#import <FUMobilePay/FUMobilePay.h><FYPayDelegate>
 
 @interface MyViewController () /*<FYPayDelegate>*/
@@ -68,12 +68,12 @@
     NSNumber *testNumber = [NSNumber numberWithBool:test];
     [dicDF setObject:testNumber forKey:@"TEST"];
   }
-  FUMobilePay * pay = [FUMobilePay shareInstance];
-  dispatch_async(dispatch_get_main_queue(), ^{
-    if([pay respondsToSelector:@selector(mobilePay:delegate:)]){
-      [pay performSelector:@selector(mobilePay:delegate:) withObject:dicDF withObject:self];
-    }
-  });
+//  FUMobilePay * pay = [FUMobilePay shareInstance];
+//  dispatch_async(dispatch_get_main_queue(), ^{
+//    if([pay respondsToSelector:@selector(mobilePay:delegate:)]){
+//      [pay performSelector:@selector(mobilePay:delegate:) withObject:dicDF withObject:self];
+//    }
+//  });
 }
 
 

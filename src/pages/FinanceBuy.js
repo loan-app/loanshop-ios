@@ -348,22 +348,33 @@ class FinanceBuy extends Component {
   _getBonusList() {
     if (!isNaN(this.state.money) && this.state.money >= this.state.min) {
       console.log('------this.props.detail.id = '+ this.props.detail.id);
-      getBonusListForBuy({investMoney: this.state.money, fid: this.props.detail.id}).then(data => {
+        console.log('------this.state.money = '+ this.state.money);
+
+        getBonusListForBuy({investMoney: this.state.money, fid: this.props.detail.id}).then(data => {
         if (data.data.code === 0) {
           let bonusList = data.data.data.memberCouponList;
-          const cantList = data.data.data.notUseCouponList;
+            console.log('-----------bonusList = ' + JSON.stringify(bonusList))
+
+            const cantList = data.data.data.notUseCouponList;
+            console.log('-----------cantList = ' + JSON.stringify(cantList))
+
             cantList && cantList.map(item => item.cantUse = true);
           bonusList = bonusList.concat(cantList);
-          this.setState({
+            console.log('-----------bonusListFinal = ' + JSON.stringify(bonusList))
+            console.log('-----------bonusCount = ' + data.data.data.memberCouponList.length)
+
+            this.setState({
             bonusCount: data.data.data.memberCouponList.length,
             bonusList,
             cantCount: cantList.length
           });
         } else {
-          this.context.callToast(data.data.msg);
+            console.log('-----------getBonusListForBuy-1')
+            this.context.callToast(data.data.msg);
         }
       }).catch(() => {
-        this.context.callToast('红包获取失败');
+            console.log('-----------getBonusListForBuy-2')
+            // this.context.callToast('红包获取失败');
       });
     }
   }
