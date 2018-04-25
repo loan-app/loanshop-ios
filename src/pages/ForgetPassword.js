@@ -60,7 +60,7 @@ export default class ForgetPassword extends Component {
     this.state = {
       mobile: '',
       code: '',
-      mode: 2,
+      mode: 1,
       second: '',
       loading: false,
       sending: false,

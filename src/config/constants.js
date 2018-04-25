@@ -22,3 +22,4 @@ export const InnerVersion = "1";
 export const WeChatKey = "wx6de50f0e3a8a7a1a";
 export const ItunesId = "1364345343";
 export const TDkey = OS === "ios" ? "F8EEB5B98AEE4597984274DA18B0E2E9" : "AF1FA0E532384161BEDE63D225B84A11";
+export const HttpKey = "1b617c3e72d109ccf772704594c24910"

@@ -81,12 +81,18 @@ class CapitalRecord extends Component {
 
   componentDidMount() {
     page = 1;
+    console.log("-----componentDidMount");
+
     const {capitalRecordActions} = this.props;
     capitalRecordActions.getData(false, false, true, page);
   }
 
   render() {
     let {loading, list, noMore, isLoadMore} = this.props.capitalRecord;
+    console.log('------------capitalRecord1 = ' + JSON.stringify(this.props.capitalRecord))
+
+    console.log('------------capitalRecord2 = ' + JSON.stringify(list))
+
     return (
       <FlexView>
         <FlatList data={list} initialNumToRender={20}

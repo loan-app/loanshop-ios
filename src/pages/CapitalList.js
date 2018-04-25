@@ -166,6 +166,7 @@ class CapitalList extends Component {
 
   render() {
     const {loading, list, noMore, isLoadMore} = this.props.capitalList;
+    console.log('---------capitalList = ')
     const {userInfo} = this.props;
     return (
       <FlexView>

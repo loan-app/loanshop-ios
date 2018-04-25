@@ -16,6 +16,7 @@ axios.interceptors.request.use(function (config) {
   }
   config.headers.osversion = global.version || '';
   config.headers.osname = global.os || '';
+  // console.info('[axiosRequestInter]:',JSON.stringify(config.headers))
   return config;
 }, function (error) {
   // Do something with request error

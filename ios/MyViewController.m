@@ -9,6 +9,7 @@
 #import "MyViewController.h"
 //#import <FUMobilePay/FUMobilePay.h>
 //#import <FUMobilePay/NSString+Extension.h>
+
 //#import <FUMobilePay/FUMobilePay.h><FYPayDelegate>
 
 @interface MyViewController () /*<FYPayDelegate>*/
