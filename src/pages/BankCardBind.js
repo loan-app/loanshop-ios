@@ -96,41 +96,41 @@ class BankCardBind extends Component {
     this.second = 59;
   }
 
-  _submit() {
-    this.setState({mode: 2}, () => {
-      const headerRight = (
-        <HeaderButton onPress={() => {
-          goBack();
-        }}>
-          <StyledText color={color.font.blue} align="center">先逛逛</StyledText>
-        </HeaderButton>
-      );
-      this.props.navigation.setParams({
-        headerRight: headerRight
-      });
-    });
-    return;
-    if (!this.state.mobile) {
-      this.context.callToast('请输入手机号');
-    } else if (!this.state.code) {
-      this.context.callToast('请输入验证码');
-    } else if (!/^[1][34578][0-9]{9}$/.test(this.state.mobile)) {
-      this.context.callToast('请输入正确的手机号');
-    } else {
-      this.setState({loading: true});
-      register().then(data => {
-        this.setState({loading: false});
-        if (data.data.code === 0) {
-          this.setState({mode: 2});
-        } else {
-          this.context.callToast(data.data.msg);
-        }
-      }).catch(() => {
-        this.setState({loading: false});
-        this.context.callToast('提交失败');
-      });
-    }
-  }
+  // _submit() {
+  //   this.setState({mode: 2}, () => {
+  //     const headerRight = (
+  //       <HeaderButton onPress={() => {
+  //         goBack();
+  //       }}>
+  //         <StyledText color={color.font.blue} align="center">先逛逛</StyledText>
+  //       </HeaderButton>
+  //     );
+  //     this.props.navigation.setParams({
+  //       headerRight: headerRight
+  //     });
+  //   });
+  //   return;
+  //   if (!this.state.mobile) {
+  //     this.context.callToast('请输入手机号');
+  //   } else if (!this.state.code) {
+  //     this.context.callToast('请输入验证码');
+  //   } else if (!/^[1][34578][0-9]{9}$/.test(this.state.mobile)) {
+  //     this.context.callToast('请输入正确的手机号');
+  //   } else {
+  //     this.setState({loading: true});
+  //     register().then(data => {
+  //       this.setState({loading: false});
+  //       if (data.data.code === 0) {
+  //         this.setState({mode: 2});
+  //       } else {
+  //         this.context.callToast(data.data.msg);
+  //       }
+  //     }).catch(() => {
+  //       this.setState({loading: false});
+  //       this.context.callToast('提交失败');
+  //     });
+  //   }
+  // }
 
   _sendCode() {
     if (!this.state.mobile) {
@@ -203,16 +203,16 @@ class BankCardBind extends Component {
           this.props.userActions.userProfile(false);
           const {goBack} = this.props.navigation;
           this.setState({mode: 2, setCode: data.data.firstSetCode}, () => {
-            // const headerRight = (
-            //   <HeaderButton onPress={() => {
-            //     goBack();
-            //   }}>
-            //     <StyledText color={color.font.blue} align="center">先逛逛</StyledText>
-            //   </HeaderButton>
-            // );
-            // this.props.navigation.setParams({
-            //   headerRight: headerRight
-            // });
+            const headerRight = (
+              <HeaderButton onPress={() => {
+                goBack();
+              }}>
+                <StyledText color={color.font.blue} align="center">先逛逛</StyledText>
+              </HeaderButton>
+            );
+            this.props.navigation.setParams({
+              headerRight: headerRight
+            });
           });
         } else {
           this.context.callToast(data.msg);
