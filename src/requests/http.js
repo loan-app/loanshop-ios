@@ -341,6 +341,12 @@ export function checkUpdate() {
   // return axios.get(createApiUrl('/app/version/info?os=ios'));
 }
 
+//获取公司名字
+export function getCompanyName() {
+  return axios.get('http://xpz.xinyijinf.com/app?code=00001');
+}
+
+
 // postHeader(null, 'dads')
 
 // postHeader({}, 'xxx', 'POST')

@@ -324,6 +324,8 @@ class Home extends Component {
       this.props.workingTableAction.getBanner();
       this.props.workingTableAction.getAds();
       this.props.workingTableAction.getNotification();
+      this.props.workingTableAction.getCompanyName();
+
     }
   }
 
@@ -344,6 +346,8 @@ class Home extends Component {
     this.props.workingTableAction.getAds();
     this.props.workingTableAction.getNotification();
     this.props.workingTableAction.getData(false);
+    this.props.workingTableAction.getCompanyName();
+
     AppState.addEventListener('change', this._handleAppStateChange);
     this._getUpdateMeta();
     // setTimeout(() => this.props.navigation.navigate("CapitalList"), 300)
@@ -357,7 +361,7 @@ class Home extends Component {
 
   render() {
     const {navigate} = this.props.navigation;
-    const {loading, error, list, ads, notification} = this.props.workingTable;
+    const {loading, error, list, ads, notification, companyName} = this.props.workingTable;
     return (
       <ScrollLayout color="transparent"
                     removeClippedSubviews={false}
@@ -468,11 +472,11 @@ class Home extends Component {
           </CenterRow>
         </SafeView>
 
-          {/*<SafeView>*/}
-              {/*<CenterRow>*/}
-                  {/*<StyledText color="#999999" size="10" lh="0">利群理财的基金销售服务由北京兴辉投资管理有限公司提供</StyledText>*/}
-              {/*</CenterRow>*/}
-          {/*</SafeView>*/}
+        <SafeView>
+          <CenterRow>
+            <StyledText color="#999999" size="10" lh="0">{companyName}</StyledText>
+          </CenterRow>
+        </SafeView>
 
         <MessageBox
           style={{height: 195}}

@@ -7,7 +7,8 @@ const initialState = {
   ads: null,
   list: null,
   banner: null,
-  notification: null
+  notification: null,
+  companyName:null
 };
 
 export default function workingTable(state = initialState, action = {}) {
@@ -45,7 +46,13 @@ export default function workingTable(state = initialState, action = {}) {
           notification: action.notification,
         });
       }
-    default:
+    case types.RECEIVE_COMPANYNAME:
+      if (!action.error) {
+        return Object.assign({}, state, {
+          companyName: action.companyName,
+        });
+      }
+      default:
       return state;
   }
 }

@@ -1,5 +1,5 @@
 import * as types from '../actions/actionTypes';
-import {getHome, getBanner as _getBanner, getAds as _getAds,getNotification as _getNotification} from '../requests/http';
+import {getHome, getBanner as _getBanner, getAds as _getAds,getNotification as _getNotification, getCompanyName as _getCompanyName} from '../requests/http';
 
 export function getData(loading) {
   return dispatch => {
@@ -50,6 +50,15 @@ export function getNotification() {
   }
 }
 
+export function getCompanyName() {
+  return dispatch => {
+    _getCompanyName().then(data => {
+      if (data.data.code == 0) {
+        dispatch(receiveCompanyName({companyName:data.data.data}))
+      }
+    })
+  }
+}
 
 function requestData(data) {
   return {
@@ -82,6 +91,13 @@ function receiveAds(data) {
 function receiveNotification(data) {
   return {
     type: types.RECEIVE_NOTIFICATION,
+    ...data
+  }
+}
+
+function receiveCompanyName(data) {
+  return {
+    type: types.RECEIVE_COMPANYNAME,
     ...data
   }
 }
