@@ -30,6 +30,8 @@ import MessageBox from '../components/MessageBox';
 import moment from 'moment';
 import * as Update from '../utils/Update';
 import FloatFormatter from '../utils/Float';
+import {createH5Url} from "../requests/http";
+import * as bonusListCreator from "../actions/bonusListActions";
 
 const height = WINDOW_WIDTH / 1.7;
 const cell = 3;
@@ -46,11 +48,11 @@ const AdImage = styled.Image`
   width:${WINDOW_WIDTH};
 `;
 const AboutContainer = CenterRow.extend`
-  padding-vertical:35;
+  padding-vertical:20;
   background-color:#ffffff;
 `;
 const AboutView = styled(Touchable)`
-   width:${WINDOW_WIDTH / 2};
+   width:${WINDOW_WIDTH / 4};
    padding-horizontal:5;
    align-items:center;
 `;
@@ -79,11 +81,21 @@ const ItemView = styled(Touchable)`
 `;
 const ColumnView = CenterView.extend`
   border-right-width:1;
-  border-color:#eeeeee;
+  border-color:#fff;
   width:${WINDOW_WIDTH / 3};
   padding-left:2;
   margin-top:6;
   justify-content:center;
+`;
+const LabRadius = styled.View`
+  border-radius:24px;
+  width:100px;
+  height:34px;
+  align-items:center;
+  padding-bottom:2;
+  justify-content:center;
+  margin-top:10;
+  background-color:#EFBF6B;
 `;
 const TitleView = styled.View`
   flex-direction:row;
@@ -103,12 +115,14 @@ const UpdateDesc = styled.View`
   padding-left:10;
 `;
 const Type = CenterView.extend`
-  padding-vertical:4;
-  width:56;
-  background-color:#FC9657;
+  border-radius:10px;
+  width:58;
+  height:20
+  background-color:#FA8443;
   position:absolute;
-  right:0;
-  top:0;
+  right:012;
+  top:12;
+   justify-content:center;
 `;
 const AdsView = styled(Touchable)`
 `;
@@ -117,7 +131,7 @@ const AdsImage = styled.Image`
   width:${WINDOW_WIDTH};
 `;
 
-const types = ["新手专享", "超短项目", "爆款项目", "精选项目", "体验项目"];
+const types = ["新手标", "超短项目", "爆款项目", "精选项目", "体验项目"];
 class Home extends Component {
 
   static navigationOptions = ({navigation, screenProps}) => ({
@@ -284,7 +298,7 @@ class Home extends Component {
     });
 
     registerNetWorkErrorCallback(() => {
-      this.context.callToast("网络异常，请检查网络设置");
+      //this.context.callToast("网络异常，请检查网络设置");
     });
 
   }
@@ -358,6 +372,29 @@ class Home extends Component {
     this.time && clearTimeout(this.time);
     AppState.removeEventListener('change', this._handleAppStateChange);
   }
+  _toBonus(type, params) {
+    if (global.token) {
+      this.props.bonusListActions.getData(false, false, false, type, null, null, true);
+      this._navigate("BonusList", params);
+    } else {
+      global.initRouter = "UserInfo";
+      this.props.navigation.navigate("Login");
+    }
+  }
+
+  _toYaoQing() {
+    if (global.token) {
+      this._toWebView(createH5Url("/user/invitation?t=" + global.token))
+    } else {
+      global.initRouter = "UserInfo";
+      this.props.navigation.navigate("Login");
+    }
+  }
+
+  _navigate = (router, params) => {
+    this.props.navigation.navigate(router, params);
+
+  };
 
   render() {
     const {navigate} = this.props.navigation;
@@ -377,19 +414,27 @@ class Home extends Component {
           <AboutView
             onPress={() => this._toWebView(createApiUrl(`/h5/activity/platform-introduction/index`))}>
             <CenterRow>
-              {imgs.we()}
-              <StyledText color="#333333" size="16" left="10">信息披露</StyledText>
+              {imgs.xinxipilu()}
             </CenterRow>
-            <StyledText color="#B7B7B7" top="4" size="10" left="6">多年行业经验从未违约</StyledText>
+          </AboutView>
+          <AboutView
+            onPress={() => this._toYaoQing()}>
+            <CenterRow>x
+              {imgs.yaoqingyouli()}
+            </CenterRow>
           </AboutView>
           <AboutView
             onPress={() => this._toWebView(createApiUrl(`/h5/activity/platform-introduction/about`))}>
             <CenterRow>
-              {imgs.information()}
-              <StyledText color="#333333" size="16" left="10">关于我们</StyledText>
+              {imgs.guanyuwomen()}
             </CenterRow>
-            <StyledText color="#B7B7B7" top="4" size="10">多重保障投资零风险</StyledText>
           </AboutView>
+          <AboutView
+          onPress={() => this._toBonus("1", {title: "我的福利"})}>
+          <CenterRow>
+            {imgs.licaihongbao()}
+          </CenterRow>
+        </AboutView>
         </AboutContainer>
         {ads && ads[0] && ads[0].position === "pic3" ?
           <AdsView feedback={ads[0].link ? true : false}
@@ -422,43 +467,50 @@ class Home extends Component {
                 </TitleView>
                 <RowView>
                   <ColumnView>
-                    <NormalView style={{alignItems: 'flex-end'}}>
-                      <StyledText size="24" color="#F1BE64">{FloatFormatter(item.rate * 100)}%</StyledText>
-                      <StyledText size="12" color="#999999" top="10">预期年化</StyledText>
+                    <NormalView style={{alignItems: 'center'}}>
+                      <StyledText size="12" color="#999999" top="6">参考年回报率</StyledText>
+                      <StyledText size="24" color="#F1BE64" top="10">{FloatFormatter(item.rate * 100).replace("%", "")}
+                        <StyledText color="#F1BE64">%</StyledText>
+                      </StyledText>
                     </NormalView>
                   </ColumnView>
                   <ColumnView>
-                    <NormalView style={{alignItems: 'flex-end'}}>
-                      <StyledText size="24" color="#F1BE64">{item.deadLine.replace("天", "")}
+                    <NormalView style={{alignItems: 'center'}}>
+                      <StyledText size="12" color="#999999" top="6">项目期限</StyledText>
+                      <StyledText size="24" color="#F1BE64" top="10">{item.deadLine.replace("天", "")}
                         <StyledText color="#333333">天</StyledText>
                       </StyledText>
-                      <StyledText size="12" color="#999999" top="10">项目期限</StyledText>
                     </NormalView>
                   </ColumnView>
                   <ColumnView>
-                    <NormalView style={{alignItems: 'flex-end'}}>
+                    <NormalView style={{alignItems: 'center'}}>
                       {item.isEnd ? <StyledText size="18" color={textcolor}>募集结束</StyledText> :
-                        <StyledText size="24" color="#333333">{FloatFormatter(residueMoney)}
-                          <StyledText color="#333333">{str}</StyledText>
-                        </StyledText>
+                        <CenterRow>
+                          <StyledText color="#999999">剩余</StyledText>
+                          <StyledText color="#333333">{FloatFormatter(residueMoney)}</StyledText>
+                          <StyledText color="#999999">{str}</StyledText>
+                        </CenterRow>
                       }
-                      <StyledText size="12" color="#999999" top="10">剩余可投</StyledText>
+                      <LabRadius>
+                        <StyledText size="20">加入</StyledText>
+                      </LabRadius>
                     </NormalView>
                   </ColumnView>
                 </RowView>
                 <Type>
-                  <StyledText size="12">{types[item.isNewuserOnly]}</StyledText>
+                  <StyledText size="13">{types[item.isNewuserOnly]}</StyledText>
                 </Type>
               </ItemView>
             )
           })
         }
+        >
 
         <SafeView>
           <CenterRow>
             {imgs.shijian(icon)}
             <StyledText color="#999999" size="10" lh="14">用户本息{`\n`}
-              3年0逾期</StyledText>
+              0逾期</StyledText>
           </CenterRow>
           <CenterRow>
             {imgs.safe(icon)}
@@ -509,7 +561,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   const workingTableAction = bindActionCreators(workingTableCreator, dispatch);
-  return {workingTableAction};
+  const bonusListActions = bindActionCreators(bonusListCreator, dispatch);
+
+  return {workingTableAction,bonusListActions};
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

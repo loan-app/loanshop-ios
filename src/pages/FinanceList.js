@@ -250,7 +250,7 @@ class FinanceList extends Component {
     let {loading, isRefreshing, list} = this.props.financeList;
     return (
       <FlexView>
-        <Header center color="#38373C">
+        <Header center color="#fd813a">
           <StyledText size="17">理财列表</StyledText>
         </Header>
         <FlatList data={list} initialNumToRender={5}

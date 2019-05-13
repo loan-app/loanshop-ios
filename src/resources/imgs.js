@@ -181,5 +181,14 @@ export default {
   },
   phoneanquan: function (style) {
     return <Image style={style} source={require("./imgs/phoneanquan.png")}/>;
+  },guanyuwomen: function (style) {
+    return <Image style={style} source={require("./imgs/guanyuwomen.png")}/>;
+  },yaoqingyouli: function (style) {
+    return <Image style={style} source={require("./imgs/yaoqingyouli.png")}/>;
+  },xinxipilu: function (style) {
+    return <Image style={style} source={require("./imgs/xinxipilu.png")}/>;
+  },licaihongbao: function (style) {
+    return <Image style={style} source={require("./imgs/licaihongbao.png")}/>;
   },
+
 }

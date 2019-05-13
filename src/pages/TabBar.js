@@ -76,7 +76,7 @@ export default class Tabs extends Component {
           </TabNavigator.Item>
           <TabNavigator.Item
             selected={this.state.selectedTab === 'UserInfo'}
-            title="我的"
+            title="帐户"
             titleStyle={styles.titleText}
             selectedTitleStyle={{color: '#F1BE64'}}
             renderIcon={() => imgs.user(icon)}

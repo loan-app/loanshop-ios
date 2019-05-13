@@ -1,0 +1,52 @@
+//
+//  APStore.pch
+//  XFlowers
+//
+//  Created by 文金庚 on 2018/6/19.
+//  Copyright © 2018年 杭州电子商务有限公司. All rights reserved.
+//
+
+
+
+#ifndef APStore_pch
+#define APStore_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "XHHuHeader.h"
+#import <UIKit/UIKit.h>
+
+
+#import "NSString+Checkout.h"
+#import "Masonry.h"
+#import "AFNetworking.h"
+#import "MBProgressHUD+AP.h"
+#import "MJRefresh.h"
+#import "UIImageView+WebCache.h"
+#import <commoncrypto/CommonDigest.h>
+#import "WebViewJavascriptBridge.h"
+#import "MyWebViwViewController.h"
+//我添加的
+#import "AFNetworkTool.h"
+#import "AppDelegate.h"
+#define __UserDefaults                              [NSUserDefaults standardUserDefaults]
+#define __GetUserInfo                               [[NSUserDefaults standardUserDefaults] valueForKey:KUserInfo]
+#define __GetUserPhone                              [[NSUserDefaults standardUserDefaults] valueForKey:KUserPhone]
+
+//用户信息
+#define KUserInfo           @"UserInfomation"
+#define KUserPhone          @"KUserPhone"
+
+#import "DBCHUIViewTool.h"
+
+#import "DeviceInfo.h"
+
+#import "GSKeyChain.h"
+
+//#define URL_Base                @"http://47.111.165.27:8081/renren-api/"
+
+//https://www.jiyawangluo.com/dkm-api/api/mobileLogin
+
+#define URL_Base                @"https://www.jiyawangluo.com/dkm-api/"
+
+#endif /* APStore_pch */

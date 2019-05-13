@@ -96,13 +96,13 @@ def enableSeparateBuildPerCPUArchitecture = false
 def enableProguardInReleaseBuilds = false
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 28
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId 'com.liqun.car'
+        applicationId 'com.cz018.v1'
         minSdkVersion 16
-        targetSdkVersion 25
+        targetSdkVersion 28
         versionCode 4
         versionName "1.0.1"
         flavorDimensions 'default'
@@ -199,6 +199,9 @@ android {
         }
         guanwang {
             manifestPlaceholders = [BAIDU_CHANNEL: "guanwang"]
+        }
+        pp {
+            manifestPlaceholders = [BAIDU_CHANNEL: "pp"]
         }
         dt001 {
             manifestPlaceholders = [BAIDU_CHANNEL: "dt001"]

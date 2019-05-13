@@ -357,9 +357,9 @@ class Recharge extends Component {
           </CenterView>
           <StyledText color="#999999" lh="20" top="15" left="15" size="12" style={{paddingRight: 15}}>
             温馨提示：{`\n`}
-            1.充值实时到账，如有疑问请联系客服热线400-871-3088；{`\n`}
+            1.充值实时到账，如有疑问请联系客服热线400-6683-878；{`\n`}
             2.请注意您的银行卡充值限额，以免造成不便；{`\n`}
-            3.如需使用大额充值，请登录利群理财官网(www.liqun888.com)使用网银充值；{`\n`}
+            3.如需使用大额充值，请登录贷款喵官网(www.chengzilicai.com)使用网银充值；{`\n`}
           </StyledText>
           {/*<FlexView/>*/}
           {/*<CenterView>*/}

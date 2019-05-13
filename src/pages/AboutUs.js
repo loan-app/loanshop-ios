@@ -64,29 +64,29 @@ class AboutUs extends Component {
         </Touchable>
         <StyledText color="#999999"
                     size="14">{global.codePushVersion ? (global.codePushVersion + "_") : "v"}{DeviceInfo.getVersion()} {this.state.Channel}</StyledText>
-        <Touchable onPress={() => this._tel("http://www.liqun888.com")}>
+        <Touchable onPress={() => this._tel("http://www.chengzilicai.com")}>
           <Items marginTop={35}>
             <StyledText color="#333333">网址</StyledText>
-            <StyledText color="#999999">www.liqun888.com</StyledText>
+            <StyledText color="#999999">www.chengzilicai.com</StyledText>
           </Items>
         </Touchable>
         <Touchable onPress={() => {
           this.context.callToast("复制成功", true);
-          Clipboard.setString("liqun88d");
+          Clipboard.setString("cz018_net");
         }}>
           <Items>
             <StyledText color="#333333">官方微信</StyledText>
-            <StyledText color="#999999">liqun88d</StyledText>
+            <StyledText color="#999999">cz018_net</StyledText>
           </Items>
         </Touchable>
         <Items>
           <StyledText color="#333333">客服邮箱</StyledText>
-          <StyledText color="#999999">postmaster@xinyijinf.com</StyledText>
+          <StyledText color="#999999">m13388433368@163.com</StyledText>
         </Items>
-        <Touchable onPress={() => this._tel("tel:400-871-3088")}>
+        <Touchable onPress={() => this._tel("tel:400-1588-665")}>
           <Items>
             <StyledText color="#333333">客服热线</StyledText>
-            <StyledText color="#999999">400-871-3088</StyledText>
+            <StyledText color="#999999">400-1588-665</StyledText>
           </Items>
         </Touchable>
       </CenterView>

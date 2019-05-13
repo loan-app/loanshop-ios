@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="i5M-xl-1rj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Shen He View Controller-->
+        <scene sceneID="Whn-f9-fpR">
+            <objects>
+                <viewController id="i5M-xl-1rj" customClass="GJFMainShenHeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qpb-Qk-5rA"/>
+                        <viewControllerLayoutGuide type="bottom" id="KyT-Xp-2wd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xRD-lN-00r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qidongtu" translatesAutoresizingMaskIntoConstraints="NO" id="IUm-gH-IgY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IUm-gH-IgY" secondAttribute="trailing" id="Hzq-ew-Ghr"/>
+                            <constraint firstItem="KyT-Xp-2wd" firstAttribute="top" secondItem="IUm-gH-IgY" secondAttribute="bottom" id="J1c-pm-sFd"/>
+                            <constraint firstItem="IUm-gH-IgY" firstAttribute="leading" secondItem="xRD-lN-00r" secondAttribute="leading" id="cPQ-T1-FFd"/>
+                            <constraint firstItem="IUm-gH-IgY" firstAttribute="top" secondItem="xRD-lN-00r" secondAttribute="top" id="fug-C0-HTl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOE-Cw-nJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3986" y="1152"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="qidongtu" width="621" height="1344"/>
+    </resources>
+</document>

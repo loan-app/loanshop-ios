@@ -3,7 +3,7 @@ import global from "../styles/global";
 import {HttpKey} from '../config/constants';
 
 export function createApiUrl(path) {
-  return `http://napi.liqun888.com${path}`;
+  return `http://api.chengzilicai888.com${path}`;
 }
 
 // export function createApiUrl(path) {
@@ -343,7 +343,7 @@ export function checkUpdate() {
 
 //获取公司名字
 export function getCompanyName() {
-  return axios.get('http://xpz.xinyijinf.com/app?code=00001');
+  return axios.get('http://xpz.xinyijinf.com/app?code=00006');
 }
 
 

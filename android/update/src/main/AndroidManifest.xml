@@ -7,7 +7,7 @@
 
         <provider
             android:name="ezy.boost.update.UpdateFileProvider"
-            android:authorities="com.liqun8"
+            android:authorities="com.cz018.v1"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

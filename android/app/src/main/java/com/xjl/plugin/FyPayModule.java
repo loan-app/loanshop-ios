@@ -46,7 +46,7 @@ public class FyPayModule extends ReactContextBaseJavaModule {
         this.callback = callback;
         MchantMsgBean bean = new MchantMsgBean();
         bean.setOrderId(options.getString("MCHNTORDERID"));
-        bean.setKey("i941pumycj5li4kcre385clb3572v7uv");
+        bean.setKey("9gqkoscnqwh483xh7yzirgiaw4fjif4u");
         bean.setMchntCd(options.getString("MCHNTCD"));
         bean.setAmt(options.getString("AMT"));
         bean.setUserId(options.getString("USERID"));
