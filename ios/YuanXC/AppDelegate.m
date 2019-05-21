@@ -45,7 +45,7 @@
   // 设置返回格式
   manager.responseSerializer = [AFHTTPResponseSerializer serializer];
   
-  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=31" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=32" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
   } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
     
   }];
@@ -62,7 +62,7 @@
   _timer =  [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(timerSelector:) userInfo:appArray repeats:YES];
   [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
   
-  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=31" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=32" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
     if (self->_isFinish) {
       [self->_timer invalidate];
       return;
@@ -123,9 +123,7 @@
   
   return YES;
   
-  
-  
-  return YES;
+
 }
 - (void)timerSelector:(NSTimer *)timer{
   NSArray * appArray = timer.userInfo;
@@ -147,7 +145,7 @@
   // 设置返回格式
   manager.responseSerializer = [AFHTTPResponseSerializer serializer];
   //  weakify(self);
-  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=31" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=32" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
     if (self->_isFinish) {
       [self->_timer invalidate];
       return;

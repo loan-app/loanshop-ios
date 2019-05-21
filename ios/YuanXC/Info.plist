@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.5</string>
+	<string>1.0.6</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -34,9 +34,9 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>3</string>
+	<string>1</string>
 	<key>Channel</key>
-	<string>dk</string>
+	<string>dx</string>
 	<key>CodePushDeploymentKey</key>
 	<string>TiRwXc84hDwpqIHlaHenaSylXNTc8c030f2c-1804-42f6-9ca0-cbdb8e508f63</string>
 	<key>LSRequiresIPhoneOS</key>
