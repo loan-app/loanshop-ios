@@ -77,6 +77,7 @@
 		1656FA422281842E00C85BCB /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1656FA0A2281842E00C85BCB /* TAAnimatedDotView.m */; };
 		1656FA432281842E00C85BCB /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1656FA0B2281842E00C85BCB /* TAAbstractDotView.m */; };
 		1656FA442281842E00C85BCB /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1656FA0F2281842E00C85BCB /* DeviceInfo.m */; };
+		1699671F2293F8FE00E7593F /* libOpenInstallSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 169966F12293F8FE00E7593F /* libOpenInstallSDK.a */; };
 		2FF0456DAD9B4A7C916FB014 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B1ADE7CD34EEF834FFD81 /* libRNDeviceInfo.a */; };
 		3799B5C98D3759CFEC1AFCD8 /* libPods-YuanXC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C79C2890CAC82132DA4CF7A /* libPods-YuanXC.a */; };
 		394B7DE57FB04245AD009566 /* libthird-party.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E507999A4A5B48EF897A6923 /* libthird-party.a */; };
@@ -562,7 +563,10 @@
 		1656FA0D2281842E00C85BCB /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
 		1656FA0E2281842E00C85BCB /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
 		1656FA0F2281842E00C85BCB /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
-		1656FA82228184D300C85BCB /* YuanXC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = YuanXC.entitlements; path = YuanXC/YuanXC.entitlements; sourceTree = "<group>"; };
+		1671A3912295160400BA2C01 /* YuanXC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = YuanXC.entitlements; path = YuanXC/YuanXC.entitlements; sourceTree = "<group>"; };
+		169966F12293F8FE00E7593F /* libOpenInstallSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOpenInstallSDK.a; sourceTree = "<group>"; };
+		169966F22293F8FE00E7593F /* OpeninstallData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpeninstallData.h; sourceTree = "<group>"; };
+		169966F32293F8FE00E7593F /* OpenInstallSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenInstallSDK.h; sourceTree = "<group>"; };
 		2574146CB7EB4DCFB376B23F /* libcxxreact.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libcxxreact.a; sourceTree = "<group>"; };
 		2C79C2890CAC82132DA4CF7A /* libPods-YuanXC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YuanXC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B91E0DE8344E9CA12E2C37 /* libdouble-conversion.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libdouble-conversion.a"; sourceTree = "<group>"; };
@@ -657,6 +661,7 @@
 				A43FD2E51FD544A8000F4189 /* libstdc++.tbd in Frameworks */,
 				4045906E0E0B42F29CFA3658 /* libCodePush.a in Frameworks */,
 				F8A23BD7BCE64315971EF323 /* libz.tbd in Frameworks */,
+				1699671F2293F8FE00E7593F /* libOpenInstallSDK.a in Frameworks */,
 				563F3E4AC6694AACB2A49A6B /* libReact.a in Frameworks */,
 				F289FFCC062B4BDAABE920C5 /* libyoga.a in Frameworks */,
 				FF38EAD813624F14BBDCEA6F /* libcxxreact.a in Frameworks */,
@@ -752,7 +757,7 @@
 		13B07FAE1A68108700A75B9A /* YuanXC */ = {
 			isa = PBXGroup;
 			children = (
-				1656FA82228184D300C85BCB /* YuanXC.entitlements */,
+				1671A3912295160400BA2C01 /* YuanXC.entitlements */,
 				1656F9D12281842D00C85BCB /* APStore.pch */,
 				1656F9982281842C00C85BCB /* Base */,
 				1656F99D2281842D00C85BCB /* Classes */,
@@ -964,6 +969,7 @@
 		1656F9D32281842D00C85BCB /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				169966F02293F8FE00E7593F /* OpenInstallSDK2.2.1 */,
 				1656F9D42281842D00C85BCB /* Reachability.m */,
 				1656F9D52281842D00C85BCB /* MBProgressHUD+AP.h */,
 				1656F9D62281842D00C85BCB /* AFNetWorkTool */,
@@ -1082,6 +1088,16 @@
 				1656FA0E2281842E00C85BCB /* TAPageControl.h */,
 			);
 			path = PageControl;
+			sourceTree = "<group>";
+		};
+		169966F02293F8FE00E7593F /* OpenInstallSDK2.2.1 */ = {
+			isa = PBXGroup;
+			children = (
+				169966F12293F8FE00E7593F /* libOpenInstallSDK.a */,
+				169966F22293F8FE00E7593F /* OpeninstallData.h */,
+				169966F32293F8FE00E7593F /* OpenInstallSDK.h */,
+			);
+			path = OpenInstallSDK2.2.1;
 			sourceTree = "<group>";
 		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
@@ -1304,6 +1320,9 @@
 							};
 							com.apple.Push = {
 								enabled = 0;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 1;
 							};
 						};
 					};
@@ -1904,6 +1923,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Lib/OpenInstallSDK2.2.1",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1948,6 +1968,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Lib/OpenInstallSDK2.2.1",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",

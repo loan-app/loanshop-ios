@@ -55,7 +55,7 @@
 
 +(NSString *)getUUID
 {
-    NSString * strUUID = (NSString *)[KeyChainStore load:@"com.meilimiao.net.chaoshimiao"];
+    NSString * strUUID = (NSString *)[KeyChainStore load:@"com.cz018.test.v1"];
     
     //首次执行该方法时，uuid为空
     if ([strUUID isEqualToString:@""] || !strUUID)
@@ -66,7 +66,7 @@
         strUUID = (NSString *)CFBridgingRelease(CFUUIDCreateString (kCFAllocatorDefault,uuidRef));
         
         //将该uuid保存到keychain
-        [KeyChainStore save:@"com.meilimiao.net.chaoshimiao" data:strUUID];
+        [KeyChainStore save:@"com.cz018.test.v1" data:strUUID];
         
     }
     return strUUID;

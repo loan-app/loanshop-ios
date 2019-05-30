@@ -55,7 +55,7 @@
 //    currentVersion1.0.0
 //    chCodets
     
-    NSString* channel = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Channel"];
+    NSString* channel = __GetKChannel;
     NSDictionary *dic = @{@"type":@"1",@"currentVersion" : app_Version,@"chCode" : channel };
     
     [AFNetworkTool getJSONWithUrl:[URL_Base stringByAppendingString:@"api/get_new_version"] parameters:dic success:^(id responseObject) {
@@ -167,6 +167,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//  NSString* channel = __GetKChannel;
+//   NSString *uuid = [GSKeyChain getUUID];
+//  [DBCHUIViewTool showTipView:[NSString stringWithFormat:@"%@%@",channel,uuid]];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationnew) name:@"duanwangzhuangtai" object:nil];
     
@@ -204,7 +207,7 @@
             NSString *uuid = [GSKeyChain getUUID];
             HomeListModel *model = weakSelf.homeListArray[0];
             NSString *mobile = __GetUserPhone;
-            NSString* channel = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Channel"];
+            NSString* channel = __GetKChannel;
             NSDictionary *dict = @{@"relId" : model.Hlistid,@"refer" :@"1",@"mobile" : mobile,@"uuid": uuid,@"channel" : channel};
             [AFNetworkTool  postJSONWithUrl:[URL_Base stringByAppendingString:@"api/traceProduct"] parameters:dict success:^(id responseObject) {
                 if (responseObject) {
@@ -249,7 +252,7 @@
 }
 
 - (void)postTracetraceChannelAppOpenNum{
-    NSString* channel = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Channel"];
+    NSString* channel = __GetKChannel;
     NSDictionary *dict = @{@"channel" :channel};
     [AFNetworkTool postJSONWithUrl: [URL_Base stringByAppendingString:@"api/traceChannelAppOpenNum"] parameters:dict success:^(id responseObject) {
         
@@ -372,7 +375,7 @@
     NSString *uuid = [GSKeyChain getUUID];
     HomeListModel *model = self.homeListArray[indexPath.row + 1];
     NSString *mobile = __GetUserPhone;
-    NSString* channel = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Channel"];
+    NSString* channel = __GetKChannel;
     NSDictionary *dict = @{@"relId" : model.Hlistid,@"refer" :@"1",@"mobile" : mobile,@"uuid": uuid,@"channel" : channel};
     [AFNetworkTool  postJSONWithUrl:[URL_Base stringByAppendingString:@"api/traceProduct"] parameters:dict success:^(id responseObject) {
         if (responseObject) {

@@ -10,6 +10,8 @@
 
 #import "NSString+Checkout.h"
 
+#import "OpenInstallSDK.h"
+
 @interface LoginViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *phoneTF;
 
@@ -56,7 +58,7 @@
 
 - (void)postTraceMdevic{
     NSString *uuid = [GSKeyChain getUUID];
-    NSString* channel = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Channel"];
+    NSString* channel = __GetKChannel;
     NSDictionary *dict = @{@"uuid" :uuid,@"channel" :channel};
     [AFNetworkTool postJSONWithUrl: [URL_Base stringByAppendingString:@"api/traceMdevice"] parameters:dict success:^(id responseObject) {
         
@@ -66,7 +68,7 @@
 }
 
 - (void)postTraceChannel{
-    NSString* channel = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Channel"];
+    NSString* channel = __GetKChannel;
     NSDictionary *dict = @{@"channel" :channel};
     [AFNetworkTool postJSONWithUrl: [URL_Base stringByAppendingString:@"api/traceChannel"] parameters:dict success:^(id responseObject) {
         
@@ -96,7 +98,7 @@
 - (void)askForSendCodeWithPhone:(NSString *)phone{
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
     NSString *app_Name = [infoDictionary objectForKey:@"CFBundleDisplayName"];
-    NSString* channel = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Channel"];
+    NSString* channel = __GetKChannel;
     NSDictionary *dic = @{@"mobile":phone,@"chName":app_Name,@"chCode":channel};
     [AFNetworkTool postWithUrl:[URL_Base stringByAppendingString:@"api/getVcode"] parameters:dic success:^(id responseObject) {
         if (responseObject) {
@@ -147,8 +149,8 @@
         return;
     }
     WS(weakSelf);
-
-    NSDictionary *dict = @{@"mobile" : _phoneTF.text,@"vcode" :_yanzhengmaTF.text};
+    NSString* channel = __GetKChannel;
+    NSDictionary *dict = @{@"mobile" : _phoneTF.text,@"vcode" :_yanzhengmaTF.text,@"channel":channel};
     [AFNetworkTool  postJSONWithUrl:[URL_Base stringByAppendingString:@"api/mobileLogin"] parameters:dict success:^(id responseObject) {
         if (responseObject) {
             if ([responseObject[@"code"] integerValue] == 0) {
@@ -156,6 +158,7 @@
                 [__UserDefaults setObject:weakSelf.phoneTF.text forKey:KUserPhone];
                 [weakSelf postTraceMdevic];
                 [weakSelf postTraceChannel];
+                [OpenInstallSDK reportRegister];
                 [weakSelf dismissViewControllerAnimated:YES completion:nil];
             }else{
                 [DBCHUIViewTool showTipView:responseObject[@"msg"]];

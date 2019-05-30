@@ -95,7 +95,7 @@
     NSString *uuid = [GSKeyChain getUUID];
     NSDictionary *dict = _bannerArray[index];
     NSString *mobile = __GetUserPhone;
-    NSString* channel = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Channel"];
+    NSString* channel = __GetKChannel;
     NSDictionary *dicta = @{@"relId" : dict[@"loanId"],@"refer" :@"1",@"mobile" : mobile,@"uuid": uuid,@"channel" : channel};
     [AFNetworkTool  postJSONWithUrl:[URL_Base stringByAppendingString:@"api/traceProduct"] parameters:dicta success:^(id responseObject) {
         if (responseObject) {

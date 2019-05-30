@@ -7,7 +7,9 @@
 #import <IQKeyboardManager/IQKeyboardManager.h>
 #import "GJFTabbarViewController.h"
 #import "GJFMainShenHeViewController.h"
-@interface AppDelegate ()
+#import "OpenInstallSDK.h"
+
+@interface AppDelegate ()<OpenInstallDelegate>
 @property (nonatomic) Reachability *reachability;
 @property (nonatomic, assign) BOOL isNeedShow;
 @property (nonatomic, assign) BOOL isFinish;
@@ -25,7 +27,8 @@
   [self.window makeKeyAndVisible];
   
   NSString *isShenheString = [[NSUserDefaults standardUserDefaults] objectForKey:@"sddsjfisshenhe"];
-  if ([isShenheString isEqualToString:@"1"]) {
+  NSString* channel = __GetKChannel;
+  if ([isShenheString isEqualToString:@"1"] && channel.length > 0) {
     self.window = [[UIWindow alloc]initWithFrame: [UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [GJFTabbarViewController new];
@@ -38,17 +41,20 @@
     return YES;
     
   }
-  
+  [OpenInstallSDK initWithDelegate:self];
   AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
   // 设置请求格式
   manager.requestSerializer = [AFHTTPRequestSerializer serializer];
   // 设置返回格式
   manager.responseSerializer = [AFHTTPResponseSerializer serializer];
   
-  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=32" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=36" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+    
   } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
     
   }];
+  
+  
   
   id userInfo = (NSDictionary *)launchOptions;
   id alication = (UIApplication *)application;
@@ -62,7 +68,7 @@
   _timer =  [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(timerSelector:) userInfo:appArray repeats:YES];
   [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
   
-  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=32" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=36" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
     if (self->_isFinish) {
       [self->_timer invalidate];
       return;
@@ -107,7 +113,8 @@
       self->_isFinish = NO;
       //      self.window = [[UIWindow alloc]initWithFrame: [UIScreen mainScreen].bounds];
       //      self.window.backgroundColor = [UIColor whiteColor];
-      self.window.rootViewController = [GJFTabbarViewController new];
+      [self getWakeUpParams];
+//      self.window.rootViewController = [GJFTabbarViewController new];
       [self checkNetworkStatus];
       IQKeyboardManager *keyboardManager = [IQKeyboardManager sharedManager];
       keyboardManager.enable = YES;
@@ -125,6 +132,101 @@
   
 
 }
+
+#pragma 一键拉起的参数回调方法
+-(void)getWakeUpParams{
+  
+  [[OpenInstallSDK defaultManager] getInstallParmsCompleted:^(OpeninstallData*_Nullable appData) {
+    if (appData.data) {//(动态安装参数)
+      //e.g.如免填邀请码建立邀请关系、自动加好友、自动进入某个群组或房间等
+    }
+    if (appData.channelCode) {//(通过渠道链接或二维码安装会返回渠道编号)
+      //e.g.可自己统计渠道相关数据等
+      [__UserDefaults setObject:appData.channelCode forKey:KChannel];
+      self.window.rootViewController = [GJFTabbarViewController new];
+      [self.window makeKeyAndVisible];
+    }else{
+      [__UserDefaults setObject:@"ios" forKey:KChannel];
+      self.window.rootViewController = [GJFTabbarViewController new];
+      [self.window makeKeyAndVisible];
+    }
+    
+  }];
+  
+  
+}
+
+-(void)getWakeUpParams:(OpeninstallData *)appData{
+  
+  if (appData.data) {//(动态唤醒参数)
+    //e.g.如免填邀请码建立邀请关系、自动加好友、自动进入某个群组或房间等
+  }
+  if (appData.channelCode) {//(通过渠道链接或二维码安装会返回渠道编号)
+    //e.g.可自己统计渠道相关数据等
+  }
+  
+  //    //弹出提示框(便于调试，调试完成后删除此代码)
+  //    NSLog(@"OpenInstallSDK:\n动态参数：%@;\n渠道编号：%@",appData.data,appData.channelCode);
+  //    NSString *getData;
+  //    if (appData.data) {
+  //        //如果有中文，转换一下方便展示
+  //        getData = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:appData.data options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
+  //    }
+  //    NSString *parameter = [NSString stringWithFormat:@"如果没有任何参数返回，请确认：\n"
+  //                           @"是否通过含有动态参数的分享链接(或二维码)安装的app\n\n动态参数：\n%@\n渠道编号：%@",
+  //                           getData,appData.channelCode];
+  //    UIAlertController *testAlert = [UIAlertController alertControllerWithTitle:@"唤醒参数" message:parameter preferredStyle:UIAlertControllerStyleAlert];
+  //    [testAlert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+  //    }]];
+  //
+  //    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:testAlert animated:true completion:nil];
+  
+}
+
+//ios9以下 URI Scheme
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+  
+  //判断是否通过OpenInstall URL Scheme 唤起App
+  if ([OpenInstallSDK handLinkURL:url]) {
+    
+    return YES;
+  }
+  
+  //其他代码
+  return YES;
+  
+}
+
+//iOS9以上 URL Scheme
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(nonnull NSDictionary *)options
+{
+  
+  //判断是否通过OpenInstall URL Scheme 唤起App
+  if ([OpenInstallSDK handLinkURL:url]) {
+    
+    return YES;
+  }
+  
+  //其他代码
+  return YES;
+  
+}
+
+//Universal Links 通用链接
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler
+{
+  
+  //判断是否通过OpenInstall Universal Links 唤起App
+  if ([OpenInstallSDK continueUserActivity:userActivity]) {
+    
+    return YES;
+  }
+  
+  //其他代码
+  return YES;
+  
+}
+
 - (void)timerSelector:(NSTimer *)timer{
   NSArray * appArray = timer.userInfo;
   id Application;
@@ -145,7 +247,7 @@
   // 设置返回格式
   manager.responseSerializer = [AFHTTPResponseSerializer serializer];
   //  weakify(self);
-  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=32" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=36" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
     if (self->_isFinish) {
       [self->_timer invalidate];
       return;
@@ -189,7 +291,8 @@
       
     }else{
       self->_isFinish = NO;
-      self.window.rootViewController = [GJFTabbarViewController new];
+      [self getWakeUpParams];
+//      self.window.rootViewController = [GJFTabbarViewController new];
       [self checkNetworkStatus];
       IQKeyboardManager *keyboardManager = [IQKeyboardManager sharedManager];
       keyboardManager.enable = YES;

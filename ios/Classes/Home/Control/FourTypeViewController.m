@@ -172,7 +172,7 @@
     NSString *uuid = [GSKeyChain getUUID];
     HomeListModel *model = self.homeListArray[indexPath.row];
     NSString *mobile = __GetUserPhone;
-    NSString* channel = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Channel"];
+    NSString* channel = __GetKChannel;
     NSDictionary *dict = @{@"relId" : model.Hlistid,@"refer" :@"1",@"mobile" : mobile,@"uuid": uuid,@"channel" : channel};
     [AFNetworkTool  postJSONWithUrl:[URL_Base stringByAppendingString:@"api/traceProduct"] parameters:dict success:^(id responseObject) {
         if (responseObject) {

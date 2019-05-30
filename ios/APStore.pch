@@ -32,10 +32,13 @@
 #define __UserDefaults                              [NSUserDefaults standardUserDefaults]
 #define __GetUserInfo                               [[NSUserDefaults standardUserDefaults] valueForKey:KUserInfo]
 #define __GetUserPhone                              [[NSUserDefaults standardUserDefaults] valueForKey:KUserPhone]
+#define __GetKChannel                               [[NSUserDefaults standardUserDefaults] valueForKey:KChannel]
+
 
 //用户信息
 #define KUserInfo           @"UserInfomation"
 #define KUserPhone          @"KUserPhone"
+#define KChannel            @"KChannel"
 
 #import "DBCHUIViewTool.h"
 

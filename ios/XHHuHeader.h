@@ -47,7 +47,6 @@
 #define XHHHelpCenterUrlOnline  @"http://file.daydayaup.com/xFlowers/helperCenter/helperCenterOnline.html"
 #define XHHShippingProtocol     @"http://file.daydayaup.com/xFlowers/helperCenter/shippingProtocol.html"
 
-
 //屏幕宽
 #define AP_SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 
