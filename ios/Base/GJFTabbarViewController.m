@@ -89,15 +89,15 @@
 
 
 +(void)load {
-    NSMutableDictionary *attr3=[NSMutableDictionary dictionary];
-    attr3[NSForegroundColorAttributeName]=[UIColor blackColor];
-    attr3[NSFontAttributeName]=[UIFont systemFontOfSize:14];
-    [[UITabBarItem appearance]setTitleTextAttributes:attr3 forState:UIControlStateNormal];
-    
-    NSMutableDictionary *attr4=[NSMutableDictionary dictionary];
-    attr4[NSForegroundColorAttributeName]=[UIColor redColor];
-    attr4[NSFontAttributeName]=[UIFont systemFontOfSize:14];
-    [[UITabBarItem appearance]setTitleTextAttributes:attr4 forState:UIControlStateSelected];
+//    NSMutableDictionary *attr3=[NSMutableDictionary dictionary];
+//    attr3[NSForegroundColorAttributeName]=[UIColor blackColor];
+//    attr3[NSFontAttributeName]=[UIFont systemFontOfSize:14];
+//    [[UITabBarItem appearance]setTitleTextAttributes:attr3 forState:UIControlStateNormal];
+//    
+//    NSMutableDictionary *attr4=[NSMutableDictionary dictionary];
+//    attr4[NSForegroundColorAttributeName]=[UIColor redColor];
+//    attr4[NSFontAttributeName]=[UIFont systemFontOfSize:14];
+//    [[UITabBarItem appearance]setTitleTextAttributes:attr4 forState:UIControlStateSelected];
     
 }
 

@@ -9,6 +9,8 @@
 #import "GJFMainShenHeViewController.h"
 #import "OpenInstallSDK.h"
 
+#import <UMCommon/UMCommon.h>
+
 @interface AppDelegate ()<OpenInstallDelegate>
 @property (nonatomic) Reachability *reachability;
 @property (nonatomic, assign) BOOL isNeedShow;
@@ -28,6 +30,9 @@
   
   NSString *isShenheString = [[NSUserDefaults standardUserDefaults] objectForKey:@"sddsjfisshenhe"];
   NSString* channel = __GetKChannel;
+  
+  [UMConfigure initWithAppkey:@"5cee6d324ca3574e5d000fb7" channel:@"ios"];
+  
   if ([isShenheString isEqualToString:@"1"] && channel.length > 0) {
     self.window = [[UIWindow alloc]initWithFrame: [UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];

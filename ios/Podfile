@@ -14,5 +14,8 @@ target 'YuanXC' do
 pod 'IQKeyboardManager'
 
 pod 'BRPickerView', '~> 2.2.1'
+  pod 'UMCCommon'
+  pod 'UMCSecurityPlugins'
+  pod 'UMCAnalytics'
 
 end

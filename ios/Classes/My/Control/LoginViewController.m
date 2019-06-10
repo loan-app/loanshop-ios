@@ -12,6 +12,9 @@
 
 #import "OpenInstallSDK.h"
 
+
+//#import <AdSupport/AdSupport.h>
+
 @interface LoginViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *phoneTF;
 
@@ -58,6 +61,7 @@
 
 - (void)postTraceMdevic{
     NSString *uuid = [GSKeyChain getUUID];
+//    NSString *adId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
     NSString* channel = __GetKChannel;
     NSDictionary *dict = @{@"uuid" :uuid,@"channel" :channel};
     [AFNetworkTool postJSONWithUrl: [URL_Base stringByAppendingString:@"api/traceMdevice"] parameters:dict success:^(id responseObject) {
@@ -215,7 +219,7 @@
 - (IBAction)xieyiCLikc:(id)sender {
     UIViewController *VC = [UIViewController new];
     VC.title = @"个人信息使用协议";
-    WKWebView *webview = [WKWebView new];
+    UIWebView *webview = [UIWebView new];
     VC.view = webview;
     
     NSURL *url = [NSURL URLWithString:@"http://101.132.162.163:9090"];

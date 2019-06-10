@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shuibowen 2" translatesAutoresizingMaskIntoConstraints="NO" id="PA0-2e-sxM">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="274"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="274.5"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="头像登录" translatesAutoresizingMaskIntoConstraints="NO" id="q2k-WB-Efl">
                     <rect key="frame" x="152.5" y="80" width="70" height="70"/>
@@ -34,7 +34,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgb-73-DmM">
-                    <rect key="frame" x="0.0" y="274" width="375" height="41"/>
+                    <rect key="frame" x="0.0" y="274.5" width="375" height="41"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4d-0f-sz1">
                             <rect key="frame" x="0.0" y="40" width="375" height="1"/>
@@ -91,7 +91,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFA-pd-6q3">
-                    <rect key="frame" x="0.0" y="315" width="375" height="41"/>
+                    <rect key="frame" x="0.0" y="315.5" width="375" height="41"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1I-16-rDK">
                             <rect key="frame" x="0.0" y="40" width="375" height="1"/>
@@ -100,11 +100,11 @@
                                 <constraint firstAttribute="height" constant="1" id="D56-mN-7aT"/>
                             </constraints>
                         </view>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="分组" translatesAutoresizingMaskIntoConstraints="NO" id="bhV-bl-oUG">
-                            <rect key="frame" x="17" y="9.5" width="22" height="22"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gjffenzu" translatesAutoresizingMaskIntoConstraints="NO" id="bhV-bl-oUG">
+                            <rect key="frame" x="17" y="12.5" width="16" height="16"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系我们" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8TX-D5-uWn">
-                            <rect key="frame" x="46" y="11.5" width="61.5" height="18"/>
+                            <rect key="frame" x="40" y="11.5" width="61.5" height="18"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -138,7 +138,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62S-Wu-h9x">
-                    <rect key="frame" x="0.0" y="356" width="375" height="41"/>
+                    <rect key="frame" x="0.0" y="356.5" width="375" height="41"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k47-RM-PNl">
                             <rect key="frame" x="0.0" y="40" width="375" height="1"/>
@@ -210,9 +210,9 @@
     </objects>
     <resources>
         <image name="gengduo-2 2" width="10" height="17"/>
+        <image name="gjffenzu" width="22" height="22"/>
         <image name="guanyuwomen 2" width="22" height="22"/>
         <image name="shuibowen 2" width="375" height="274.5"/>
-        <image name="分组" width="22" height="22"/>
         <image name="分组 2" width="22" height="22"/>
         <image name="头像登录" width="70" height="70"/>
     </resources>

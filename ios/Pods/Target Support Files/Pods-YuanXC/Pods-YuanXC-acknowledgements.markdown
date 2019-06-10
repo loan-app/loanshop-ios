@@ -393,6 +393,21 @@ SOFTWARE.
 
 
 
+## UMCAnalytics
+
+Copyright 2011 - 2019 umeng.com. All rights reserved.
+
+
+## UMCCommon
+
+Copyright 2011 - 2019 umeng.com. All rights reserved.
+
+
+## UMCSecurityPlugins
+
+Copyright 2011 - 2018 umeng.com. All rights reserved.
+
+
 ## WebViewJavascriptBridge
 
 Copyright (c) 2011-2015 Marcus Westin, Antoine Lagadec
