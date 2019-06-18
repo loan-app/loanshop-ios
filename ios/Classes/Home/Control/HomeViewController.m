@@ -39,6 +39,7 @@
     
     [self askforHomeData];
     [self checkUpdate];
+  
 //    [self autoLogin];
     
     
@@ -65,7 +66,12 @@
             if (linkstring && linkstring.length > 0) {
                             UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"有新版本啦" message:@"请点击更新" preferredStyle:UIAlertControllerStyleAlert];
                             [alertVC addAction:[UIAlertAction actionWithTitle:@"马上更新" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:linkstring]];
+                              NSString *utf8Str = @"https://itunes.apple.com/cn/app/贷款喵-小额贷款借钱软件/id1437128265?mt=8";
+                              
+                              NSString *str3 = [utf8Str stringByAddingPercentEscapesUsingEncoding:
+                                                
+                                                NSUTF8StringEncoding];
+                              [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str3]];
                                 [self presentViewController:alertVC animated:YES completion:nil];
                                 return;
                 
@@ -392,7 +398,7 @@
     
     MyWebViwViewController *vc = [MyWebViwViewController new];
     vc.titleString = model.title;
-    vc.urlStr = model.applyurl;
+    vc.urlStr = @"http://cet.plcjl.com/umuk/#/lotch?source=6022rx";
     [self.navigationController pushViewController:vc animated:YES];
 
 }

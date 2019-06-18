@@ -46,9 +46,10 @@
 
 #import "GSKeyChain.h"
 
-//#define URL_Base                @"http://47.111.165.27:8081/renren-api/"
+//#define URL_Base                @"http://192.168.3.14:8082/dkm-api/"
+//测试服
+//#define URL_Base                @"http://47.111.165.27:8082/dkm-api/"
 
-//https://www.jiyawangluo.com/dkm-api/api/mobileLogin
 
 #define URL_Base                @"https://www.jiyawangluo.com/dkm-api/"
 

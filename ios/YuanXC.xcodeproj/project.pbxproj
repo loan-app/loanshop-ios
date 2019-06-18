@@ -78,6 +78,7 @@
 		1656FA432281842E00C85BCB /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1656FA0B2281842E00C85BCB /* TAAbstractDotView.m */; };
 		1656FA442281842E00C85BCB /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1656FA0F2281842E00C85BCB /* DeviceInfo.m */; };
 		1699671F2293F8FE00E7593F /* libOpenInstallSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 169966F12293F8FE00E7593F /* libOpenInstallSDK.a */; };
+		16DB9A4422B793BD00A1E0E8 /* gjficon.png in Resources */ = {isa = PBXBuildFile; fileRef = 16DB9A1822B793BD00A1E0E8 /* gjficon.png */; };
 		2FF0456DAD9B4A7C916FB014 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B1ADE7CD34EEF834FFD81 /* libRNDeviceInfo.a */; };
 		3799B5C98D3759CFEC1AFCD8 /* libPods-YuanXC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C79C2890CAC82132DA4CF7A /* libPods-YuanXC.a */; };
 		394B7DE57FB04245AD009566 /* libthird-party.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E507999A4A5B48EF897A6923 /* libthird-party.a */; };
@@ -567,6 +568,7 @@
 		169966F12293F8FE00E7593F /* libOpenInstallSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOpenInstallSDK.a; sourceTree = "<group>"; };
 		169966F22293F8FE00E7593F /* OpeninstallData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpeninstallData.h; sourceTree = "<group>"; };
 		169966F32293F8FE00E7593F /* OpenInstallSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenInstallSDK.h; sourceTree = "<group>"; };
+		16DB9A1822B793BD00A1E0E8 /* gjficon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gjficon.png; sourceTree = "<group>"; };
 		2574146CB7EB4DCFB376B23F /* libcxxreact.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libcxxreact.a; sourceTree = "<group>"; };
 		2C79C2890CAC82132DA4CF7A /* libPods-YuanXC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YuanXC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B91E0DE8344E9CA12E2C37 /* libdouble-conversion.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libdouble-conversion.a"; sourceTree = "<group>"; };
@@ -785,6 +787,7 @@
 				160DF15E22866EF3003EC680 /* GJFMainShenHeViewController.m */,
 				160DF15F22866EF3003EC680 /* MainShenHeView.storyboard */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				16DB9A1822B793BD00A1E0E8 /* gjficon.png */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
@@ -1333,6 +1336,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1732,6 +1736,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16DB9A4422B793BD00A1E0E8 /* gjficon.png in Resources */,
 				1656FA172281842E00C85BCB /* HomeGjfTableViewCell.xib in Resources */,
 				160DF16122866EF3003EC680 /* MainShenHeView.storyboard in Resources */,
 				1656FA1D2281842E00C85BCB /* ShuaiTableViewCell.xib in Resources */,

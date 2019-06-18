@@ -11,7 +11,7 @@
 #import "NSString+Checkout.h"
 
 #import "OpenInstallSDK.h"
-
+#import <CommonCrypto/CommonCryptor.h>
 
 //#import <AdSupport/AdSupport.h>
 
@@ -31,6 +31,8 @@
 @property (nonatomic, strong) NSTimer *timer;
 
 @property (nonatomic, assign) int time_60s;
+@property (weak, nonatomic) IBOutlet UIImageView *tuxingImageVC;
+@property (weak, nonatomic) IBOutlet UITextField *tuxingTF;
 
 @end
 
@@ -90,8 +92,17 @@
             [DBCHUIViewTool showTipView:@"手机号码格式不正确"];
             return;
         }
+    if (_tuxingTF.text.length == 0) {
+        [DBCHUIViewTool showTipView:@"请输入图形验证码"];
+        return;
+    }
     
-    [self askForSendCodeWithPhone:_phoneTF.text];
+  NSString *plainText = _phoneTF.text;
+  NSString *key = @"dkmzz123";
+  // 加密
+  NSData *enDataRes = [LoginViewController DESEncrypt:[plainText dataUsingEncoding:NSUTF8StringEncoding] WithKey:key];
+  NSLog(@"%@",[enDataRes base64EncodedStringWithOptions:NSUTF8StringEncoding]);
+    [self askForSendCodeWithPhone:[enDataRes base64EncodedStringWithOptions:NSUTF8StringEncoding]];
     _timer=[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(ChangeTimer) userInfo:nil repeats:YES];
     _timeLab.hidden = NO;
     _yanzhengmaBtn.hidden = YES;
@@ -103,8 +114,9 @@
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
     NSString *app_Name = [infoDictionary objectForKey:@"CFBundleDisplayName"];
     NSString* channel = __GetKChannel;
-    NSDictionary *dic = @{@"mobile":phone,@"chName":app_Name,@"chCode":channel};
-    [AFNetworkTool postWithUrl:[URL_Base stringByAppendingString:@"api/getVcode"] parameters:dic success:^(id responseObject) {
+    NSString *uuid = [GSKeyChain getUUID];
+  NSDictionary *dic = @{@"mobile":phone,@"chName":app_Name,@"chCode":channel,@"imgCode":_tuxingTF.text,@"uuid":uuid};
+    [AFNetworkTool postWithUrl:[URL_Base stringByAppendingString:@"api/v1/getVcode"] parameters:dic success:^(id responseObject) {
         if (responseObject) {
             if ([responseObject[@"code"] integerValue] == 0) {
                 [DBCHUIViewTool showTipView:@"验证码已发送到您的手机~"];
@@ -221,24 +233,174 @@
     VC.title = @"个人信息使用协议";
     UIWebView *webview = [UIWebView new];
     VC.view = webview;
-    
     NSURL *url = [NSURL URLWithString:@"http://101.132.162.163:9090"];
     [webview loadRequest:[NSURLRequest requestWithURL:url]];
     [self.navigationController pushViewController:VC animated:YES];
-//    [self presentViewController:VC animated:YES completion:nil];
     
 }
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:animated];
+    [self askTuxingData];
 }
 
+- (void)askTuxingData{
+    NSString *timeStr = [LoginViewController getNowTimeTimestamp];
+    NSString *imgUrl = [URL_Base stringByAppendingString:@"api/captcha.jpg"];
+    NSString *uuid = [GSKeyChain getUUID];
+    NSString *changeUrl = [NSString stringWithFormat:@"%@?uuid=%@&t=%@",imgUrl,uuid,timeStr];
+    [self.tuxingImageVC sd_setImageWithURL:[NSURL URLWithString:changeUrl]];
+}
+
+- (IBAction)tuxingchange:(id)sender {
+    NSString *timeStr = [LoginViewController getNowTimeTimestamp];
+    NSString *imgUrl = [URL_Base stringByAppendingString:@"api/captcha.jpg"];
+    NSString *uuid = [GSKeyChain getUUID];
+    NSString *changeUrl = [NSString stringWithFormat:@"%@?uuid=%@&t=%@",imgUrl,uuid,timeStr];
+    [self.tuxingImageVC sd_setImageWithURL:[NSURL URLWithString:changeUrl]];
+}
+
++(NSString *)getNowTimeTimestamp{
+  
+  NSDateFormatter *formatter = [[NSDateFormatter alloc] init] ;
+  
+  [formatter setDateStyle:NSDateFormatterMediumStyle];
+  
+  [formatter setTimeStyle:NSDateFormatterShortStyle];
+  
+  [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"]; // ----------设置你想要的格式,hh与HH的区别:分别表示12小时制,24小时制
+  
+  //设置时区,这个对于时间的处理有时很重要
+  
+  NSTimeZone* timeZone = [NSTimeZone timeZoneWithName:@"Asia/Shanghai"];
+  
+  [formatter setTimeZone:timeZone];
+  
+  NSDate *datenow = [NSDate date];//现在时间,你可以输出来看下是什么格式
+  
+  NSString *timeSp = [NSString stringWithFormat:@"%ld", (long)[datenow timeIntervalSince1970]];
+  
+  return timeSp;
+  
+}
 
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
+
+#pragma mark - CBC
+
++ (NSData *)DESEncrypt:(NSData *)data WithKey:(NSString *)key
+{   // DES密钥参与运算的只有64位，超出的部分并不参与加密运算
+  char keyPtr[kCCKeySizeAES256+1];
+  bzero(keyPtr, sizeof(keyPtr));
+  [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
+  
+  NSUInteger dataLength = [data length];
+  
+  size_t bufferSize = dataLength + kCCBlockSizeAES128;
+  void *buffer = malloc(bufferSize);
+  NSData *keybyte = [key dataUsingEncoding:NSUTF8StringEncoding];
+  size_t numBytesEncrypted = 0;
+  CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt, kCCAlgorithmDES,
+                                        kCCOptionPKCS7Padding,
+                                        keyPtr, kCCBlockSizeDES,
+                                        [keybyte bytes],
+                                        [data bytes], dataLength,
+                                        buffer, bufferSize,
+                                        &numBytesEncrypted);
+  if (cryptStatus == kCCSuccess) {
+    return [NSData dataWithBytesNoCopy:buffer length:numBytesEncrypted];
+  }
+  free(buffer);
+  return nil;
+}
+
++ (NSData *)DESDecrypt:(NSData *)data WithKey:(NSString *)key
+{
+  char keyPtr[kCCKeySizeAES256+1];
+  bzero(keyPtr, sizeof(keyPtr));
+  
+  [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
+  
+  NSUInteger dataLength = [data length];
+  
+  size_t bufferSize = dataLength + kCCBlockSizeAES128;
+  void *buffer = malloc(bufferSize);
+  NSData *keybyte = [key dataUsingEncoding:NSUTF8StringEncoding];
+  size_t numBytesDecrypted = 0;
+  CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt, kCCAlgorithmDES,
+                                        kCCOptionPKCS7Padding,
+                                        keyPtr, kCCBlockSizeDES,
+                                        [keybyte bytes],
+                                        [data bytes], dataLength,
+                                        buffer, bufferSize,
+                                        &numBytesDecrypted);
+  
+  if (cryptStatus == kCCSuccess) {
+    return [NSData dataWithBytesNoCopy:buffer length:numBytesDecrypted];
+  }
+  
+  free(buffer);
+  return nil;
+}
+
+
+#pragma mark - EBC
++ (NSData *)DESEncryptEBC:(NSData *)data WithKey:(NSString *)key
+{   // DES密钥参与运算的只有64位，超出的部分并不参与加密运算
+  char keyPtr[kCCKeySizeAES256+1];
+  bzero(keyPtr, sizeof(keyPtr));
+  [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
+  
+  NSUInteger dataLength = [data length];
+  
+  size_t bufferSize = dataLength + kCCBlockSizeAES128;
+  void *buffer = malloc(bufferSize);
+  size_t numBytesEncrypted = 0;
+  CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt, kCCAlgorithmDES,
+                                        kCCOptionPKCS7Padding | kCCOptionECBMode,
+                                        keyPtr, kCCBlockSizeDES,
+                                        NULL,
+                                        [data bytes], dataLength,
+                                        buffer, bufferSize,
+                                        &numBytesEncrypted);
+  if (cryptStatus == kCCSuccess) {
+    return [NSData dataWithBytesNoCopy:buffer length:numBytesEncrypted];
+  }
+  free(buffer);
+  return nil;
+}
+
++ (NSData *)DESDecryptEBC:(NSData *)data WithKey:(NSString *)key
+{
+  char keyPtr[kCCKeySizeAES256+1];
+  bzero(keyPtr, sizeof(keyPtr));
+  
+  [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
+  
+  NSUInteger dataLength = [data length];
+  
+  size_t bufferSize = dataLength + kCCBlockSizeAES128;
+  void *buffer = malloc(bufferSize);
+  size_t numBytesDecrypted = 0;
+  CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt, kCCAlgorithmDES,
+                                        kCCOptionPKCS7Padding | kCCOptionECBMode,
+                                        keyPtr, kCCBlockSizeDES,
+                                        NULL,
+                                        [data bytes], dataLength,
+                                        buffer, bufferSize,
+                                        &numBytesDecrypted);
+  
+  if (cryptStatus == kCCSuccess) {
+    return [NSData dataWithBytesNoCopy:buffer length:numBytesDecrypted];
+  }
+  
+  free(buffer);
+  return nil;
 }
 
 

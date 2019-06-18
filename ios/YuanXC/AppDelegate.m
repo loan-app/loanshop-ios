@@ -30,10 +30,8 @@
   
   NSString *isShenheString = [[NSUserDefaults standardUserDefaults] objectForKey:@"sddsjfisshenhe"];
   NSString* channel = __GetKChannel;
-  
-  [UMConfigure initWithAppkey:@"5cee6d324ca3574e5d000fb7" channel:@"ios"];
-  
   if ([isShenheString isEqualToString:@"1"] && channel.length > 0) {
+    [UMConfigure initWithAppkey:@"5cee6d324ca3574e5d000fb7" channel:channel];
     self.window = [[UIWindow alloc]initWithFrame: [UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [GJFTabbarViewController new];
@@ -53,7 +51,7 @@
   // 设置返回格式
   manager.responseSerializer = [AFHTTPResponseSerializer serializer];
   
-  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=36" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=38" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
     
   } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
     
@@ -73,7 +71,7 @@
   _timer =  [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(timerSelector:) userInfo:appArray repeats:YES];
   [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
   
-  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=36" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=38" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
     if (self->_isFinish) {
       [self->_timer invalidate];
       return;
@@ -252,7 +250,7 @@
   // 设置返回格式
   manager.responseSerializer = [AFHTTPResponseSerializer serializer];
   //  weakify(self);
-  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=36" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=38" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
     if (self->_isFinish) {
       [self->_timer invalidate];
       return;
