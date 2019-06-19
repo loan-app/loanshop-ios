@@ -100,11 +100,11 @@
                                 <constraint firstAttribute="height" constant="1" id="D56-mN-7aT"/>
                             </constraints>
                         </view>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gjffenzu" translatesAutoresizingMaskIntoConstraints="NO" id="bhV-bl-oUG">
-                            <rect key="frame" x="17" y="12.5" width="16" height="16"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="分组 2" translatesAutoresizingMaskIntoConstraints="NO" id="bhV-bl-oUG">
+                            <rect key="frame" x="17" y="9.5" width="22" height="22"/>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系我们" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8TX-D5-uWn">
-                            <rect key="frame" x="40" y="11.5" width="61.5" height="18"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系我们(15869031617)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8TX-D5-uWn">
+                            <rect key="frame" x="46" y="11.5" width="166" height="18"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -210,7 +210,6 @@
     </objects>
     <resources>
         <image name="gengduo-2 2" width="10" height="17"/>
-        <image name="gjffenzu" width="22" height="22"/>
         <image name="guanyuwomen 2" width="22" height="22"/>
         <image name="shuibowen 2" width="375" height="274.5"/>
         <image name="分组 2" width="22" height="22"/>

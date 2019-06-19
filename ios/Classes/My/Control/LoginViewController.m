@@ -116,7 +116,7 @@
     NSString* channel = __GetKChannel;
     NSString *uuid = [GSKeyChain getUUID];
   NSDictionary *dic = @{@"mobile":phone,@"chName":app_Name,@"chCode":channel,@"imgCode":_tuxingTF.text,@"uuid":uuid};
-    [AFNetworkTool postWithUrl:[URL_Base stringByAppendingString:@"api/v1/getVcode"] parameters:dic success:^(id responseObject) {
+    [AFNetworkTool postWithUrl:[URL_Base stringByAppendingString:@"api/v2/getVcode"] parameters:dic success:^(id responseObject) {
         if (responseObject) {
             if ([responseObject[@"code"] integerValue] == 0) {
                 [DBCHUIViewTool showTipView:@"验证码已发送到您的手机~"];

@@ -398,7 +398,7 @@
     
     MyWebViwViewController *vc = [MyWebViwViewController new];
     vc.titleString = model.title;
-    vc.urlStr = @"http://cet.plcjl.com/umuk/#/lotch?source=6022rx";
+    vc.urlStr = model.applyurl;
     [self.navigationController pushViewController:vc animated:YES];
 
 }

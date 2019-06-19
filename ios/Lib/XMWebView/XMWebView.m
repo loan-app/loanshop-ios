@@ -378,16 +378,25 @@
     NSURL  * url = navigationAction.request.URL;
     UIApplication *app = [UIApplication sharedApplication];
     
-    if ([url.absoluteString containsString:@"about:blank"]){
-        decisionHandler(WKNavigationActionPolicyCancel);
-        return;
-    }
+//    if ([url.absoluteString containsString:@"bridge_loaded"]){
+//        decisionHandler(WKNavigationActionPolicyCancel);
+//        return;
+//    }
+//
+//  if ([url.absoluteString containsString:@"umuk/undefined"]){
+//    decisionHandler(WKNavigationActionPolicyCancel);
+//    return;
+//  }
+  
+  if ([url.absoluteString containsString:@"about:blank"]){
+    decisionHandler(WKNavigationActionPolicyCancel);
+    return;
+  }
     
     
     //    appstorte
   BOOL isAabcel = [url.host containsString:@"."];
-    if ([url.host isEqualToString:@"itunes.apple.com" ] || !isAabcel)
-        
+  if ([url.host isEqualToString:@"itunes.apple.com" ] || !isAabcel)
     {
         
       
