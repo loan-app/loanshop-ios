@@ -398,6 +398,7 @@
     
     MyWebViwViewController *vc = [MyWebViwViewController new];
     vc.titleString = model.title;
+//    vc.urlStr = @"https://h5.51bjxy.com/mzhland/1?tag=h5-czqdf44ccad6&sr=ldc9FeoB";
     vc.urlStr = model.applyurl;
     [self.navigationController pushViewController:vc animated:YES];
 
