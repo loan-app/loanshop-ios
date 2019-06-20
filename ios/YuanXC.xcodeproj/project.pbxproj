@@ -874,12 +874,12 @@
 		1656F9AB2281842D00C85BCB /* Control */ = {
 			isa = PBXGroup;
 			children = (
-				1656F9AC2281842D00C85BCB /* HomeViewController.m */,
-				1656F9AD2281842D00C85BCB /* FourTypeViewController.xib */,
 				1656F9AE2281842D00C85BCB /* FourTypeViewController.h */,
-				1656F9AF2281842D00C85BCB /* HomeViewController.xib */,
 				1656F9B02281842D00C85BCB /* FourTypeViewController.m */,
+				1656F9AD2281842D00C85BCB /* FourTypeViewController.xib */,
 				1656F9B12281842D00C85BCB /* HomeViewController.h */,
+				1656F9AC2281842D00C85BCB /* HomeViewController.m */,
+				1656F9AF2281842D00C85BCB /* HomeViewController.xib */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -953,18 +953,18 @@
 		1656F9C42281842D00C85BCB /* Control */ = {
 			isa = PBXGroup;
 			children = (
-				1656F9C52281842D00C85BCB /* AboutViewController.m */,
-				1656F9C62281842D00C85BCB /* xieyiViewController.xib */,
-				1656F9C72281842D00C85BCB /* xieyiViewController.m */,
-				1656F9C82281842D00C85BCB /* LoginViewController.m */,
-				1656F9C92281842D00C85BCB /* MineViewController.xib */,
-				1656F9CA2281842D00C85BCB /* MineViewController.h */,
-				1656F9CB2281842D00C85BCB /* LoginViewController.xib */,
 				1656F9CC2281842D00C85BCB /* AboutViewController.h */,
-				1656F9CD2281842D00C85BCB /* MineViewController.m */,
-				1656F9CE2281842D00C85BCB /* LoginViewController.h */,
-				1656F9CF2281842D00C85BCB /* xieyiViewController.h */,
+				1656F9C52281842D00C85BCB /* AboutViewController.m */,
 				1656F9D02281842D00C85BCB /* AboutViewController.xib */,
+				1656F9CE2281842D00C85BCB /* LoginViewController.h */,
+				1656F9C82281842D00C85BCB /* LoginViewController.m */,
+				1656F9CB2281842D00C85BCB /* LoginViewController.xib */,
+				1656F9CA2281842D00C85BCB /* MineViewController.h */,
+				1656F9CD2281842D00C85BCB /* MineViewController.m */,
+				1656F9C92281842D00C85BCB /* MineViewController.xib */,
+				1656F9CF2281842D00C85BCB /* xieyiViewController.h */,
+				1656F9C72281842D00C85BCB /* xieyiViewController.m */,
+				1656F9C62281842D00C85BCB /* xieyiViewController.xib */,
 			);
 			path = Control;
 			sourceTree = "<group>";

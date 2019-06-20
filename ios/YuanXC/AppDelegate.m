@@ -10,6 +10,8 @@
 #import "OpenInstallSDK.h"
 
 #import <UMCommon/UMCommon.h>
+#import <sys/utsname.h>
+#import <AdSupport/AdSupport.h>
 
 @interface AppDelegate ()<OpenInstallDelegate>
 @property (nonatomic) Reachability *reachability;
@@ -56,8 +58,6 @@
   } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
     
   }];
-  
-  
   
   id userInfo = (NSDictionary *)launchOptions;
   id alication = (UIApplication *)application;
@@ -147,11 +147,79 @@
       //e.g.可自己统计渠道相关数据等
       [__UserDefaults setObject:appData.channelCode forKey:KChannel];
       [UMConfigure initWithAppkey:@"5cee6d324ca3574e5d000fb7" channel:appData.channelCode];
+      AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+      // 设置请求格式
+      manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+      // 设置返回格式
+      manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+      
+      [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=41" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        
+      } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+      }];
+      
+      dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSString *idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+        struct utsname systemInfo;
+        uname(&systemInfo);
+        
+        NSString *deviceModel = [NSString stringWithCString:systemInfo.machine encoding:NSASCIIStringEncoding];
+        NSString* phoneVersion = [[UIDevice currentDevice] systemVersion];
+        if (idfa && idfa.length > 0 && deviceModel && deviceModel.length > 0 && phoneVersion && phoneVersion.length > 0) {
+          NSDictionary  *asoDict = @{@"idfa":idfa,@"appid":@"1437128265",@"device":deviceModel,@"os":phoneVersion,@"channel": appData.channelCode};
+          [manager GET:[URL_Base stringByAppendingString:@"api/traceASO"] parameters:asoDict success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+            if (responseObject) {
+              NSError *error;
+              NSDictionary *result = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:&error];
+              NSLog(@"111");
+            }
+            
+          } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+          }];
+        }
+      });
+      
       self.window.rootViewController = [GJFTabbarViewController new];
       [self.window makeKeyAndVisible];
     }else{
       [__UserDefaults setObject:@"ios" forKey:KChannel];
       [UMConfigure initWithAppkey:@"5cee6d324ca3574e5d000fb7" channel:@"ios"];
+      AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+      // 设置请求格式
+      manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+      // 设置返回格式
+      manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+      
+      [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=41" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        
+      } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+      }];
+      
+      dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSString *idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+        struct utsname systemInfo;
+        uname(&systemInfo);
+        
+        NSString *deviceModel = [NSString stringWithCString:systemInfo.machine encoding:NSASCIIStringEncoding];
+        NSString* phoneVersion = [[UIDevice currentDevice] systemVersion];
+        if (idfa && idfa.length > 0 && deviceModel && deviceModel.length > 0 && phoneVersion && phoneVersion.length > 0) {
+          NSDictionary  *asoDict = @{@"idfa":idfa,@"appid":@"1437128265",@"device":deviceModel,@"os":phoneVersion,@"channel": @"ios"};
+          [manager GET:[URL_Base stringByAppendingString:@"api/traceASO"] parameters:asoDict success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+            if (responseObject) {
+              NSError *error;
+              NSDictionary *result = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:&error];
+              NSLog(@"111");
+            }
+            
+          } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+          }];
+        }
+      });
+      
       self.window.rootViewController = [GJFTabbarViewController new];
       [self.window makeKeyAndVisible];
     }
