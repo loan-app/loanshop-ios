@@ -153,12 +153,6 @@
       // 设置返回格式
       manager.responseSerializer = [AFHTTPResponseSerializer serializer];
       
-      [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=41" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-        
-      } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-      }];
-      
       dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         NSString *idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
         struct utsname systemInfo;
@@ -191,13 +185,7 @@
       manager.requestSerializer = [AFHTTPRequestSerializer serializer];
       // 设置返回格式
       manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-      
-      [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=41" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-        
-      } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-      }];
-      
+            
       dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         NSString *idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
         struct utsname systemInfo;
