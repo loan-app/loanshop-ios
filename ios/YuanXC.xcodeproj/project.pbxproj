@@ -24,6 +24,10 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		160DF16022866EF3003EC680 /* GJFMainShenHeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 160DF15E22866EF3003EC680 /* GJFMainShenHeViewController.m */; };
 		160DF16122866EF3003EC680 /* MainShenHeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160DF15F22866EF3003EC680 /* MainShenHeView.storyboard */; };
+		165529CB22CCE2A2009B65E5 /* STMURLCacheMk.m in Sources */ = {isa = PBXBuildFile; fileRef = 165529C422CCE2A1009B65E5 /* STMURLCacheMk.m */; };
+		165529CC22CCE2A2009B65E5 /* STMURLCacheModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 165529C522CCE2A1009B65E5 /* STMURLCacheModel.m */; };
+		165529CD22CCE2A2009B65E5 /* STMURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 165529C922CCE2A2009B65E5 /* STMURLProtocol.m */; };
+		165529CE22CCE2A2009B65E5 /* STMURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 165529CA22CCE2A2009B65E5 /* STMURLCache.m */; };
 		1656FA102281842E00C85BCB /* GJFNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1656F99A2281842C00C85BCB /* GJFNavigationViewController.m */; };
 		1656FA112281842E00C85BCB /* GJFTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1656F99C2281842C00C85BCB /* GJFTabbarViewController.m */; };
 		1656FA122281842E00C85BCB /* HomeListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1656F9A02281842D00C85BCB /* HomeListModel.m */; };
@@ -467,6 +471,14 @@
 		160DF13222866EF3003EC680 /* GJFMainShenHeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJFMainShenHeViewController.h; sourceTree = "<group>"; };
 		160DF15E22866EF3003EC680 /* GJFMainShenHeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJFMainShenHeViewController.m; sourceTree = "<group>"; };
 		160DF15F22866EF3003EC680 /* MainShenHeView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainShenHeView.storyboard; sourceTree = "<group>"; };
+		1655299822CCE2A1009B65E5 /* STMURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMURLCache.h; sourceTree = "<group>"; };
+		165529C422CCE2A1009B65E5 /* STMURLCacheMk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMURLCacheMk.m; sourceTree = "<group>"; };
+		165529C522CCE2A1009B65E5 /* STMURLCacheModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMURLCacheModel.m; sourceTree = "<group>"; };
+		165529C622CCE2A1009B65E5 /* STMURLCacheMk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMURLCacheMk.h; sourceTree = "<group>"; };
+		165529C722CCE2A2009B65E5 /* STMURLCacheModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMURLCacheModel.h; sourceTree = "<group>"; };
+		165529C822CCE2A2009B65E5 /* STMURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMURLProtocol.h; sourceTree = "<group>"; };
+		165529C922CCE2A2009B65E5 /* STMURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMURLProtocol.m; sourceTree = "<group>"; };
+		165529CA22CCE2A2009B65E5 /* STMURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMURLCache.m; sourceTree = "<group>"; };
 		1656F9992281842C00C85BCB /* GJFTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJFTabbarViewController.h; sourceTree = "<group>"; };
 		1656F99A2281842C00C85BCB /* GJFNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJFNavigationViewController.m; sourceTree = "<group>"; };
 		1656F99B2281842C00C85BCB /* GJFNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJFNavigationViewController.h; sourceTree = "<group>"; };
@@ -861,12 +873,12 @@
 		1656F9A42281842D00C85BCB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1656F9A52281842D00C85BCB /* ShouYeView.h */,
 				1656F9A62281842D00C85BCB /* HomeGjfTableViewCell.h */,
-				1656F9A72281842D00C85BCB /* ShouYeView.m */,
-				1656F9A82281842D00C85BCB /* ShouYeView.xib */,
 				1656F9A92281842D00C85BCB /* HomeGjfTableViewCell.m */,
 				1656F9AA2281842D00C85BCB /* HomeGjfTableViewCell.xib */,
+				1656F9A52281842D00C85BCB /* ShouYeView.h */,
+				1656F9A72281842D00C85BCB /* ShouYeView.m */,
+				1656F9A82281842D00C85BCB /* ShouYeView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -972,6 +984,14 @@
 		1656F9D32281842D00C85BCB /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				1655299822CCE2A1009B65E5 /* STMURLCache.h */,
+				165529CA22CCE2A2009B65E5 /* STMURLCache.m */,
+				165529C622CCE2A1009B65E5 /* STMURLCacheMk.h */,
+				165529C422CCE2A1009B65E5 /* STMURLCacheMk.m */,
+				165529C722CCE2A2009B65E5 /* STMURLCacheModel.h */,
+				165529C522CCE2A1009B65E5 /* STMURLCacheModel.m */,
+				165529C822CCE2A2009B65E5 /* STMURLProtocol.h */,
+				165529C922CCE2A2009B65E5 /* STMURLProtocol.m */,
 				169966F02293F8FE00E7593F /* OpenInstallSDK2.2.1 */,
 				1656F9D42281842D00C85BCB /* Reachability.m */,
 				1656F9D52281842D00C85BCB /* MBProgressHUD+AP.h */,
@@ -1841,7 +1861,9 @@
 				A43FD2731FD53BED000F4189 /* RNChannel.m in Sources */,
 				A4E9F72B1FD9202600FD2906 /* MyView.m in Sources */,
 				1656FA412281842E00C85BCB /* TAPageControl.m in Sources */,
+				165529CC22CCE2A2009B65E5 /* STMURLCacheModel.m in Sources */,
 				1656FA3F2281842E00C85BCB /* SDCollectionViewCell.m in Sources */,
+				165529CD22CCE2A2009B65E5 /* STMURLProtocol.m in Sources */,
 				1656FA232281842E00C85BCB /* AboutViewController.m in Sources */,
 				1656FA442281842E00C85BCB /* DeviceInfo.m in Sources */,
 				1656FA112281842E00C85BCB /* GJFTabbarViewController.m in Sources */,
@@ -1855,6 +1877,7 @@
 				160DF16022866EF3003EC680 /* GJFMainShenHeViewController.m in Sources */,
 				1656FA2B2281842E00C85BCB /* Reachability.m in Sources */,
 				1656FA3B2281842E00C85BCB /* KeyChainStore.m in Sources */,
+				165529CB22CCE2A2009B65E5 /* STMURLCacheMk.m in Sources */,
 				1656FA432281842E00C85BCB /* TAAbstractDotView.m in Sources */,
 				1656FA342281842E00C85BCB /* NSObject+Swizzling.m in Sources */,
 				1656FA162281842E00C85BCB /* HomeGjfTableViewCell.m in Sources */,
@@ -1864,6 +1887,7 @@
 				1656FA3A2281842E00C85BCB /* GSKeyChainDataManager.m in Sources */,
 				1656FA122281842E00C85BCB /* HomeListModel.m in Sources */,
 				1656FA222281842E00C85BCB /* ShuaiViewController.m in Sources */,
+				165529CE22CCE2A2009B65E5 /* STMURLCache.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				1656FA3E2281842E00C85BCB /* UIView+SDExtension.m in Sources */,
 				1656FA1B2281842E00C85BCB /* FourTypeViewController.m in Sources */,

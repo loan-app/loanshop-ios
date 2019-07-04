@@ -110,10 +110,17 @@
         
     }];
     
-    MyWebViwViewController *vc1 = [MyWebViwViewController new];
-    vc1.titleString =dict[@"title"];
-    vc1.urlStr = dict[@"gourl"];
-    [nav pushViewController:vc1 animated:YES];
+//    MyWebViwViewController *vc1 = [MyWebViwViewController new];
+//    vc1.titleString =dict[@"title"];
+//    vc1.urlStr = dict[@"gourl"];
+//    [nav pushViewController:vc1 animated:YES];
+  
+  MyWebViwViewController *vc1 = [MyWebViwViewController sharedSingleton];
+  vc1.titleString = dict[@"title"];
+  vc1.view.hidden = NO;
+  vc1.urlStr = dict[@"gourl"];
+  [vc1 startReload];
+  [nav pushViewController:vc1 animated:YES];
     
     
     NSLog(@"---点击了第%ld张图片", (long)index);

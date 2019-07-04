@@ -28,6 +28,8 @@
 @property (nonatomic, strong) NSMutableArray *homeTypeArray;
 @property (nonatomic, strong) NSMutableArray *homeListArray;
 
+@property (nonatomic, assign) BOOL isLoadCaches;
+
 @end
 
 @implementation HomeViewController
@@ -156,10 +158,12 @@
                 
             }];
             
-            MyWebViwViewController *vc = [MyWebViwViewController new];
-            vc.titleString = model.title;
-            vc.urlStr = model.applyurl;
-            [self.navigationController pushViewController:vc animated:YES];
+          MyWebViwViewController *vc = [MyWebViwViewController sharedSingleton];
+          vc.titleString = model.title;
+          vc.view.hidden = NO;
+          vc.urlStr = model.applyurl;
+          [vc startReload];
+          [self.navigationController pushViewController:vc animated:YES];
         }
         
     } fail:^{
@@ -228,10 +232,12 @@
                 
             }];
             
-            MyWebViwViewController *vc = [MyWebViwViewController new];
-            vc.titleString = model.title;
-            vc.urlStr = model.applyurl;
-            [weakSelf.navigationController pushViewController:vc animated:YES];
+          MyWebViwViewController *vc = [MyWebViwViewController sharedSingleton];
+          vc.titleString = model.title;
+          vc.view.hidden = NO;
+          vc.urlStr = model.applyurl;
+          [vc startReload];
+          [weakSelf.navigationController pushViewController:vc animated:YES];
             
         }else{
             AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
@@ -313,16 +319,30 @@
                 
                 NSArray *hListArray = weakSelf.dataDict[@"loans"];
                 if (hListArray.count > 0) {
+                  NSMutableArray *yuUrl = [NSMutableArray arrayWithCapacity:0];
                     for (NSDictionary *dict in hListArray) {
                         HomeListModel *mode = [HomeListModel new];
                         [mode setValuesForKeysWithDictionary:dict];
                         [weakSelf.homeListArray addObject:mode];
+                      [yuUrl addObject:mode.applyurl];
                     }
                     HomeListModel *firstModel = weakSelf.homeListArray[0];
                     weakSelf.headView.nameLab.text = firstModel.title;
                     weakSelf.headView.jinerLab.text = [NSString stringWithFormat:@"%@-%@",firstModel.minloan,firstModel.maxloan];
                     [weakSelf.mainTableView reloadData];
+                  if (!weakSelf.isLoadCaches) {
+                    MyWebViwViewController *vc = [MyWebViwViewController sharedSingleton];
+                    vc.dataArray = yuUrl;
+                    [vc yuLoad];
+                    vc.view.frame = CGRectMake(0, 0, 200, 200);
+                    vc.view.hidden = YES;
+                    [self.view addSubview:vc.view];
+                    weakSelf.isLoadCaches = YES;
+                  }
+                 
                 }
+              
+              
                 
                 weakSelf.headView.bannerArray = weakSelf.dataDict[@"banners"];
                 
@@ -396,10 +416,11 @@
         
     }];
     
-    MyWebViwViewController *vc = [MyWebViwViewController new];
+    MyWebViwViewController *vc = [MyWebViwViewController sharedSingleton];
     vc.titleString = model.title;
-//    vc.urlStr = @"https://h5.51bjxy.com/mzhland/1?tag=h5-czqdf44ccad6&sr=ldc9FeoB";
+    vc.view.hidden = NO;
     vc.urlStr = model.applyurl;
+    [vc startReload];
     [self.navigationController pushViewController:vc animated:YES];
 
 }

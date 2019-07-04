@@ -14,7 +14,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *urlStr;
 @property (nonatomic, strong) NSString *titleString;
+@property (nonatomic, strong) NSArray *dataArray;
 
++ (instancetype)sharedSingleton;
+
+- (void)startReload;
+
+- (void)yuLoad;
 @end
 
 NS_ASSUME_NONNULL_END

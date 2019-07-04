@@ -54,9 +54,9 @@
             [self.wkWebView addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:nil];
             self.progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, 64, frame.size.width, 2)];
             if (KIsiPhoneX) {
-                self.progressView.frame = CGRectMake(0, 88, frame.size.width, 2);
+                self.progressView.frame = CGRectMake(0, 0, frame.size.width, 2);
             }else{
-                self.progressView.frame = CGRectMake(0, 64, frame.size.width, 2);
+                self.progressView.frame = CGRectMake(0, 0, frame.size.width, 2);
             }
             self.progressView.trackTintColor = [UIColor clearColor]; // 设置进度条的色彩
             self.progressView.progressTintColor = XMRGBCOLOR(254, 206, 69);

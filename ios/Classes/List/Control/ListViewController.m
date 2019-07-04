@@ -506,10 +506,12 @@
             
         }];
         
-        MyWebViwViewController *vc = [MyWebViwViewController new];
-        vc.titleString = model.title;
-        vc.urlStr = model.applyurl;
-        [self.navigationController pushViewController:vc animated:YES];
+      MyWebViwViewController *vc = [MyWebViwViewController sharedSingleton];
+      vc.titleString = model.title;
+      vc.view.hidden = NO;
+      vc.urlStr = model.applyurl;
+      [vc startReload];
+      [self.navigationController pushViewController:vc animated:YES];
         
     }
 }
