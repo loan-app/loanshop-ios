@@ -174,6 +174,7 @@
                 [__UserDefaults setObject:weakSelf.phoneTF.text forKey:KUserPhone];
                 [weakSelf postTraceMdevic];
                 [weakSelf postTraceChannel];
+                [weakSelf postTAL];
                 [OpenInstallSDK reportRegister];
                 [weakSelf dismissViewControllerAnimated:YES completion:nil];
             }else{
@@ -226,6 +227,18 @@
     
     return mutStr;
     
+}
+
+//上报登录成功
+- (void)postTAL{
+  NSString *uuid = [GSKeyChain getUUID];
+  NSString* channel = __GetKChannel;
+  NSDictionary *dict = @{@"mac" :uuid,@"channel" :channel,@"type" : @"1"};
+  [AFNetworkTool postJSONWithUrl: [URL_Base stringByAppendingString:@"api/tal"] parameters:dict success:^(id responseObject) {
+    
+  } fail:^{
+    
+  }];
 }
 
 - (IBAction)xieyiCLikc:(id)sender {

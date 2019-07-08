@@ -84,7 +84,7 @@
   //    NSString *hs = @"<a>被替换的内容</a>";
   //    NSData *da = [hs dataUsingEncoding:NSUTF8StringEncoding];
   self.sCache = [STMURLCache create:^(STMURLCacheMk *mk) {
-    mk.whiteListsHost(whiteLists).whiteUserAgent(@"starming").isUsingURLProtocol(NO).cacheTime(24*60*60);
+    mk.whiteListsHost(whiteLists).whiteUserAgent(@"starming").isUsingURLProtocol(NO).cacheTime(20*60*60);
   }];
   
   [self.sCache update:^(STMURLCacheMk *mk) {
