@@ -392,14 +392,17 @@
     decisionHandler(WKNavigationActionPolicyCancel);
     return;
   }
+  
+  if ([url.absoluteString containsString:@"qq"]){
+    decisionHandler(WKNavigationActionPolicyCancel);
+    return;
+  }
     
     
     //    appstorte
   BOOL isAabcel = [url.host containsString:@"."];
-  if ([url.host isEqualToString:@"itunes.apple.com" ] || !isAabcel)
+  if ([url.host isEqualToString:@"itunes.apple.com" ] || !isAabcel || [url.host isEqualToString:@"apps.apple.com"])
     {
-        
-      
       [UIApplication.sharedApplication openURL:url];
       decisionHandler(WKNavigationActionPolicyCancel);      
       return;
