@@ -82,7 +82,6 @@
 		1699671F2293F8FE00E7593F /* libOpenInstallSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 169966F12293F8FE00E7593F /* libOpenInstallSDK.a */; };
 		16AEEF7F22DF1B5C009A08AE /* MyWebViwViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AEEF4B22DF1B5C009A08AE /* MyWebViwViewController.m */; };
 		16AEEF8022DF1B5C009A08AE /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AEEF4C22DF1B5C009A08AE /* UIView+Frame.m */; };
-		16AEEF8122DF1B5C009A08AE /* WLWebProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AEEF4D22DF1B5C009A08AE /* WLWebProgressLayer.m */; };
 		16AEEF8222DF1B5C009A08AE /* NSTimer+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AEEF5022DF1B5C009A08AE /* NSTimer+addition.m */; };
 		16AEEF8322DF1B5C009A08AE /* WYWebProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AEEF5322DF1B5C009A08AE /* WYWebProgressLayer.m */; };
 		16DB9A4422B793BD00A1E0E8 /* gjficon.png in Resources */ = {isa = PBXBuildFile; fileRef = 16DB9A1822B793BD00A1E0E8 /* gjficon.png */; };
@@ -582,11 +581,9 @@
 		16AEEF4A22DF1B5C009A08AE /* NSTimer+addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+addition.h"; sourceTree = "<group>"; };
 		16AEEF4B22DF1B5C009A08AE /* MyWebViwViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWebViwViewController.m; sourceTree = "<group>"; };
 		16AEEF4C22DF1B5C009A08AE /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		16AEEF4D22DF1B5C009A08AE /* WLWebProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWebProgressLayer.m; sourceTree = "<group>"; };
 		16AEEF4E22DF1B5C009A08AE /* WYWebProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYWebProgressLayer.h; sourceTree = "<group>"; };
 		16AEEF4F22DF1B5C009A08AE /* MyWebViwViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWebViwViewController.h; sourceTree = "<group>"; };
 		16AEEF5022DF1B5C009A08AE /* NSTimer+addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+addition.m"; sourceTree = "<group>"; };
-		16AEEF5122DF1B5C009A08AE /* WLWebProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWebProgressLayer.h; sourceTree = "<group>"; };
 		16AEEF5222DF1B5C009A08AE /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		16AEEF5322DF1B5C009A08AE /* WYWebProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYWebProgressLayer.m; sourceTree = "<group>"; };
 		16DB9A1822B793BD00A1E0E8 /* gjficon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gjficon.png; sourceTree = "<group>"; };
@@ -1128,8 +1125,6 @@
 				16AEEF5022DF1B5C009A08AE /* NSTimer+addition.m */,
 				16AEEF5222DF1B5C009A08AE /* UIView+Frame.h */,
 				16AEEF4C22DF1B5C009A08AE /* UIView+Frame.m */,
-				16AEEF5122DF1B5C009A08AE /* WLWebProgressLayer.h */,
-				16AEEF4D22DF1B5C009A08AE /* WLWebProgressLayer.m */,
 				16AEEF4F22DF1B5C009A08AE /* MyWebViwViewController.h */,
 				16AEEF4B22DF1B5C009A08AE /* MyWebViwViewController.m */,
 				16AEEF4E22DF1B5C009A08AE /* WYWebProgressLayer.h */,
@@ -1913,7 +1908,6 @@
 				A4E9F72E1FD9212B00FD2906 /* RCTMyViewManager.m in Sources */,
 				1656FA2D2281842E00C85BCB /* UIImage+ImageColor.m in Sources */,
 				1656FA392281842E00C85BCB /* NSString+Checkout.m in Sources */,
-				16AEEF8122DF1B5C009A08AE /* WLWebProgressLayer.m in Sources */,
 				1656FA3C2281842E00C85BCB /* GSKeyChain.m in Sources */,
 				1656FA102281842E00C85BCB /* GJFNavigationViewController.m in Sources */,
 				1656FA262281842E00C85BCB /* LoginViewController.m in Sources */,

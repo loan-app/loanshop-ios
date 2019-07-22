@@ -9,7 +9,7 @@
 #import "MyWebViwViewController.h"
 #import "WYWebProgressLayer.h"
 #import "UIView+Frame.h"
-#import "WLWebProgressLayer.h"
+//#import "WLWebProgressLayer.h"
 #import "STMURLCache.h"
 
 @interface MyWebViwViewController ()<UIWebViewDelegate>
@@ -46,7 +46,7 @@
 }
   
 - (void)startReload{
-  NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:_urlStr] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:10];
+  NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:_urlStr] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:10];
   
   //  NSURLRequest *re = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.jiyawangluo.com/dx/blank.html"]];
   [_webView loadRequest:request];
@@ -72,11 +72,14 @@
   
 - (void)viewDidDisappear:(BOOL)animated{
   [super viewDidDisappear:animated];
-  NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://www.jiyawangluo.com/dx/blank.html"] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:10];
+  _urlStr = @"https://www.jiyawangluo.com/dx/blank.html";
+//  _urlStr = @"https://www.baidu.com";
+  NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:_urlStr] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:10];
   
 //  NSURLRequest *re = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.jiyawangluo.com/dx/blank.html"]];
   [_webView loadRequest:request];
   [_progressLayer finishedLoad];
+  [self remove];
 }
 
 - (void)viewDidLoad {
@@ -94,7 +97,7 @@
     _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT)];
   }
     _webView.delegate = self;
-  NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:_urlStr] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:10];
+  NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:_urlStr] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:10];
   
   //  NSURLRequest *re = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.jiyawangluo.com/dx/blank.html"]];
   [_webView loadRequest:request];
@@ -122,12 +125,22 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     [_progressLayer finishedLoad];
+  [self remove];
     self.title = self.titleString;
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
     [_progressLayer finishedLoad];
+  [self remove];
 }
+  
+- (void)remove{
+    for (CAShapeLayer *layer in self.view.layer.sublayers) {
+      if ([layer isKindOfClass:[WYWebProgressLayer class]]) {
+        [layer removeFromSuperlayer];
+      }
+    }
+  }
 
 //- (void)dealloc {
 //    NSLog(@"i am dealloc");
