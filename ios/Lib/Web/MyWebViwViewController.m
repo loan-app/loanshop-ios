@@ -14,6 +14,8 @@
 
 @interface MyWebViwViewController ()<UIWebViewDelegate>
 @property (nonatomic, strong) STMURLCache *sCache;
+
+@property (nonatomic, strong) UIView *bankView;
   
 @end
 
@@ -69,17 +71,19 @@
   }];
   [self.sCache preLoadByWebViewWithUrls:_dataArray];
 }
-  
+
 - (void)viewDidDisappear:(BOOL)animated{
-  [super viewDidDisappear:animated];
-  _urlStr = @"https://www.jiyawangluo.com/dx/blank.html";
-//  _urlStr = @"https://www.baidu.com";
-  NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:_urlStr] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:10];
-  
-//  NSURLRequest *re = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.jiyawangluo.com/dx/blank.html"]];
-  [_webView loadRequest:request];
-  [_progressLayer finishedLoad];
-  [self remove];
+    [super viewDidDisappear:animated];
+    _urlStr = @"https://www.jiyawangluo.com/dx/blank.html";
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:_urlStr] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:0];
+    [_webView loadRequest:request];
+    [_progressLayer finishedLoad];
+    [self remove];
+  if (KIsiPhoneX) {
+    _webView.frame = CGRectMake(0, 88, SCREEN_WIDTH, 2);
+  }else{
+    _webView.frame = CGRectMake(0, 64, SCREEN_WIDTH, 2);
+  }
 }
 
 - (void)viewDidLoad {
@@ -90,7 +94,6 @@
 }
 
 - (void)setupUI {
-//    _webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
   if (KIsiPhoneX) {
     _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 88, SCREEN_WIDTH, SCREEN_HEIGHT)];
   }else{
@@ -104,11 +107,14 @@
     
     _webView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_webView];
+  
+//  _bankView = [[UIView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT)];
+//  _bankView.backgroundColor = [UIColor whiteColor];
+//  [self.view addSubview:_bankView];
 }
 
 #pragma mark - UIWebViewDelegate
 - (void)webViewDidStartLoad:(UIWebView *)webView {
-    
 //    _progressLayer = [WYWebProgressLayer layerWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, 2)];
   if (KIsiPhoneX) {
    _progressLayer = [WYWebProgressLayer layerWithFrame:CGRectMake(0, 88, SCREEN_WIDTH, 2)];
@@ -124,6 +130,13 @@
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
+
+  if (KIsiPhoneX) {
+    _webView.frame = CGRectMake(0, 88, SCREEN_WIDTH, SCREEN_HEIGHT);
+  }else{
+    _webView.frame = CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT);
+  }
+  
     [_progressLayer finishedLoad];
   [self remove];
     self.title = self.titleString;
@@ -132,6 +145,7 @@
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
     [_progressLayer finishedLoad];
   [self remove];
+//  _bankView.hidden = YES;
 }
   
 - (void)remove{
