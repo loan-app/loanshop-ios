@@ -172,6 +172,7 @@
             if ([responseObject[@"code"] integerValue] == 0) {
                 [__UserDefaults setObject:responseObject forKey:KUserInfo];
                 [__UserDefaults setObject:weakSelf.phoneTF.text forKey:KUserPhone];
+                [__UserDefaults synchronize];
                 [weakSelf postTraceMdevic];
                 [weakSelf postTraceChannel];
                 [weakSelf postTAL];
