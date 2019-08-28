@@ -175,7 +175,7 @@
         NSMutableDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil];
         NSMutableDictionary *mDic = [[NSMutableDictionary alloc] initWithDictionary:dic];
         
-         NSLog(@"请求成功的URL:%@",task.currentRequest.URL.absoluteString);
+      NSLog(@"请求成功的URL:%@ dic: %@",task.currentRequest.URL.absoluteString,dic);
         if (success) {
             success(mDic) ;
         }
@@ -218,7 +218,7 @@
         NSMutableDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil];
         NSMutableDictionary *mDic = [[NSMutableDictionary alloc] initWithDictionary:dic];
         
-        NSLog(@"请求成功的URL:%@",task.currentRequest.URL.absoluteString);
+      NSLog(@"请求成功的URL:%@ dic: %@",task.currentRequest.URL.absoluteString,dic);
         if (success) {
             success(mDic) ;
         }

@@ -33,7 +33,7 @@
   NSString *isShenheString = [[NSUserDefaults standardUserDefaults] objectForKey:@"sddsjfisshenhe"];
   NSString* channel = __GetKChannel;
   if ([isShenheString isEqualToString:@"1"] && channel.length > 0) {
-    [UMConfigure initWithAppkey:@"5cee6d324ca3574e5d000fb7" channel:channel];
+    [UMConfigure initWithAppkey:YOUMENGKEY channel:channel];
     self.window = [[UIWindow alloc]initWithFrame: [UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [GJFTabbarViewController new];
@@ -146,7 +146,7 @@
     if (appData.channelCode) {//(通过渠道链接或二维码安装会返回渠道编号)
       //e.g.可自己统计渠道相关数据等
       [__UserDefaults setObject:appData.channelCode forKey:KChannel];
-      [UMConfigure initWithAppkey:@"5cee6d324ca3574e5d000fb7" channel:appData.channelCode];
+      [UMConfigure initWithAppkey:YOUMENGKEY channel:appData.channelCode];
       AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
       // 设置请求格式
       manager.requestSerializer = [AFHTTPRequestSerializer serializer];
@@ -179,7 +179,7 @@
       [self.window makeKeyAndVisible];
     }else{
       [__UserDefaults setObject:@"ios" forKey:KChannel];
-      [UMConfigure initWithAppkey:@"5cee6d324ca3574e5d000fb7" channel:@"ios"];
+      [UMConfigure initWithAppkey:YOUMENGKEY channel:@"ios"];
       AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
       // 设置请求格式
       manager.requestSerializer = [AFHTTPRequestSerializer serializer];
