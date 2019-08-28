@@ -22,6 +22,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		1607B564230D1E6D00F76F1F /* gificon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1607B563230D1E6D00F76F1F /* gificon.png */; };
 		160DF16022866EF3003EC680 /* GJFMainShenHeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 160DF15E22866EF3003EC680 /* GJFMainShenHeViewController.m */; };
 		160DF16122866EF3003EC680 /* MainShenHeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160DF15F22866EF3003EC680 /* MainShenHeView.storyboard */; };
 		165529CB22CCE2A2009B65E5 /* STMURLCacheMk.m in Sources */ = {isa = PBXBuildFile; fileRef = 165529C422CCE2A1009B65E5 /* STMURLCacheMk.m */; };
@@ -82,7 +83,6 @@
 		1656FA432281842E00C85BCB /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1656FA0B2281842E00C85BCB /* TAAbstractDotView.m */; };
 		1656FA442281842E00C85BCB /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1656FA0F2281842E00C85BCB /* DeviceInfo.m */; };
 		1699671F2293F8FE00E7593F /* libOpenInstallSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 169966F12293F8FE00E7593F /* libOpenInstallSDK.a */; };
-		16DB9A4422B793BD00A1E0E8 /* gjficon.png in Resources */ = {isa = PBXBuildFile; fileRef = 16DB9A1822B793BD00A1E0E8 /* gjficon.png */; };
 		2FF0456DAD9B4A7C916FB014 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B1ADE7CD34EEF834FFD81 /* libRNDeviceInfo.a */; };
 		3799B5C98D3759CFEC1AFCD8 /* libPods-YuanXC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C79C2890CAC82132DA4CF7A /* libPods-YuanXC.a */; };
 		394B7DE57FB04245AD009566 /* libthird-party.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E507999A4A5B48EF897A6923 /* libthird-party.a */; };
@@ -468,6 +468,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = YuanXC/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = YuanXC/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		1607B563230D1E6D00F76F1F /* gificon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gificon.png; sourceTree = "<group>"; };
 		160DF13222866EF3003EC680 /* GJFMainShenHeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJFMainShenHeViewController.h; sourceTree = "<group>"; };
 		160DF15E22866EF3003EC680 /* GJFMainShenHeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJFMainShenHeViewController.m; sourceTree = "<group>"; };
 		160DF15F22866EF3003EC680 /* MainShenHeView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainShenHeView.storyboard; sourceTree = "<group>"; };
@@ -580,7 +581,6 @@
 		169966F12293F8FE00E7593F /* libOpenInstallSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOpenInstallSDK.a; sourceTree = "<group>"; };
 		169966F22293F8FE00E7593F /* OpeninstallData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpeninstallData.h; sourceTree = "<group>"; };
 		169966F32293F8FE00E7593F /* OpenInstallSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenInstallSDK.h; sourceTree = "<group>"; };
-		16DB9A1822B793BD00A1E0E8 /* gjficon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gjficon.png; sourceTree = "<group>"; };
 		2574146CB7EB4DCFB376B23F /* libcxxreact.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libcxxreact.a; sourceTree = "<group>"; };
 		2C79C2890CAC82132DA4CF7A /* libPods-YuanXC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YuanXC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B91E0DE8344E9CA12E2C37 /* libdouble-conversion.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libdouble-conversion.a"; sourceTree = "<group>"; };
@@ -798,8 +798,8 @@
 				160DF13222866EF3003EC680 /* GJFMainShenHeViewController.h */,
 				160DF15E22866EF3003EC680 /* GJFMainShenHeViewController.m */,
 				160DF15F22866EF3003EC680 /* MainShenHeView.storyboard */,
+				1607B563230D1E6D00F76F1F /* gificon.png */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
-				16DB9A1822B793BD00A1E0E8 /* gjficon.png */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
@@ -1335,7 +1335,7 @@
 				ORGANIZATIONNAME = ycx;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 6AF3GJPV94;
+						DevelopmentTeam = K6V6G76QVS;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -1756,7 +1756,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16DB9A4422B793BD00A1E0E8 /* gjficon.png in Resources */,
 				1656FA172281842E00C85BCB /* HomeGjfTableViewCell.xib in Resources */,
 				160DF16122866EF3003EC680 /* MainShenHeView.storyboard in Resources */,
 				1656FA1D2281842E00C85BCB /* ShuaiTableViewCell.xib in Resources */,
@@ -1764,6 +1763,7 @@
 				1656FA1F2281842E00C85BCB /* ListViewController.xib in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				1656FA212281842E00C85BCB /* ShuaiViewController.xib in Resources */,
+				1607B564230D1E6D00F76F1F /* gificon.png in Resources */,
 				1656FA2A2281842E00C85BCB /* AboutViewController.xib in Resources */,
 				1656FA152281842E00C85BCB /* ShouYeView.xib in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
@@ -1931,7 +1931,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 6AF3GJPV94;
+				DEVELOPMENT_TEAM = K6V6G76QVS;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1959,7 +1959,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cz018.test.v1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dailiyou;
 				PRODUCT_NAME = YuanXC;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1976,7 +1976,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6AF3GJPV94;
+				DEVELOPMENT_TEAM = K6V6G76QVS;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2004,7 +2004,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cz018.test.v1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dailiyou;
 				PRODUCT_NAME = YuanXC;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

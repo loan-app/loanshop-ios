@@ -51,6 +51,6 @@
 //#define URL_Base                @"http://47.111.165.27:8082/dkm-api/"
 
 
-#define URL_Base                @"https://www.jiyawangluo.com/dkm-api/"
+#define URL_Base                @"https://api.jiyawangluo.com/dkm-api/"
 
 #endif /* APStore_pch */
