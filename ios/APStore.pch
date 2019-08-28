@@ -51,7 +51,7 @@
 //#define URL_Base                @"http://47.111.165.27:8082/dkm-api/"
 
 //贷款喵
-#define URL_Base                @"https://www.jiyawangluo.com/dkm-api/"
+//#define URL_Base                @"https://www.jiyawangluo.com/dkm-api/"
 //小蜜蜂
-//#define URL_Base    @"http://bee.fenghuolunb.com:8016/bee-api/"
+#define URL_Base    @"http://bee.fenghuolunb.com:8016/bee-api/"
 #endif /* APStore_pch */

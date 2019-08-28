@@ -1971,7 +1971,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cz018.test.v1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiji.xmf;
 				PRODUCT_NAME = YuanXC;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2016,7 +2016,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cz018.test.v1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiji.xmf;
 				PRODUCT_NAME = YuanXC;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

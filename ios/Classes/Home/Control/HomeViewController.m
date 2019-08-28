@@ -214,6 +214,7 @@
             vc.model = model;
             [weakSelf.navigationController pushViewController:vc animated:YES];
         }else if (tag == 5){
+          if(weakSelf.homeListArray.count<=0) return ;
             NSString *uuid = [GSKeyChain getUUID];
             HomeListModel *model = weakSelf.homeListArray[0];
             NSString *mobile = __GetUserPhone;
