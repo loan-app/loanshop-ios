@@ -21,14 +21,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gificon.png" translatesAutoresizingMaskIntoConstraints="NO" id="lqx-Xj-gJF">
-                                <rect key="frame" x="111.5" y="257.5" width="152" height="152"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lc_xmf" translatesAutoresizingMaskIntoConstraints="NO" id="IUm-gH-IgY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="lqx-Xj-gJF" firstAttribute="centerY" secondItem="xRD-lN-00r" secondAttribute="centerY" id="Eny-MC-pRu"/>
-                            <constraint firstItem="lqx-Xj-gJF" firstAttribute="centerX" secondItem="xRD-lN-00r" secondAttribute="centerX" id="ePC-h7-BhS"/>
+                            <constraint firstAttribute="trailing" secondItem="IUm-gH-IgY" secondAttribute="trailing" id="Hzq-ew-Ghr"/>
+                            <constraint firstItem="KyT-Xp-2wd" firstAttribute="top" secondItem="IUm-gH-IgY" secondAttribute="bottom" id="J1c-pm-sFd"/>
+                            <constraint firstItem="IUm-gH-IgY" firstAttribute="leading" secondItem="xRD-lN-00r" secondAttribute="leading" id="cPQ-T1-FFd"/>
+                            <constraint firstItem="IUm-gH-IgY" firstAttribute="top" secondItem="xRD-lN-00r" secondAttribute="top" id="fug-C0-HTl"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gificon.png" width="152" height="152"/>
+        <image name="lc_xmf" width="375" height="667"/>
     </resources>
 </document>

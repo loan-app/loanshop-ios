@@ -50,7 +50,10 @@
 //测试服
 //#define URL_Base                @"http://47.111.165.27:8082/dkm-api/"
 
-
-#define URL_Base                @"https://api.jiyawangluo.com/dkm-api/"
-
+//贷款喵
+//#define URL_Base                @"https://www.jiyawangluo.com/dkm-api/"
+//小蜜蜂
+#define URL_Base    @"http://bee.fenghuolunb.com:8016/bee-api/"
+//友盟key
+#define YOUMENGKEY  @"5d6654150cafb27522000ada"
 #endif /* APStore_pch */

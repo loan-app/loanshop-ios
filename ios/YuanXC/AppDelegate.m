@@ -33,7 +33,7 @@
   NSString *isShenheString = [[NSUserDefaults standardUserDefaults] objectForKey:@"sddsjfisshenhe"];
   NSString* channel = __GetKChannel;
   if ([isShenheString isEqualToString:@"1"] && channel.length > 0) {
-    [UMConfigure initWithAppkey:@"5d5ce9d93fc19514860008ce" channel:channel];
+    [UMConfigure initWithAppkey:YOUMENGKEY channel:channel];
     self.window = [[UIWindow alloc]initWithFrame: [UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [GJFTabbarViewController new];
@@ -53,7 +53,7 @@
   // 设置返回格式
   manager.responseSerializer = [AFHTTPResponseSerializer serializer];
   
-  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=48" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=53" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
     
   } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
     
@@ -71,7 +71,7 @@
   _timer =  [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(timerSelector:) userInfo:appArray repeats:YES];
   [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
   
-  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=48" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=53" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
     if (self->_isFinish) {
       [self->_timer invalidate];
       return;
@@ -146,7 +146,7 @@
     if (appData.channelCode) {//(通过渠道链接或二维码安装会返回渠道编号)
       //e.g.可自己统计渠道相关数据等
       [__UserDefaults setObject:appData.channelCode forKey:KChannel];
-      [UMConfigure initWithAppkey:@"5d5ce9d93fc19514860008ce" channel:appData.channelCode];
+      [UMConfigure initWithAppkey:YOUMENGKEY channel:appData.channelCode];
       AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
       // 设置请求格式
       manager.requestSerializer = [AFHTTPRequestSerializer serializer];
@@ -179,7 +179,7 @@
       [self.window makeKeyAndVisible];
     }else{
       [__UserDefaults setObject:@"ios" forKey:KChannel];
-      [UMConfigure initWithAppkey:@"5d5ce9d93fc19514860008ce" channel:@"ios"];
+      [UMConfigure initWithAppkey:YOUMENGKEY channel:@"ios"];
       AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
       // 设置请求格式
       manager.requestSerializer = [AFHTTPRequestSerializer serializer];
@@ -308,7 +308,7 @@
   // 设置返回格式
   manager.responseSerializer = [AFHTTPResponseSerializer serializer];
   //  weakify(self);
-  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=48" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=53" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
     if (self->_isFinish) {
       [self->_timer invalidate];
       return;
