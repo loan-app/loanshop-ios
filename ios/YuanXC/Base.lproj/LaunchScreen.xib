@@ -32,6 +32,6 @@
         </view>
     </objects>
     <resources>
-        <image name="rhh_cold" width="375" height="667"/>
+        <image name="rhh_cold" width="151" height="453"/>
     </resources>
 </document>

@@ -1936,7 +1936,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 32F2A83D55FE9B3647D2E37B /* Pods-YuanXC.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = rhh_icon;
 				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1971,7 +1971,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiji.xmf;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiji.rhh;
 				PRODUCT_NAME = YuanXC;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1983,7 +1983,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F74B6C10D835434CD7F015BE /* Pods-YuanXC.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = rhh_icon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -2016,7 +2016,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiji.xmf;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiji.rhh;
 				PRODUCT_NAME = YuanXC;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

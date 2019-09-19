@@ -37,7 +37,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>par46u</string>
+				<string>rfctuy</string>
 			</array>
 		</dict>
 	</array>
@@ -79,6 +79,6 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>com.openinstall.APP_KEY</key>
-	<string>par46u</string>
+	<string>rfctuy</string>
 </dict>
 </plist>
