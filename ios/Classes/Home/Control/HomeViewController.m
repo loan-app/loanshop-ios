@@ -68,7 +68,7 @@
             if (linkstring && linkstring.length > 0) {
                             UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"有新版本啦" message:@"请点击更新" preferredStyle:UIAlertControllerStyleAlert];
                             [alertVC addAction:[UIAlertAction actionWithTitle:@"马上更新" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                              NSString *utf8Str = @"https://itunes.apple.com/cn/app/贷款喵-小额贷款借钱软件/id1437128265?mt=8";
+                              NSString *utf8Str = @"https://itunes.apple.com/cn/app/易财钱包-小额贷款借钱软件/id1437128265?mt=8";
                               
                               NSString *str3 = [utf8Str stringByAddingPercentEscapesUsingEncoding:
                                                 

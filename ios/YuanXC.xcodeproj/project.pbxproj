@@ -88,13 +88,35 @@
 		2FF0456DAD9B4A7C916FB014 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B1ADE7CD34EEF834FFD81 /* libRNDeviceInfo.a */; };
 		3799B5C98D3759CFEC1AFCD8 /* libPods-YuanXC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C79C2890CAC82132DA4CF7A /* libPods-YuanXC.a */; };
 		394B7DE57FB04245AD009566 /* libthird-party.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E507999A4A5B48EF897A6923 /* libthird-party.a */; };
-		4045906E0E0B42F29CFA3658 /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EDF1C88831D4C3B8A8BE178 /* libCodePush.a */; };
 		563F3E4AC6694AACB2A49A6B /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAB76BBBC3A4FDB993FD791 /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		70A71E13C7294B13A42B194F /* libdouble-conversion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B91E0DE8344E9CA12E2C37 /* libdouble-conversion.a */; };
+		81E861ED2416671B00435066 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861EC2416671400435066 /* libART.a */; };
+		81E861EF2416672A00435066 /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861EE2416672700435066 /* libCodePush.a */; };
+		81E861F12416673100435066 /* libcxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861F02416672F00435066 /* libcxxreact.a */; };
+		81E861F22416673500435066 /* libcxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861F02416672F00435066 /* libcxxreact.a */; };
+		81E862072416673C00435066 /* libdouble-conversion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861F52416673A00435066 /* libdouble-conversion.a */; };
+		81E862082416673C00435066 /* libfishhook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861F72416673A00435066 /* libfishhook.a */; };
+		81E862092416673C00435066 /* libjschelpers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861F92416673A00435066 /* libjschelpers.a */; };
+		81E8620A2416673C00435066 /* libprivatedata.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861FF2416673B00435066 /* libprivatedata.a */; };
+		81E8620B2416673C00435066 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861F32416673A00435066 /* libRCTActionSheet.a */; };
+		81E8620C2416673C00435066 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861F62416673A00435066 /* libRCTAnimation.a */; };
+		81E8620D2416673D00435066 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861FE2416673B00435066 /* libRCTBlob.a */; };
+		81E8620E2416673D00435066 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E862042416673B00435066 /* libRCTGeolocation.a */; };
+		81E8620F2416673D00435066 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861F42416673A00435066 /* libRCTImage.a */; };
+		81E862102416673D00435066 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861FB2416673A00435066 /* libRCTLinking.a */; };
+		81E862112416673D00435066 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861FA2416673A00435066 /* libRCTNetwork.a */; };
+		81E862122416673D00435066 /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861FD2416673B00435066 /* libRCTSettings.a */; };
+		81E862132416673D00435066 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E862022416673B00435066 /* libRCTText.a */; };
+		81E862142416673D00435066 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E862002416673B00435066 /* libRCTVibration.a */; };
+		81E862152416673D00435066 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E862052416673B00435066 /* libRCTWebSocket.a */; };
+		81E862162416673D00435066 /* libRCTWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861FC2416673B00435066 /* libRCTWeChat.a */; };
+		81E862172416673D00435066 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E862012416673B00435066 /* libReact.a */; };
+		81E862182416673D00435066 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E862062416673B00435066 /* libRNDeviceInfo.a */; };
+		81E862192416673D00435066 /* libthird-party.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861F82416673A00435066 /* libthird-party.a */; };
+		81E8621A2416673D00435066 /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E862032416673B00435066 /* libyoga.a */; };
 		82DFD7B508874B17BE90A34D /* libjschelpers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC4CDD359124B82AE2F1D93 /* libjschelpers.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		A43FD2651FD53B64000F4189 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A43FD2621FD53B56000F4189 /* libART.a */; };
 		A43FD26F1FD53BED000F4189 /* RNTD.m in Sources */ = {isa = PBXBuildFile; fileRef = A43FD2661FD53BEC000F4189 /* RNTD.m */; };
 		A43FD2701FD53BED000F4189 /* libTalkingDataAppCpa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A43FD2671FD53BEC000F4189 /* libTalkingDataAppCpa.a */; };
 		A43FD2721FD53BED000F4189 /* libBaiduMobStat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A43FD26B1FD53BEC000F4189 /* libBaiduMobStat.a */; };
@@ -462,7 +484,7 @@
 		0BAB76BBBC3A4FDB993FD791 /* libReact.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReact.a; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* YuanXC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuanXC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* 易财钱包.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "易财钱包.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = YuanXC/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = YuanXC/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -597,6 +619,29 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		7FDF943C2E3E483789A52E7F /* CodePush.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; };
+		81E861EC2416671400435066 /* libART.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libART.a; path = "build/Build/Products/Debug-iphonesimulator/libART.a"; sourceTree = "<group>"; };
+		81E861EE2416672700435066 /* libCodePush.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCodePush.a; path = "build/Build/Products/Debug-iphonesimulator/libCodePush.a"; sourceTree = "<group>"; };
+		81E861F02416672F00435066 /* libcxxreact.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcxxreact.a; path = "build/Build/Products/Debug-iphonesimulator/libcxxreact.a"; sourceTree = "<group>"; };
+		81E861F32416673A00435066 /* libRCTActionSheet.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRCTActionSheet.a; path = "build/Build/Products/Debug-iphonesimulator/libRCTActionSheet.a"; sourceTree = "<group>"; };
+		81E861F42416673A00435066 /* libRCTImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRCTImage.a; path = "build/Build/Products/Debug-iphonesimulator/libRCTImage.a"; sourceTree = "<group>"; };
+		81E861F52416673A00435066 /* libdouble-conversion.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libdouble-conversion.a"; path = "build/Build/Products/Debug-iphonesimulator/libdouble-conversion.a"; sourceTree = "<group>"; };
+		81E861F62416673A00435066 /* libRCTAnimation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRCTAnimation.a; path = "build/Build/Products/Debug-iphonesimulator/libRCTAnimation.a"; sourceTree = "<group>"; };
+		81E861F72416673A00435066 /* libfishhook.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfishhook.a; path = "build/Build/Products/Debug-iphonesimulator/libfishhook.a"; sourceTree = "<group>"; };
+		81E861F82416673A00435066 /* libthird-party.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libthird-party.a"; path = "build/Build/Products/Debug-iphonesimulator/libthird-party.a"; sourceTree = "<group>"; };
+		81E861F92416673A00435066 /* libjschelpers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjschelpers.a; path = "build/Build/Products/Debug-iphonesimulator/libjschelpers.a"; sourceTree = "<group>"; };
+		81E861FA2416673A00435066 /* libRCTNetwork.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRCTNetwork.a; path = "build/Build/Products/Debug-iphonesimulator/libRCTNetwork.a"; sourceTree = "<group>"; };
+		81E861FB2416673A00435066 /* libRCTLinking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRCTLinking.a; path = "build/Build/Products/Debug-iphonesimulator/libRCTLinking.a"; sourceTree = "<group>"; };
+		81E861FC2416673B00435066 /* libRCTWeChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRCTWeChat.a; path = "build/Build/Products/Debug-iphonesimulator/libRCTWeChat.a"; sourceTree = "<group>"; };
+		81E861FD2416673B00435066 /* libRCTSettings.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRCTSettings.a; path = "build/Build/Products/Debug-iphonesimulator/libRCTSettings.a"; sourceTree = "<group>"; };
+		81E861FE2416673B00435066 /* libRCTBlob.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRCTBlob.a; path = "build/Build/Products/Debug-iphonesimulator/libRCTBlob.a"; sourceTree = "<group>"; };
+		81E861FF2416673B00435066 /* libprivatedata.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprivatedata.a; path = "build/Build/Products/Debug-iphonesimulator/libprivatedata.a"; sourceTree = "<group>"; };
+		81E862002416673B00435066 /* libRCTVibration.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRCTVibration.a; path = "build/Build/Products/Debug-iphonesimulator/libRCTVibration.a"; sourceTree = "<group>"; };
+		81E862012416673B00435066 /* libReact.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReact.a; path = "build/Build/Products/Debug-iphonesimulator/libReact.a"; sourceTree = "<group>"; };
+		81E862022416673B00435066 /* libRCTText.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRCTText.a; path = "build/Build/Products/Debug-iphonesimulator/libRCTText.a"; sourceTree = "<group>"; };
+		81E862032416673B00435066 /* libyoga.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libyoga.a; path = "build/Build/Products/Debug-iphonesimulator/libyoga.a"; sourceTree = "<group>"; };
+		81E862042416673B00435066 /* libRCTGeolocation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRCTGeolocation.a; path = "build/Build/Products/Debug-iphonesimulator/libRCTGeolocation.a"; sourceTree = "<group>"; };
+		81E862052416673B00435066 /* libRCTWebSocket.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRCTWebSocket.a; path = "build/Build/Products/Debug-iphonesimulator/libRCTWebSocket.a"; sourceTree = "<group>"; };
+		81E862062416673B00435066 /* libRNDeviceInfo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRNDeviceInfo.a; path = "build/Build/Products/Debug-iphonesimulator/libRNDeviceInfo.a"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8F4F7C4B89CB4725937426C3 /* libRNDeviceInfo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNDeviceInfo-tvOS.a"; sourceTree = "<group>"; };
 		9EDF1C88831D4C3B8A8BE178 /* libCodePush.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libCodePush.a; sourceTree = "<group>"; };
@@ -646,8 +691,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E9F72F1FD9626B00FD2906 /* libRCTActionSheet.a in Frameworks */,
+				81E862072416673C00435066 /* libdouble-conversion.a in Frameworks */,
+				81E8620D2416673D00435066 /* libRCTBlob.a in Frameworks */,
 				A43FD2DD1FD5445A000F4189 /* CoreTelephony.framework in Frameworks */,
 				A43FD2DC1FD54443000F4189 /* SystemConfiguration.framework in Frameworks */,
+				81E8621A2416673D00435066 /* libyoga.a in Frameworks */,
 				A43FD2DB1FD5441C000F4189 /* CoreLocation.framework in Frameworks */,
 				A43FD2DF1FD5447A000F4189 /* libresolv.tbd in Frameworks */,
 				A43FD2DA1FD54415000F4189 /* JavaScriptCore.framework in Frameworks */,
@@ -658,16 +706,26 @@
 				A43FD2D51FD543D4000F4189 /* CoreFoundation.framework in Frameworks */,
 				A43FD2D41FD543C8000F4189 /* CoreGraphics.framework in Frameworks */,
 				0426E939207229E300548005 /* FUMobilePay.framework in Frameworks */,
+				81E862082416673C00435066 /* libfishhook.a in Frameworks */,
 				A43FD2C91FD54329000F4189 /* libRCTWeChat.a in Frameworks */,
-				A43FD2651FD53B64000F4189 /* libART.a in Frameworks */,
+				81E8620C2416673C00435066 /* libRCTAnimation.a in Frameworks */,
+				81E861EF2416672A00435066 /* libCodePush.a in Frameworks */,
+				81E862182416673D00435066 /* libRNDeviceInfo.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
+				81E862152416673D00435066 /* libRCTWebSocket.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				A43FD2701FD53BED000F4189 /* libTalkingDataAppCpa.a in Frameworks */,
 				A43FD2E31FD5449D000F4189 /* libz.1.2.5.tbd in Frameworks */,
 				0426E93A20722A5400548005 /* FUMobilePay.framework in Frameworks */,
+				81E862112416673D00435066 /* libRCTNetwork.a in Frameworks */,
+				81E862122416673D00435066 /* libRCTSettings.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
+				81E862102416673D00435066 /* libRCTLinking.a in Frameworks */,
+				81E862132416673D00435066 /* libRCTText.a in Frameworks */,
+				81E8620E2416673D00435066 /* libRCTGeolocation.a in Frameworks */,
 				A43FD2721FD53BED000F4189 /* libBaiduMobStat.a in Frameworks */,
+				81E862162416673D00435066 /* libRCTWeChat.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
@@ -676,19 +734,28 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				A43FD2E71FD544B5000F4189 /* libsqlite3.0.tbd in Frameworks */,
+				81E862192416673D00435066 /* libthird-party.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				2FF0456DAD9B4A7C916FB014 /* libRNDeviceInfo.a in Frameworks */,
+				81E862142416673D00435066 /* libRCTVibration.a in Frameworks */,
+				81E8620A2416673C00435066 /* libprivatedata.a in Frameworks */,
 				A43FD2E51FD544A8000F4189 /* libstdc++.tbd in Frameworks */,
-				4045906E0E0B42F29CFA3658 /* libCodePush.a in Frameworks */,
 				F8A23BD7BCE64315971EF323 /* libz.tbd in Frameworks */,
 				1699671F2293F8FE00E7593F /* libOpenInstallSDK.a in Frameworks */,
 				563F3E4AC6694AACB2A49A6B /* libReact.a in Frameworks */,
+				81E862092416673C00435066 /* libjschelpers.a in Frameworks */,
+				81E861F22416673500435066 /* libcxxreact.a in Frameworks */,
 				F289FFCC062B4BDAABE920C5 /* libyoga.a in Frameworks */,
+				81E8620B2416673C00435066 /* libRCTActionSheet.a in Frameworks */,
+				81E8620F2416673D00435066 /* libRCTImage.a in Frameworks */,
 				FF38EAD813624F14BBDCEA6F /* libcxxreact.a in Frameworks */,
+				81E861F12416673100435066 /* libcxxreact.a in Frameworks */,
 				82DFD7B508874B17BE90A34D /* libjschelpers.a in Frameworks */,
 				394B7DE57FB04245AD009566 /* libthird-party.a in Frameworks */,
+				81E861ED2416671B00435066 /* libART.a in Frameworks */,
 				70A71E13C7294B13A42B194F /* libdouble-conversion.a in Frameworks */,
 				3799B5C98D3759CFEC1AFCD8 /* libPods-YuanXC.a in Frameworks */,
+				81E862172416673D00435066 /* libReact.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1203,7 +1270,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* YuanXC.app */,
+				13B07F961A680F5B00A75B9A /* 易财钱包.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1211,6 +1278,29 @@
 		89B138E2B47140B9A2B5DBC4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				81E861F52416673A00435066 /* libdouble-conversion.a */,
+				81E861F72416673A00435066 /* libfishhook.a */,
+				81E861F92416673A00435066 /* libjschelpers.a */,
+				81E861FF2416673B00435066 /* libprivatedata.a */,
+				81E861F32416673A00435066 /* libRCTActionSheet.a */,
+				81E861F62416673A00435066 /* libRCTAnimation.a */,
+				81E861FE2416673B00435066 /* libRCTBlob.a */,
+				81E862042416673B00435066 /* libRCTGeolocation.a */,
+				81E861F42416673A00435066 /* libRCTImage.a */,
+				81E861FB2416673A00435066 /* libRCTLinking.a */,
+				81E861FA2416673A00435066 /* libRCTNetwork.a */,
+				81E861FD2416673B00435066 /* libRCTSettings.a */,
+				81E862022416673B00435066 /* libRCTText.a */,
+				81E862002416673B00435066 /* libRCTVibration.a */,
+				81E862052416673B00435066 /* libRCTWebSocket.a */,
+				81E861FC2416673B00435066 /* libRCTWeChat.a */,
+				81E862012416673B00435066 /* libReact.a */,
+				81E862062416673B00435066 /* libRNDeviceInfo.a */,
+				81E861F82416673A00435066 /* libthird-party.a */,
+				81E862032416673B00435066 /* libyoga.a */,
+				81E861F02416672F00435066 /* libcxxreact.a */,
+				81E861EE2416672700435066 /* libCodePush.a */,
+				81E861EC2416671400435066 /* libART.a */,
 				A43FD2E61FD544B5000F4189 /* libsqlite3.0.tbd */,
 				A43FD2E41FD544A7000F4189 /* libstdc++.tbd */,
 				A43FD2E21FD5449D000F4189 /* libz.1.2.5.tbd */,
@@ -1332,7 +1422,7 @@
 			);
 			name = YuanXC;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* YuanXC.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* 易财钱包.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1345,7 +1435,7 @@
 				ORGANIZATIONNAME = ycx;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 6RS3ZTU2BJ;
+						DevelopmentTeam = Q5XFK6FPLR;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -1828,8 +1918,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YuanXC/Pods-YuanXC-resources.sh",
 				"${PODS_ROOT}/BRPickerView/BRPickerView/AddressPickerView/BRPickerView.bundle",
@@ -1838,8 +1926,6 @@
 				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRPickerView.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
@@ -1943,7 +2029,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 6RS3ZTU2BJ;
+				DEVELOPMENT_TEAM = Q5XFK6FPLR;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1965,6 +2051,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Lib/OpenInstallSDK2.2.1",
+					"$(PROJECT_DIR)/build/Build/Products/Debug-iphonesimulator",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1972,7 +2059,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiji.rhh;
-				PRODUCT_NAME = YuanXC;
+				PRODUCT_NAME = "易财钱包";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1988,7 +2075,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6RS3ZTU2BJ;
+				DEVELOPMENT_TEAM = Q5XFK6FPLR;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2010,6 +2097,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Lib/OpenInstallSDK2.2.1",
+					"$(PROJECT_DIR)/build/Build/Products/Debug-iphonesimulator",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2017,7 +2105,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiji.rhh;
-				PRODUCT_NAME = YuanXC;
+				PRODUCT_NAME = "易财钱包";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";

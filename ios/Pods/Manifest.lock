@@ -46,7 +46,7 @@ DEPENDENCIES:
   - WebViewJavascriptBridge (~> 6.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - BRPickerView
     - IQKeyboardManager
@@ -78,4 +78,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 22d1211e4f125341867c0b01662c90637cfc0beb
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.9.0.beta.2
