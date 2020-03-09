@@ -91,6 +91,29 @@
 		563F3E4AC6694AACB2A49A6B /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAB76BBBC3A4FDB993FD791 /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		70A71E13C7294B13A42B194F /* libdouble-conversion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B91E0DE8344E9CA12E2C37 /* libdouble-conversion.a */; };
+		8108E3C22416888500DC0217 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A43FD2621FD53B56000F4189 /* libART.a */; };
+		8108E3EC2416888C00DC0217 /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A43FD2571FD53A18000F4189 /* libCodePush.a */; };
+		8108E3ED2416889500DC0217 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
+		8108E3EE2416889B00DC0217 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		8108E3EF241688A100DC0217 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		8108E3F0241688A800DC0217 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
+		8108E3F1241688AD00DC0217 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
+		8108E3F2241688B300DC0217 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
+		8108E3F3241688B900DC0217 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
+		8108E3F4241688C000DC0217 /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
+		8108E3F5241688C700DC0217 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		8108E3F6241688CD00DC0217 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
+		8108E3F7241688D700DC0217 /* libfishhook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A43FD2021FD53689000F4189 /* libfishhook.a */; };
+		8108E3F8241688DE00DC0217 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
+		8108E3F9241688E600DC0217 /* libRCTWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A43FD2C61FD5422D000F4189 /* libRCTWeChat.a */; };
+		8108E3FA2416894600DC0217 /* libcxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA91DF850E9000B6D8A /* libcxxreact.a */; };
+		8108E3FB2416894600DC0217 /* libdouble-conversion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A43FD2481FD53A17000F4189 /* libdouble-conversion.a */; };
+		8108E3FC2416894600DC0217 /* libjschelpers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */; };
+		8108E3FD2416894600DC0217 /* libprivatedata.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A43FD24C1FD53A17000F4189 /* libprivatedata.a */; };
+		8108E3FE2416894600DC0217 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		8108E3FF2416894600DC0217 /* libthird-party.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A43FD2441FD53A17000F4189 /* libthird-party.a */; };
+		8108E4002416894600DC0217 /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA51DF850E9000B6D8A /* libyoga.a */; };
+		8108E4012416894600DC0217 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A43FD20C1FD5368C000F4189 /* libRNDeviceInfo.a */; };
 		81E861ED2416671B00435066 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861EC2416671400435066 /* libART.a */; };
 		81E861EF2416672A00435066 /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861EE2416672700435066 /* libCodePush.a */; };
 		81E861F12416673100435066 /* libcxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E861F02416672F00435066 /* libcxxreact.a */; };
@@ -690,18 +713,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8108E3F6241688CD00DC0217 /* libRCTVibration.a in Frameworks */,
 				A4E9F72F1FD9626B00FD2906 /* libRCTActionSheet.a in Frameworks */,
+				8108E3F1241688AD00DC0217 /* libRCTImage.a in Frameworks */,
 				81E862072416673C00435066 /* libdouble-conversion.a in Frameworks */,
+				8108E3EC2416888C00DC0217 /* libCodePush.a in Frameworks */,
 				81E8620D2416673D00435066 /* libRCTBlob.a in Frameworks */,
 				A43FD2DD1FD5445A000F4189 /* CoreTelephony.framework in Frameworks */,
 				A43FD2DC1FD54443000F4189 /* SystemConfiguration.framework in Frameworks */,
 				81E8621A2416673D00435066 /* libyoga.a in Frameworks */,
 				A43FD2DB1FD5441C000F4189 /* CoreLocation.framework in Frameworks */,
+				8108E3FD2416894600DC0217 /* libprivatedata.a in Frameworks */,
 				A43FD2DF1FD5447A000F4189 /* libresolv.tbd in Frameworks */,
 				A43FD2DA1FD54415000F4189 /* JavaScriptCore.framework in Frameworks */,
 				A43FD2D91FD54406000F4189 /* CFNetwork.framework in Frameworks */,
 				A43FD2D81FD543F5000F4189 /* Foundation.framework in Frameworks */,
 				A43FD2D71FD543EB000F4189 /* Security.framework in Frameworks */,
+				8108E3C22416888500DC0217 /* libART.a in Frameworks */,
 				A43FD2D61FD543E0000F4189 /* UIKit.framework in Frameworks */,
 				A43FD2D51FD543D4000F4189 /* CoreFoundation.framework in Frameworks */,
 				A43FD2D41FD543C8000F4189 /* CoreGraphics.framework in Frameworks */,
@@ -709,6 +737,7 @@
 				81E862082416673C00435066 /* libfishhook.a in Frameworks */,
 				A43FD2C91FD54329000F4189 /* libRCTWeChat.a in Frameworks */,
 				81E8620C2416673C00435066 /* libRCTAnimation.a in Frameworks */,
+				8108E3FA2416894600DC0217 /* libcxxreact.a in Frameworks */,
 				81E861EF2416672A00435066 /* libCodePush.a in Frameworks */,
 				81E862182416673D00435066 /* libRNDeviceInfo.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
@@ -718,41 +747,58 @@
 				A43FD2701FD53BED000F4189 /* libTalkingDataAppCpa.a in Frameworks */,
 				A43FD2E31FD5449D000F4189 /* libz.1.2.5.tbd in Frameworks */,
 				0426E93A20722A5400548005 /* FUMobilePay.framework in Frameworks */,
+				8108E4012416894600DC0217 /* libRNDeviceInfo.a in Frameworks */,
 				81E862112416673D00435066 /* libRCTNetwork.a in Frameworks */,
 				81E862122416673D00435066 /* libRCTSettings.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				81E862102416673D00435066 /* libRCTLinking.a in Frameworks */,
 				81E862132416673D00435066 /* libRCTText.a in Frameworks */,
 				81E8620E2416673D00435066 /* libRCTGeolocation.a in Frameworks */,
+				8108E3F5241688C700DC0217 /* libRCTText.a in Frameworks */,
 				A43FD2721FD53BED000F4189 /* libBaiduMobStat.a in Frameworks */,
 				81E862162416673D00435066 /* libRCTWeChat.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
+				8108E3F9241688E600DC0217 /* libRCTWeChat.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
+				8108E3FB2416894600DC0217 /* libdouble-conversion.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				A43FD2E71FD544B5000F4189 /* libsqlite3.0.tbd in Frameworks */,
+				8108E3EF241688A100DC0217 /* libRCTBlob.a in Frameworks */,
+				8108E3F4241688C000DC0217 /* libRCTSettings.a in Frameworks */,
 				81E862192416673D00435066 /* libthird-party.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				2FF0456DAD9B4A7C916FB014 /* libRNDeviceInfo.a in Frameworks */,
 				81E862142416673D00435066 /* libRCTVibration.a in Frameworks */,
+				8108E3EE2416889B00DC0217 /* libRCTAnimation.a in Frameworks */,
 				81E8620A2416673C00435066 /* libprivatedata.a in Frameworks */,
+				8108E3FE2416894600DC0217 /* libReact.a in Frameworks */,
+				8108E3FC2416894600DC0217 /* libjschelpers.a in Frameworks */,
 				A43FD2E51FD544A8000F4189 /* libstdc++.tbd in Frameworks */,
 				F8A23BD7BCE64315971EF323 /* libz.tbd in Frameworks */,
 				1699671F2293F8FE00E7593F /* libOpenInstallSDK.a in Frameworks */,
 				563F3E4AC6694AACB2A49A6B /* libReact.a in Frameworks */,
 				81E862092416673C00435066 /* libjschelpers.a in Frameworks */,
+				8108E3FF2416894600DC0217 /* libthird-party.a in Frameworks */,
 				81E861F22416673500435066 /* libcxxreact.a in Frameworks */,
 				F289FFCC062B4BDAABE920C5 /* libyoga.a in Frameworks */,
+				8108E4002416894600DC0217 /* libyoga.a in Frameworks */,
 				81E8620B2416673C00435066 /* libRCTActionSheet.a in Frameworks */,
 				81E8620F2416673D00435066 /* libRCTImage.a in Frameworks */,
+				8108E3F0241688A800DC0217 /* libRCTGeolocation.a in Frameworks */,
+				8108E3F3241688B900DC0217 /* libRCTNetwork.a in Frameworks */,
+				8108E3F7241688D700DC0217 /* libfishhook.a in Frameworks */,
 				FF38EAD813624F14BBDCEA6F /* libcxxreact.a in Frameworks */,
+				8108E3ED2416889500DC0217 /* libRCTActionSheet.a in Frameworks */,
+				8108E3F8241688DE00DC0217 /* libRCTWebSocket.a in Frameworks */,
 				81E861F12416673100435066 /* libcxxreact.a in Frameworks */,
 				82DFD7B508874B17BE90A34D /* libjschelpers.a in Frameworks */,
 				394B7DE57FB04245AD009566 /* libthird-party.a in Frameworks */,
 				81E861ED2416671B00435066 /* libART.a in Frameworks */,
+				8108E3F2241688B300DC0217 /* libRCTLinking.a in Frameworks */,
 				70A71E13C7294B13A42B194F /* libdouble-conversion.a in Frameworks */,
 				3799B5C98D3759CFEC1AFCD8 /* libPods-YuanXC.a in Frameworks */,
 				81E862172416673D00435066 /* libReact.a in Frameworks */,
