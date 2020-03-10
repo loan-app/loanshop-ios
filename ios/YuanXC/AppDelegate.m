@@ -47,17 +47,6 @@
     
   }
   [OpenInstallSDK initWithDelegate:self];
-  AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-  // 设置请求格式
-  manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-  // 设置返回格式
-  manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-  
-  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=53" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-    
-  } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    
-  }];
   
   id userInfo = (NSDictionary *)launchOptions;
   id alication = (UIApplication *)application;
@@ -71,65 +60,25 @@
   _timer =  [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(timerSelector:) userInfo:appArray repeats:YES];
   [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
   
-  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=53" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-    if (self->_isFinish) {
+  if (self->_isFinish) {
+        [self->_timer invalidate];
+        return YES;
+      }
+      self->_isFinish = YES;
       [self->_timer invalidate];
-      return;
-    }
-    self->_isFinish = YES;
-    [self->_timer invalidate];
-    NSError *error;
-    NSArray *result = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:&error];
-    NSDictionary *dic = result[0];
-    NSLog(@"----%@",dic);
-    BOOL isShenHe = [dic[@"type"] boolValue];
-    if (isShenHe) {
-      BaiduMobStat* statTracker = [BaiduMobStat defaultStat];
-      statTracker.shortAppVersion  = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-      statTracker.channelId=[[NSBundle mainBundle] bundleIdentifier];
-      //    statTracker.enableDebugOn = YES;
-      [statTracker startWithAppId:@""];
-      
-      NSURL *jsCodeLocation;
-      
-      
-#ifdef DEBUG
-      //        jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
-      jsCodeLocation = [CodePush bundleURL];
-#else
-      jsCodeLocation = [CodePush bundleURL];
-#endif
-      
-      RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                          moduleName:@"YuanXC"
-                                                   initialProperties:nil
-                                                       launchOptions:launchOptions];
-      rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
-      
-      self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-      UIViewController *rootViewController = [UIViewController new];
-      rootViewController.view = rootView;
-      self.window.rootViewController = rootViewController;
-      [self.window makeKeyAndVisible];
-      
-    }else{
       self->_isFinish = NO;
-      //      self.window = [[UIWindow alloc]initWithFrame: [UIScreen mainScreen].bounds];
-      //      self.window.backgroundColor = [UIColor whiteColor];
-      [self getWakeUpParams];
-//      self.window.rootViewController = [GJFTabbarViewController new];
-      [self checkNetworkStatus];
-      IQKeyboardManager *keyboardManager = [IQKeyboardManager sharedManager];
-      keyboardManager.enable = YES;
-      keyboardManager.shouldResignOnTouchOutside = YES;
-      [UITabBar appearance].translucent = NO;
-      [[NSUserDefaults standardUserDefaults] setObject:@"1"forKey:@"sddsjfisshenhe"];
-      [[NSUserDefaults standardUserDefaults]synchronize];
-    }
-    [self.window makeKeyAndVisible];
-  } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    
-  }];
+            //      self.window = [[UIWindow alloc]initWithFrame: [UIScreen mainScreen].bounds];
+            //      self.window.backgroundColor = [UIColor whiteColor];
+            [self getWakeUpParams];
+      //      self.window.rootViewController = [GJFTabbarViewController new];
+            [self checkNetworkStatus];
+            IQKeyboardManager *keyboardManager = [IQKeyboardManager sharedManager];
+            keyboardManager.enable = YES;
+            keyboardManager.shouldResignOnTouchOutside = YES;
+            [UITabBar appearance].translucent = NO;
+            [[NSUserDefaults standardUserDefaults] setObject:@"1"forKey:@"sddsjfisshenhe"];
+            [[NSUserDefaults standardUserDefaults]synchronize];
+      [self.window makeKeyAndVisible];
   
   return YES;
   
@@ -302,71 +251,22 @@
   
   
   
-  AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-  // 设置请求格式
-  manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-  // 设置返回格式
-  manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-  //  weakify(self);
-  [manager GET:@"https://www.qtz360.com/v3.0.0/rest/getIosBag?version=53" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-    if (self->_isFinish) {
+  if (self->_isFinish) {
+        [self->_timer invalidate];
+        return;
+      }
+      self->_isFinish = YES;
       [self->_timer invalidate];
-      return;
-    }
-    self->_isFinish = YES;
-    [self->_timer invalidate];
-    NSError *error;
-    NSArray *result = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:&error];
-    NSDictionary *dic = result[0];
-    NSLog(@"----%@",dic);
-    BOOL isShenHe = [dic[@"type"] boolValue];
-    if (isShenHe) {
-      
-      BaiduMobStat* statTracker = [BaiduMobStat defaultStat];
-      statTracker.shortAppVersion  = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-      statTracker.channelId=[[NSBundle mainBundle] bundleIdentifier];
-      //    statTracker.enableDebugOn = YES;
-      [statTracker startWithAppId:@""];
-      
-      NSURL *jsCodeLocation;
-      
-      
-#ifdef DEBUG
-      //        jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
-      jsCodeLocation = [CodePush bundleURL];
-#else
-      jsCodeLocation = [CodePush bundleURL];
-#endif
-      
-      RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                          moduleName:@"YuanXC"
-                                                   initialProperties:nil
-                                                       launchOptions:launchDic];
-      rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
-      
-      self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-      UIViewController *rootViewController = [UIViewController new];
-      rootViewController.view = rootView;
-      self.window.rootViewController = rootViewController;
-      [self.window makeKeyAndVisible];
-      
-    }else{
       self->_isFinish = NO;
-      [self getWakeUpParams];
-//      self.window.rootViewController = [GJFTabbarViewController new];
-      [self checkNetworkStatus];
-      IQKeyboardManager *keyboardManager = [IQKeyboardManager sharedManager];
-      keyboardManager.enable = YES;
-      keyboardManager.shouldResignOnTouchOutside = YES;
-      [UITabBar appearance].translucent = NO;
-      [[NSUserDefaults standardUserDefaults] setObject:@"1"forKey:@"sddsjfisshenhe"];
-      [[NSUserDefaults standardUserDefaults]synchronize];
-      //      [self.window makeKeyAndVisible];
-    }
-    
-  } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    
-  }];
+            [self getWakeUpParams];
+      //      self.window.rootViewController = [GJFTabbarViewController new];
+            [self checkNetworkStatus];
+            IQKeyboardManager *keyboardManager = [IQKeyboardManager sharedManager];
+            keyboardManager.enable = YES;
+            keyboardManager.shouldResignOnTouchOutside = YES;
+            [UITabBar appearance].translucent = NO;
+            [[NSUserDefaults standardUserDefaults] setObject:@"1"forKey:@"sddsjfisshenhe"];
+            [[NSUserDefaults standardUserDefaults]synchronize];
 }
 - (void)checkNetworkStatus {
   self.reachability = [Reachability reachabilityForInternetConnection];

@@ -84,7 +84,6 @@
 		16AEEF8022DF1B5C009A08AE /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AEEF4C22DF1B5C009A08AE /* UIView+Frame.m */; };
 		16AEEF8222DF1B5C009A08AE /* NSTimer+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AEEF5022DF1B5C009A08AE /* NSTimer+addition.m */; };
 		16AEEF8322DF1B5C009A08AE /* WYWebProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AEEF5322DF1B5C009A08AE /* WYWebProgressLayer.m */; };
-		16DB9A4422B793BD00A1E0E8 /* gjficon.png in Resources */ = {isa = PBXBuildFile; fileRef = 16DB9A1822B793BD00A1E0E8 /* gjficon.png */; };
 		2FF0456DAD9B4A7C916FB014 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B1ADE7CD34EEF834FFD81 /* libRNDeviceInfo.a */; };
 		3799B5C98D3759CFEC1AFCD8 /* libPods-YuanXC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C79C2890CAC82132DA4CF7A /* libPods-YuanXC.a */; };
 		394B7DE57FB04245AD009566 /* libthird-party.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E507999A4A5B48EF897A6923 /* libthird-party.a */; };
@@ -166,6 +165,8 @@
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		F289FFCC062B4BDAABE920C5 /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5D0C23D2584C259B747231 /* libyoga.a */; };
 		F8A23BD7BCE64315971EF323 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A3BCC45BC3D04DBAA0FB85FE /* libz.tbd */; };
+		F9DC2A5724175A05007FD80F /* gjficon.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DC2A5624175A05007FD80F /* gjficon.png */; };
+		F9DC2A5924175A5D007FD80F /* rhh_cold.png in Resources */ = {isa = PBXBuildFile; fileRef = F9DC2A5824175A5D007FD80F /* rhh_cold.png */; };
 		FF38EAD813624F14BBDCEA6F /* libcxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2574146CB7EB4DCFB376B23F /* libcxxreact.a */; };
 /* End PBXBuildFile section */
 
@@ -631,7 +632,6 @@
 		16AEEF5022DF1B5C009A08AE /* NSTimer+addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+addition.m"; sourceTree = "<group>"; };
 		16AEEF5222DF1B5C009A08AE /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		16AEEF5322DF1B5C009A08AE /* WYWebProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYWebProgressLayer.m; sourceTree = "<group>"; };
-		16DB9A1822B793BD00A1E0E8 /* gjficon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gjficon.png; sourceTree = "<group>"; };
 		2574146CB7EB4DCFB376B23F /* libcxxreact.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libcxxreact.a; sourceTree = "<group>"; };
 		2C79C2890CAC82132DA4CF7A /* libPods-YuanXC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YuanXC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B91E0DE8344E9CA12E2C37 /* libdouble-conversion.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libdouble-conversion.a"; sourceTree = "<group>"; };
@@ -705,6 +705,8 @@
 		E507999A4A5B48EF897A6923 /* libthird-party.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libthird-party.a"; sourceTree = "<group>"; };
 		EBC4CDD359124B82AE2F1D93 /* libjschelpers.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libjschelpers.a; sourceTree = "<group>"; };
 		F74B6C10D835434CD7F015BE /* Pods-YuanXC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuanXC.release.xcconfig"; path = "Target Support Files/Pods-YuanXC/Pods-YuanXC.release.xcconfig"; sourceTree = "<group>"; };
+		F9DC2A5624175A05007FD80F /* gjficon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gjficon.png; sourceTree = "<group>"; };
+		F9DC2A5824175A5D007FD80F /* rhh_cold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rhh_cold.png; sourceTree = "<group>"; };
 		FB170E851499450CA55559F0 /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -918,8 +920,9 @@
 				160DF15E22866EF3003EC680 /* GJFMainShenHeViewController.m */,
 				160DF15F22866EF3003EC680 /* MainShenHeView.storyboard */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
-				16DB9A1822B793BD00A1E0E8 /* gjficon.png */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				F9DC2A5624175A05007FD80F /* gjficon.png */,
+				F9DC2A5824175A5D007FD80F /* rhh_cold.png */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
@@ -1481,7 +1484,7 @@
 				ORGANIZATIONNAME = ycx;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = Q5XFK6FPLR;
+						DevelopmentTeam = NU2HX98PUA;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -1902,8 +1905,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16DB9A4422B793BD00A1E0E8 /* gjficon.png in Resources */,
+				F9DC2A5724175A05007FD80F /* gjficon.png in Resources */,
 				1656FA172281842E00C85BCB /* HomeGjfTableViewCell.xib in Resources */,
+				F9DC2A5924175A5D007FD80F /* rhh_cold.png in Resources */,
 				160DF16122866EF3003EC680 /* MainShenHeView.storyboard in Resources */,
 				1656FA1D2281842E00C85BCB /* ShuaiTableViewCell.xib in Resources */,
 				1656FA272281842E00C85BCB /* MineViewController.xib in Resources */,
@@ -1939,7 +1943,7 @@
 		};
 		111BBB3F81E1BD1CD4D636BE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -2068,14 +2072,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 32F2A83D55FE9B3647D2E37B /* Pods-YuanXC.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = rhh_icon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = Q5XFK6FPLR;
+				DEVELOPMENT_TEAM = NU2HX98PUA;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2116,12 +2120,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F74B6C10D835434CD7F015BE /* Pods-YuanXC.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = rhh_icon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q5XFK6FPLR;
+				DEVELOPMENT_TEAM = NU2HX98PUA;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
