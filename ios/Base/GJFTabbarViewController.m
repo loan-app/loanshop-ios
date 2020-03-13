@@ -4,6 +4,13 @@
 #import "GJFNavigationViewController.h"
 #import "UIImage+ImageColor.h"
 
+@implementation UIViewController (iOS13)
+
+- (UIModalPresentationStyle)modalPresentationStyle{
+    return UIModalPresentationFullScreen;
+}
+@end
+
 @interface GJFTabbarViewController ()
 
 @property (nonatomic, strong) NSMutableArray *navArr;

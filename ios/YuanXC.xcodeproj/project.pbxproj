@@ -954,9 +954,9 @@
 			isa = PBXGroup;
 			children = (
 				1656F9992281842C00C85BCB /* GJFTabbarViewController.h */,
-				1656F99A2281842C00C85BCB /* GJFNavigationViewController.m */,
-				1656F99B2281842C00C85BCB /* GJFNavigationViewController.h */,
 				1656F99C2281842C00C85BCB /* GJFTabbarViewController.m */,
+				1656F99B2281842C00C85BCB /* GJFNavigationViewController.h */,
+				1656F99A2281842C00C85BCB /* GJFNavigationViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -2103,6 +2103,7 @@
 					"$(PROJECT_DIR)/Lib/OpenInstallSDK2.2.1",
 					"$(PROJECT_DIR)/build/Build/Products/Debug-iphonesimulator",
 				);
+				MARKETING_VERSION = 1.1.8;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -2149,6 +2150,7 @@
 					"$(PROJECT_DIR)/Lib/OpenInstallSDK2.2.1",
 					"$(PROJECT_DIR)/build/Build/Products/Debug-iphonesimulator",
 				);
+				MARKETING_VERSION = 1.1.8;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
