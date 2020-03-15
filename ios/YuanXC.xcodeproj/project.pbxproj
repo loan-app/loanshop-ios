@@ -85,9 +85,9 @@
 		16AEEF8222DF1B5C009A08AE /* NSTimer+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AEEF5022DF1B5C009A08AE /* NSTimer+addition.m */; };
 		16AEEF8322DF1B5C009A08AE /* WYWebProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AEEF5322DF1B5C009A08AE /* WYWebProgressLayer.m */; };
 		2FF0456DAD9B4A7C916FB014 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B1ADE7CD34EEF834FFD81 /* libRNDeviceInfo.a */; };
-		3799B5C98D3759CFEC1AFCD8 /* libPods-YuanXC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C79C2890CAC82132DA4CF7A /* libPods-YuanXC.a */; };
 		394B7DE57FB04245AD009566 /* libthird-party.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E507999A4A5B48EF897A6923 /* libthird-party.a */; };
 		563F3E4AC6694AACB2A49A6B /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BAB76BBBC3A4FDB993FD791 /* libReact.a */; };
+		5943E0090BFB1D5B611B10B5 /* Pods_YuanXC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5FA7172892EDF0B2F9305A /* Pods_YuanXC.framework */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		70A71E13C7294B13A42B194F /* libdouble-conversion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B91E0DE8344E9CA12E2C37 /* libdouble-conversion.a */; };
 		8108E3C22416888500DC0217 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A43FD2621FD53B56000F4189 /* libART.a */; };
@@ -633,7 +633,6 @@
 		16AEEF5222DF1B5C009A08AE /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		16AEEF5322DF1B5C009A08AE /* WYWebProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYWebProgressLayer.m; sourceTree = "<group>"; };
 		2574146CB7EB4DCFB376B23F /* libcxxreact.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libcxxreact.a; sourceTree = "<group>"; };
-		2C79C2890CAC82132DA4CF7A /* libPods-YuanXC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YuanXC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B91E0DE8344E9CA12E2C37 /* libdouble-conversion.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libdouble-conversion.a"; sourceTree = "<group>"; };
 		32F2A83D55FE9B3647D2E37B /* Pods-YuanXC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuanXC.debug.xcconfig"; path = "Target Support Files/Pods-YuanXC/Pods-YuanXC.debug.xcconfig"; sourceTree = "<group>"; };
 		3756AF66D28B40499FD23307 /* RCTWeChat.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTWeChat.xcodeproj; path = "../node_modules/react-native-wechat/ios/RCTWeChat.xcodeproj"; sourceTree = "<group>"; };
@@ -702,6 +701,7 @@
 		A4E9F72D1FD9212B00FD2906 /* RCTMyViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTMyViewManager.h; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		AF5D0C23D2584C259B747231 /* libyoga.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libyoga.a; sourceTree = "<group>"; };
+		BB5FA7172892EDF0B2F9305A /* Pods_YuanXC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YuanXC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E507999A4A5B48EF897A6923 /* libthird-party.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libthird-party.a"; sourceTree = "<group>"; };
 		EBC4CDD359124B82AE2F1D93 /* libjschelpers.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libjschelpers.a; sourceTree = "<group>"; };
 		F74B6C10D835434CD7F015BE /* Pods-YuanXC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuanXC.release.xcconfig"; path = "Target Support Files/Pods-YuanXC/Pods-YuanXC.release.xcconfig"; sourceTree = "<group>"; };
@@ -802,8 +802,8 @@
 				81E861ED2416671B00435066 /* libART.a in Frameworks */,
 				8108E3F2241688B300DC0217 /* libRCTLinking.a in Frameworks */,
 				70A71E13C7294B13A42B194F /* libdouble-conversion.a in Frameworks */,
-				3799B5C98D3759CFEC1AFCD8 /* libPods-YuanXC.a in Frameworks */,
 				81E862172416673D00435066 /* libReact.a in Frameworks */,
+				5943E0090BFB1D5B611B10B5 /* Pods_YuanXC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1366,7 +1366,7 @@
 				A43FD2CB1FD54353000F4189 /* JavaScriptCore.framework */,
 				A43FD2CA1FD5434D000F4189 /* CoreLocation.framework */,
 				A3BCC45BC3D04DBAA0FB85FE /* libz.tbd */,
-				2C79C2890CAC82132DA4CF7A /* libPods-YuanXC.a */,
+				BB5FA7172892EDF0B2F9305A /* Pods_YuanXC.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1463,7 +1463,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				0426E93C20722A5400548005 /* Embed Frameworks */,
-				54E8AC1D8ABC8AB58EBD3E1A /* [CP] Copy Pods Resources */,
+				1412D08CC339B47BE26CDED3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1484,7 +1484,7 @@
 				ORGANIZATIONNAME = ycx;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = NU2HX98PUA;
+						DevelopmentTeam = Q5XFK6FPLR;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -1963,28 +1963,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		54E8AC1D8ABC8AB58EBD3E1A /* [CP] Copy Pods Resources */ = {
+		1412D08CC339B47BE26CDED3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YuanXC/Pods-YuanXC-resources.sh",
-				"${PODS_ROOT}/BRPickerView/BRPickerView/AddressPickerView/BRPickerView.bundle",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-YuanXC/Pods-YuanXC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/BRPickerView/BRPickerView.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRPickerView.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BRPickerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebViewJavascriptBridge.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YuanXC/Pods-YuanXC-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YuanXC/Pods-YuanXC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2079,7 +2091,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = NU2HX98PUA;
+				DEVELOPMENT_TEAM = Q5XFK6FPLR;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2126,7 +2138,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NU2HX98PUA;
+				DEVELOPMENT_TEAM = Q5XFK6FPLR;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

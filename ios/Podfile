@@ -1,7 +1,14 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+platform :ios, '9.0'
+inhibit_all_warnings!
+
+source 'https://github.com/CocoaPods/Specs.git'
+
 target 'YuanXC' do
+  use_frameworks!
+  
   pod 'AFNetworking'
   pod 'SDWebImage'
   pod 'MBProgressHUD’, '~> 0.9'
@@ -11,9 +18,9 @@ target 'YuanXC' do
   pod 'TZImagePickerController', '2.2.5'
   pod 'WebViewJavascriptBridge', '~> 6.0'
 
-pod 'IQKeyboardManager'
+  pod 'IQKeyboardManager'
 
-pod 'BRPickerView', '~> 2.2.1'
+  pod 'BRPickerView', '~> 2.2.1'
   pod 'UMCCommon'
   pod 'UMCSecurityPlugins'
   pod 'UMCAnalytics'
