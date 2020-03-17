@@ -2115,7 +2115,7 @@
 					"$(PROJECT_DIR)/Lib/OpenInstallSDK2.2.1",
 					"$(PROJECT_DIR)/build/Build/Products/Debug-iphonesimulator",
 				);
-				MARKETING_VERSION = 1.1.8;
+				MARKETING_VERSION = 1.1.9;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -2162,7 +2162,7 @@
 					"$(PROJECT_DIR)/Lib/OpenInstallSDK2.2.1",
 					"$(PROJECT_DIR)/build/Build/Products/Debug-iphonesimulator",
 				);
-				MARKETING_VERSION = 1.1.8;
+				MARKETING_VERSION = 1.1.9;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

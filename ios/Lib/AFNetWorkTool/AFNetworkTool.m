@@ -68,11 +68,24 @@
     AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
     session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/javascript", @"text/plain", nil];
     session.responseSerializer = [AFHTTPResponseSerializer serializer];
+  
     [session.requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     
     NSDictionary *infromDic = __GetUserInfo;
     if (infromDic != nil || [infromDic isKindOfClass:[NSDictionary class]]) {
         [session.requestSerializer setValue:infromDic[@"token"] forHTTPHeaderField:@"TOKEN"];
+      NSString *theToken = infromDic[@"token"];
+      if (theToken) {
+        if (parameters) {
+          if (!parameters[@"token"]) {
+            NSMutableDictionary *mP = [parameters mutableCopy];
+            mP[@"token"] = theToken;
+            parameters = mP.copy;
+          }
+        }else {
+          parameters = @{@"token": theToken};
+        }
+      }
     }else{
         [session.requestSerializer setValue:@"" forHTTPHeaderField:@"TOKEN"];
     }
@@ -160,6 +173,18 @@
     NSDictionary *infromDic = __GetUserInfo;
     if (infromDic != nil || [infromDic isKindOfClass:[NSDictionary class]]) {
         [session.requestSerializer setValue:infromDic[@"token"] forHTTPHeaderField:@"TOKEN"];
+      NSString *theToken = infromDic[@"token"];
+      if (theToken) {
+        if (parameters) {
+          if (!parameters[@"token"]) {
+            NSMutableDictionary *mP = [parameters mutableCopy];
+            mP[@"token"] = theToken;
+            parameters = mP.copy;
+          }
+        }else {
+          parameters = @{@"token": theToken};
+        }
+      }
     }else{
        [session.requestSerializer setValue:@"" forHTTPHeaderField:@"TOKEN"];
     }
@@ -203,6 +228,18 @@
     NSDictionary *infromDic = __GetUserInfo;
     if (infromDic != nil || [infromDic isKindOfClass:[NSDictionary class]]) {
         [session.requestSerializer setValue:infromDic[@"token"] forHTTPHeaderField:@"TOKEN"];
+      NSString *theToken = infromDic[@"token"];
+      if (theToken) {
+        if (parameters) {
+          if (!parameters[@"token"]) {
+            NSMutableDictionary *mP = [parameters mutableCopy];
+            mP[@"token"] = theToken;
+            parameters = mP.copy;
+          }
+        }else {
+          parameters = @{@"token": theToken};
+        }
+      }
     }else{
         [session.requestSerializer setValue:@"" forHTTPHeaderField:@"TOKEN"];
     }
