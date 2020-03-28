@@ -59,7 +59,7 @@
 //#define URL_Base    @"http://121.40.245.243:8016/rhh-api/"
 
 //易财钱包
-#define URL_Base    @"http://api.jbhunt.cc/ycqb-api/"
+#define URL_Base    @"http://api.whwen.cn/ycqb-api/"
 
 //友盟key
 #define YOUMENGKEY  @"5d6654150cafb27522000ada"
