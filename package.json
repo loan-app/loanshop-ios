@@ -9,7 +9,7 @@
 	"dependencies": {
 		"axios": "^0.17.1",
 		"moment": "^2.22.2",
-		"node-forge": "^0.7.5",
+		"node-forge": "^1.0.0",
 		"numeral": "^2.0.6",
 		"qs": "^6.5.2",
 		"react": "16.0.0",
